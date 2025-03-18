@@ -7,6 +7,7 @@ from uids import (
     DISCOVERY_CAMPAIGNS,
     OFFICIAL_NADEO_AUTHOR_AND_SUBMITTOR_UIDS,
     special_uids,
+    ALL_WEEKLY_SHORTS_MAP_NAMES,
     ALL_TOTD_MAP_NAMES,
     ALL_COMPETITION_MAP_NAMES
 )
@@ -33,6 +34,14 @@ for campaign in DISCOVERY_CAMPAIGNS:
 escaped_discovery_names = [re.escape(name) for name in discovery_map_names]
 discovery_pattern_group = "(?:" + "|".join(escaped_discovery_names) + ")"
 discovery_full_pattern = re.compile(rf"^{discovery_pattern_group}$", re.IGNORECASE)
+
+# Weekly shorts pattern creation
+weekly_shorts_map_names = []
+for weekly_shorts in ALL_WEEKLY_SHORTS_MAP_NAMES:
+    weekly_shorts_map_names.extend(weekly_shorts["maps"])
+escaped_weekly_shorts_names = [re.escape(name) for name in weekly_shorts_map_names]
+weekly_shorts_pattern_group = "(?:" + "|".join(escaped_weekly_shorts_names) + ")"
+weekly_shorts_full_pattern = re.compile(rf"^{weekly_shorts_pattern_group}$", re.IGNORECASE)
 
 # Competition pattern creation
 competition_map_names = []
@@ -1254,10 +1263,20 @@ desertice_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Dicy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
+    # -------- [Desert] Icy Red Reactor Down ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> IDRRD" Fall 2024 - 12 IDRRD
+deserticyredreactordown_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>IDRRD)$",
+    re.IGNORECASE)
+
     # -------- [Desert] To The Top ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Desert to the Top"
 deserttothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Desert to the Top)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> Desert to the Top"
+deserttothetop_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weekly_shorts_pattern_group})\s+(?P<alteration_mix>Desert to the Top)$",
     re.IGNORECASE)
 
     # -------- [Desert] Underwater ---------- #
@@ -1283,6 +1302,11 @@ allcars_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>all cars)$",
     re.IGNORECASE)
 
+    # -------- All Carswitch ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> 4CS"
+allcarswitch_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>4CS)$",
+    re.IGNORECASE)
 
 
 # ################ Altered Game Mode ################ #
@@ -1668,6 +1692,10 @@ checkpoin_t_seasonal_pattern_1 = re.compile(
 checkpoin_t_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s+(?P<alteration_mix>Checkpoin't)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - Checkpoin't <mapnumber>"
+checkpoin_t_seasonal_pattern_3 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s+(?P<alteration_mix>Checkpoin't)\s+(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
 
     # -------- Colour Combined ---------- #
 # Pattern seasonal: "<season> <year> - <each map number in sets from 1-5 shown in sets using colours, white = 1-5, green = 6-10, blue = 11-15, red 16-20 black 21-25> Combined"
@@ -2014,6 +2042,10 @@ straighttothefinish_seasonal_pattern_2 = re.compile(
 straighttothefinish_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>sttf)$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (STTF)"
+straighttothefinish_seasonal_pattern_4 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>STTF)\)$",
+    re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> STTF"
 straighttothefinish_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>STTF)$",
@@ -2022,31 +2054,43 @@ straighttothefinish_training_pattern_1 = re.compile(
 straighttothefinish_spring2020_pattern_1 = re.compile(
     r"^(?P<spring2020>[STst][0-1]\d)\s+(?P<alteration_mix>STTF)$",
     re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (STTF)"
+straighttothefinish_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration_mix>STTF)\)$",
+    re.IGNORECASE)
 # Pattern totd: "<totdname> (STTF)"
 straighttothefinish_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>STTF)\)$",
     re.IGNORECASE)
 
     # -------- Stunt Mode ---------- #
-# Pattern1: "<season> <year> - <mapnumber> Stunt"
+# Pattern seasonal: "<season> <year> - <mapnumber> Stunt"
 stuntmode_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Stunt)$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> Stunt Mode"
+# Pattern seasonal: "<season> <year> - <mapnumber> Stunt Mode"
 stuntmode_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Stunt Mode)$",
     re.IGNORECASE)
 
     # -------- Symmetrical ---------- #
-# Pattern1: "Symmetrical <season> <year> - <mapnumber>"
+# Pattern seasonal: "Symmetrical <season> <year> - <mapnumber>"
 symmetrical_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Symmetrical)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
     # -------- Tilted ---------- #
-# Pattern1: "<season> <mapnumber> - Tilted"
+# Pattern seasonal: "<season> <mapnumber> - Tilted"
 tilted_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>Tilted)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> Tilted"
+tilted_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Tilted)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> Tilted"
+tilted_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Tilted)$",
     re.IGNORECASE)
 
     # -------- YEET ---------- #
@@ -2256,11 +2300,13 @@ ALL_PATTERNS = [
     desertantiboost_seasonal_pattern_1,
     desertcarswitch_seasonal_pattern_1, desertcarswitch_totd_pattern_1, desertcarswitch_totd_pattern_2, desertcarswitch_totd_pattern_3, desertcarswitch_totd_pattern_4, 
     desertice_seasonal_pattern_1,
-    deserttothetop_seasonal_pattern_1,
+    deserticyredreactordown_seasonal_pattern_1,
+    deserttothetop_seasonal_pattern_1, deserttothetop_weeklyshorts_pattern_1,
     desertunderwater_seasonal_pattern_1, desertunderwater_seasonal_pattern_2, 
     desertreverse_seasonal_pattern_1,
     allcars_seasonal_pattern_1,
-    
+    allcarswitch_seasonal_pattern_1,
+
     race_seasonal_pattern_1, race_discovery_pattern_1,
     stunt_seasonal_pattern_1,
     platform_seasonal_pattern_1,
@@ -2294,7 +2340,7 @@ ALL_PATTERNS = [
     replay_seasonal_pattern_1,
     #
     ngolo_seasonal_pattern_1, ngolo_seasonal_pattern_2,
-    checkpoin_t_seasonal_pattern_1, checkpoin_t_seasonal_pattern_2, 
+    checkpoin_t_seasonal_pattern_1, checkpoin_t_seasonal_pattern_2, checkpoin_t_seasonal_pattern_3,
     colourcombined_seasonal_pattern_1, colourcombined_training_pattern_1,
     checkpointboostswap_seasonal_pattern_1, checkpointboostswap_training_pattern_1, checkpointboostswap_spring2020_pattern_1,
     checkpoint1kept_seasonal_pattern_1,
@@ -2320,10 +2366,10 @@ ALL_PATTERNS = [
     speedlimit_seasonal_pattern_1, speedlimit_seasonal_pattern_2, speedlimit_seasonal_pattern_3,
     start1down_seasonal_pattern_1,
     supersized_seasonal_pattern_1, supersized_seasonal_pattern_2, supersized_seasonal_pattern_3, supersized_seasonal_pattern_4, supersized_seasonal_pattern_5, supersized_training_pattern_1, 
-    straighttothefinish_seasonal_pattern_1, straighttothefinish_seasonal_pattern_2, straighttothefinish_seasonal_pattern_3, straighttothefinish_training_pattern_1, straighttothefinish_spring2020_pattern_1, straighttothefinish_totd_pattern_1,
+    straighttothefinish_seasonal_pattern_1, straighttothefinish_seasonal_pattern_2, straighttothefinish_seasonal_pattern_3, straighttothefinish_seasonal_pattern_4, straighttothefinish_training_pattern_1, straighttothefinish_spring2020_pattern_1, straighttothefinish_discovery_pattern_1, straighttothefinish_totd_pattern_1,
     stuntmode_seasonal_pattern_1, stuntmode_seasonal_pattern_2,
     symmetrical_seasonal_pattern_1,
-    tilted_seasonal_pattern_1,
+    tilted_seasonal_pattern_1, tilted_seasonal_pattern_2, tilted_training_pattern_1,
     yeet_seasonal_pattern_1, yeet_training_pattern_1, yeet_spring2020_pattern_1, yeet_discovery_pattern_1, yeet_totd_pattern_1,
     yeetdown_seasonal_pattern_1, yeetdown_seasonal_pattern_2,
     

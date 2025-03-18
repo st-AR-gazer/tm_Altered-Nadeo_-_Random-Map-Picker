@@ -84,9 +84,11 @@ alterations_dict = {
     "[Desert] Antiboost": [ "DAB" ],
     "[Desert] Carswitch": [ "[Desert] Carswitch", "Desertcarswitch", "CS-DC", "Carswitch DesertCar", "Cawswitch DesertCar", "CS-DesertCar" ],
     "[Desert] Ice": [ "[Desert] Ice", "Dicy" ],
+    "[Desert] Icy Red Reactor Down": [ "IDRRD" ],
     "[Desert] To The Top": [ "[Desert] To The Top" ],
     "[Desert] Underwater": [ "[Desert] Underwater", "[Desert] (UW)" ],
     "[Desert] Reverse": [ "[Desert] Reverse" ],
+    "All Car Switch": [ "4CS" ],
     
     # Altered Game Mode
     "[Race]": [ "[Race]" ],

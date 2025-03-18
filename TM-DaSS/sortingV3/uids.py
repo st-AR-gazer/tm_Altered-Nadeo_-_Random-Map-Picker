@@ -1596,7 +1596,7 @@ DISCOVERY_CAMPAIGNS = [
         'maps': {
             "StuntIsBack": "01",
             "SimpleFlips": "02",
-            "Arena": "03",
+            "Arena (MATCHES WEEKLY SHORTS AND CAN NO LONGER BE USED HERE...)": "03",
             "SuperPipe": "04",
             "Stunt4Ever": "05",
             "Freedom": "06",
@@ -1862,6 +1862,51 @@ ALL_COMPETITION_MAP_NAMES = [
         ]
     }
 ]
+
+# all is quotes xdd
+ALL_WEEKLY_SHORTS_MAP_NAMES = [
+    {
+        'week': 1,
+        'maps': {
+            "First": "01",
+            "Curve": "02",
+            "Climb": "03",
+            "Boost": "04",
+            "Slide": "05"
+        }
+    },
+    {
+        'week': 2,
+        'maps': {
+            "Hill": "06",
+            "Flight": "07",
+            "Pool": "08",
+            "Forest": "09",
+            "Ice": "10"
+        }
+    },
+    {
+        'week': 3,
+        'maps': {
+            "Tornado": "11",
+            "Marble": "12",
+            "Cascade": "13",
+            "Broken": "14",
+            "Angles": "15"
+        }
+    },
+    {
+        'week': 4,
+        'maps': {
+            "RubberLand": "16",
+            "NightRace": "17",
+            "IceBraker": "18",
+            "AutoCross": "19",
+            "Arena": "20"
+        }
+    }
+]
+
 
 ALL_TOTD_MAP_NAMES = {
     
