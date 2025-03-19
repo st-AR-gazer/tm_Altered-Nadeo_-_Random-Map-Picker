@@ -40,8 +40,8 @@ weekly_shorts_map_names = []
 for weekly_shorts in ALL_WEEKLY_SHORTS_MAP_NAMES:
     weekly_shorts_map_names.extend(weekly_shorts["maps"])
 escaped_weekly_shorts_names = [re.escape(name) for name in weekly_shorts_map_names]
-weekly_shorts_pattern_group = "(?:" + "|".join(escaped_weekly_shorts_names) + ")"
-weekly_shorts_full_pattern = re.compile(rf"^{weekly_shorts_pattern_group}$", re.IGNORECASE)
+weeklyshorts_pattern_group = "(?:" + "|".join(escaped_weekly_shorts_names) + ")"
+weekly_shorts_full_pattern = re.compile(rf"^{weeklyshorts_pattern_group}$", re.IGNORECASE)
 
 # Competition pattern creation
 competition_map_names = []
@@ -63,6 +63,10 @@ dirt_seasonal_pattern_1 = re.compile(
 # Pattern training: "Dirty Training - <mapnumber>"
 dirt_training_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Dirty)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (Dirt)"
+dirt_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Dirt)\)$",
     re.IGNORECASE)
 
     # --------- fast magnet ---------- #
@@ -144,6 +148,14 @@ ice_spring2020_pattern_1 = re.compile(
 ice_discovery_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Icy)\s+(?P<discoveryname>{discovery_pattern_group})$",
     re.IGNORECASE)
+# Pattern totd: "Icy <totdname>"
+ice_totd_pattern_1 = re.compile(
+    rf"^(?P<alteration_mix>Icy)\s+(?P<name>{totd_pattern_group})$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "Icy <weeklyshortsname>"
+ice_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<alteration_mix>Icy)\s+(?P<name>{weeklyshorts_pattern_group})$",
+    re.IGNORECASE)
 
     # --------- Magnet ---------- #
 # Pattern season: "<season> <year> - <mapnumber> Magnet"
@@ -170,6 +182,10 @@ magnet_totd_pattern_1 = re.compile(
 magnet_totd_pattern_2 = re.compile(
     rf"^(?P<name>{totd_pattern_group})\s+(?P<alteration_mix>Magnet)$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> Magnet"
+magnet_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Magnet)$",
+    re.IGNORECASE)
 
     # --------- Mixed ---------- #
 # Pattern seasonal: "Mixed <season> <year> - <mapnumber>"
@@ -184,6 +200,10 @@ mixed_training_pattern_1 = re.compile(
 mixed_training_pattern_2 = re.compile(
     rf"^(?P<alteration_mix>Mixed)\s+(?P<season>Training)\s*-\s*(?P<mapnumber_1>\d{{1,2}})-(?P<mapnumber_2>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (Mixed)"
+mixed_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Mixed)\)$",
+    re.IGNORECASE)
 
     # --------- Penalty ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Penalty"
@@ -193,6 +213,10 @@ penalty_seasonal_pattern_1 = re.compile(
 # Pattern training: "Training - <mapnumber> Penalty"
 penalty_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Penalty)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> Penalty"
+penalty_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Penalty)$",
     re.IGNORECASE)
 
     # --------- Plastic ---------- #
@@ -220,6 +244,10 @@ plastic_discovery_pattern_1 = re.compile(
 plastic_discovery_pattern_2 = re.compile(
     rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration_mix>Plastic)$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (Plastic)"
+plastic_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Plastic)\)$",
+    re.IGNORECASE)
 
     # --------- Road ---------- #
 # Pattern seasonal: "Roady <season> <year> - <mapnumber>"
@@ -230,21 +258,26 @@ road_seasonal_pattern_1 = re.compile(
 road_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration_mix>Road)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-# Pattern training: "Roady Training - <mapnumber>"
-road_training_pattern_1 = re.compile(
-    rf"^(?P<alteration_mix>Roady)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+# Pattern seasonal: "<season> <year> - <mapnumber> Road"
+road_seasonal_pattern_3 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Road)$",
     re.IGNORECASE)
-
 # Pattern seasonal: "<season> <year> - <mapnumber> Asphalt"
 roadasphalt_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Asphalt)$",
     re.IGNORECASE)
-
 # Pattern seasonal: "(Tech) <season> <year> - <mapnumber>"
 roadtech_seasonal_pattern_1 = re.compile(
     rf"^\(Tech\)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
-    
+# Pattern training: "Roady Training - <mapnumber>"
+road_training_pattern_1 = re.compile(
+    rf"^(?P<alteration_mix>Roady)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (Road)"
+road_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Road)\)$",
+    re.IGNORECASE)
 
     # --------- Wood ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Wood"
@@ -266,6 +299,10 @@ wood_spring2020_pattern_1 = re.compile(
 # Pattern discovery: "<discoveryname> Wood"
 wood_discovery_pattern_1 = re.compile(
     rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration_mix>Wood)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (Wood)"
+wood_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Wood)\)$",
     re.IGNORECASE)
 # Pattern totd: "<totdname> (Wood)"
 wood_totd_pattern_1 = re.compile(
@@ -327,11 +364,19 @@ surfaceless_training_pattern_1 = re.compile(
 surfaceless_training_pattern_16171819 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber_16>\d{{1,2}})\s+(?P<mapnumber_17>\d{{1,2}})\s+(?P<mapnumber_18>\d{{1,2}})\s+(?P<mapnumber_19>\d{{1,2}})\s+(?P<alteration_mix>Surfaceless)$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (Surfaceless)"
+surfaceless_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Surfaceless)\)$",
+    re.IGNORECASE)
 
     # --------- Underwater ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Underwater)"
 underwater_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Underwater)\)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (UW)"
+underwater_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>UW)\)$",
     re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> Underwater"
 underwater_training_pattern_1 = re.compile(
@@ -345,9 +390,25 @@ underwater_spring2020_pattern_1 = re.compile(
 underwater_discovery_pattern_1 = re.compile(
     rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration_mix>Underwater)\)$",
     re.IGNORECASE)
+# Pattern discovery: "<discoveryname> Underwater"
+underwater_discovery_pattern_2 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration_mix>Underwater)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> - Underwater"
+underwater_discovery_pattern_3 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+-\s+(?P<alteration_mix>Underwater)$",
+    re.IGNORECASE)
 # Pattern totd: "<totdname> (Underwater)"
 underwater_totd_pattern_1 = re.compile(
     rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration_mix>Underwater)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> Underwater"
+underwater_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Underwater)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> - Underwater"
+underwater_weeklyshorts_pattern_2 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+-\s+(?P<alteration_mix>Underwater)$",
     re.IGNORECASE)
 
 
@@ -397,6 +458,10 @@ cruisecontrol_seasonal_pattern_1 = re.compile(
 # Pattern seasonal: "<season> <year> - <mapnumber> - Cruise Control"
 cruisecontrol_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>Cruise Control)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> Cruise Control"
+cruisecontrol_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Cruise Control)$",
     re.IGNORECASE)
 
     # -------- Cruise Effects ---------- #
@@ -498,6 +563,10 @@ nogrip_seasonal_pattern_2 = re.compile(
 nogrip_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>No-Grip).*$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> NoGrip - <mapnumber>"
+nogrip_seasonal_pattern_4 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s+(?P<alteration_mix>NoGrip)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
+    re.IGNORECASE)
 
     # -------- No Steering ---------- #
 # Pattern seasonal: "<season> <year> No Steering - <mapnumber>"
@@ -507,6 +576,10 @@ nosteering_seasonal_pattern_1 = re.compile(
 # Pattern training: "Training - <mapnumber> No Steering"
 nosteering_training_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>No Steering)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (No-Steer)"
+nosteering_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>No-Steer)\)$",
     re.IGNORECASE)
 
     # -------- Random Dankness ---------- #
@@ -643,6 +716,10 @@ oneforward_seasonal_pattern_1 = re.compile(
 oneforward_training_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s*(?P<alteration_mix>1-forward)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> 1-back"
+oneback_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>1-back)$",
+    re.IGNORECASE)
 # Pattern spring2020: "<spring2020><mapnumber> 1-forward"
 oneforward_spring2020_pattern_1 = re.compile(
     r"^(?P<spring2020>[STst][0-1]\d)\s+(?P<alteration_mix>1-forward)$",
@@ -676,6 +753,10 @@ onedown_discovery_pattern_1 = re.compile(
 # Pattern totd: "<totdname> (1-Down)"
 onedown_totd_pattern_1 = re.compile(
     rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration_mix>1-DOWN)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> (1-DOWN)"
+onedown_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>1-DOWN)\)$",
     re.IGNORECASE)
 
     # -------- 1 Left / 1 Right ---------- #
@@ -775,6 +856,10 @@ cp1isend_seasonal_pattern_3 = re.compile(
 cp1isend_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>CP1 is End)$",
     re.IGNORECASE)
+# Pattern trainin: "Training - <mapnumber> CP1 End"
+cp1isend_training_pattern_2 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>CP1 End)$",
+    re.IGNORECASE)
 # Pattern spring2020: "<spring2020><mapnumber> CP1 is End"
 cp1isend_spring2020_pattern_1 = re.compile(
     r"^(?P<spring2020>[STst][0-1]\d)\s+(?P<alteration_mix>CP1 is End)$",
@@ -789,15 +874,23 @@ cp1isend_totd_pattern_2 = re.compile(
     re.IGNORECASE)
 
     # -------- Floor Fin ---------- #
-# Pattern1: "<season> <year> - <mapnumber> Floor-fin"
+# Pattern seasonal: "<season> <year> - <mapnumber> Floor-fin"
 floorfin_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Floor-fin)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> Floor-Fin"
+floorfin_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Floor-Fin)$",
     re.IGNORECASE)
 
     # -------- Ground Clippers ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Ground Clippers)"
 groundclippers_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Ground Clippers)\)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (Ground Clippers <alteration_mixinfo>)"
+groundclippers_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Ground Clippers)\s+(?P<alteration_mixinfo>.+)\)$",
     re.IGNORECASE)
 
     # -------- Inclined ---------- #
@@ -874,6 +967,10 @@ reverse_totd_pattern_1 = re.compile(
 # Pattern totd: "<totdname> - Reverse"
 reverse_totd_pattern_2 = re.compile(
     rf"^{totd_pattern_group}\s+-\s+(?P<alteration_mix>Reverse)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> - Reverse"
+reverse_weeklyshorts_pattern_1 = re.compile(
+    rf"^{weeklyshorts_pattern_group}\s+-\s+(?P<alteration_mix>Reverse)$",
     re.IGNORECASE)
 
     # -------- Roofing ---------- #
@@ -975,11 +1072,23 @@ stadium_discovery_pattern_1 = re.compile(
 stadium_discovery_pattern_2 = re.compile(
     rf"^(?P<dicoveryname>{discovery_pattern_group})\s+\[Stadium\]$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (CarSport)"
+stadium_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>CarSport)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> - CarSport"
+stadium_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+-\s+(?P<alteration_mix>CarSport)$",
+    re.IGNORECASE)
 
     # -------- [Stadium] To The Top ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Stadium To The Top"
 stadiumtothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Stadium To The Top)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> Stadium To The Top"
+stadiumtothetop_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Stadium To The Top)$",
     re.IGNORECASE)
 
     # -------- [Stadium] Underwater ---------- #
@@ -1029,6 +1138,10 @@ snow_totd_pattern_1 = re.compile(
 snow_totd_pattern_2 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Snow)\)$",
     re.IGNORECASE)
+# Pattern weekly shorts: "[Snow] <mapname>"
+snow_weeklyshorts_pattern_1 = re.compile(
+    rf"^\[(?P<alteration_mix>Snow)\]\s+(?P<mapname>{weeklyshorts_pattern_group})$",
+    re.IGNORECASE)
 
     # -------- [Snow] Carswitch ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Snowcarswitch"
@@ -1051,6 +1164,10 @@ snowcarswitch_totd_pattern_3 = re.compile(
 snowcarswitch_totd_pattern_4 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>CS_SC)\)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (Car Switch)"
+snowcarswitch_totd_pattern_5 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Car Switch)\)$",
+    re.IGNORECASE)
 
     # -------- [Snow] Checkpointless ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Checkpointless snow"
@@ -1066,6 +1183,22 @@ snowcheckpointless_seasonal_pattern_2 = re.compile(
 # Pattern seasonal: "<season> <year> - <mapnumber> (Icy [Snow])"
 snowice_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Icy \[Snow\])\)$",
+    re.IGNORECASE)
+
+    # -------- [Snow] Puzzle ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> Snow Puzzle"
+snowpuzzle_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Snow Puzzle)$",
+    re.IGNORECASE)
+
+    # -------- [Snow] To The Top ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> Snow To The Top"
+snowtothetop_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Snow To The Top)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> Snow To The Top"
+snowtothetop_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Snow To The Top)$",
     re.IGNORECASE)
 
     # -------- [Snow] Underwater ---------- #
@@ -1084,6 +1217,26 @@ snowunderwater_seasonal_pattern_3 = re.compile(
 # Pattern training: "Training - <mapnumber> [Snow] (UW)"
 snowunderwater_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>\[Snow\]\s+\(UW\))$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> [Snow] (UW)"
+snowunderwater_discovery_pattern_1 = re.compile(
+    rf"^{discovery_pattern_group}\s+\[(?P<alteration_mix_1>Snow)\]\s+\((?P<alteration_mix_2>UW)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> [Snow] UW"
+snowunderwater_discovery_pattern_2 = re.compile(
+    rf"^{discovery_pattern_group}\s+\[(?P<alteration_mix_1>Snow)\]\s+(?P<alteration_mix_2>UW)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (SnowCar UW)"
+snowunderwater_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>SnowCar UW)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> - Underwater [Snow]"
+snowunderwater_weeklyshorts_pattern_1 = re.compile(
+    rf"^{weeklyshorts_pattern_group}\s+-\s+(?P<alteration_mix_1>Underwater) \[(?P<alteration_mix_2>Snow)\]$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> - Underwater Snow"
+snowunderwater_weeklyshorts_pattern_2 = re.compile(
+    rf"^{weeklyshorts_pattern_group}\s+-\s+(?P<alteration_mix>Underwater Snow)$",
     re.IGNORECASE)
 
     # -------- [Snow] Wet Plastic ---------- #
@@ -1169,15 +1322,19 @@ rallycp1isend_spring2020_pattern_1 = re.compile(
     re.IGNORECASE)
 
     # -------- [Rally] Ice ---------- #
-# Pattern1: "Ricy <season> <year> - <mapnumber>"
+# Pattern seasonal: "Ricy <season> <year> - <mapnumber>"
 rallyice_seasonal_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Ricy)\s+(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
 
     # -------- [Rally] To The Top ---------- #
-# Pattern1: "<season> <year> - <mapnumber> Rally to the Top"
+# Pattern seasonal: "<season> <year> - <mapnumber> Rally to the Top"
 rallytothetop_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Rally to the Top)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshortsname> Rally To The Top"
+rallytothetop_weeklyshorts_pattern_1 = re.compile(
+    rf"^{weeklyshorts_pattern_group}\s+(?P<alteration_mix>Rally To The Top)$",
     re.IGNORECASE)
 
     # -------- [Rally] Underwater ---------- #
@@ -1192,6 +1349,10 @@ rallyunderwater_seasonal_pattern_2 = re.compile(
 # Pattern training: "Training - <mapnumber> [Rally] (UW)"
 rallyunderwater_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\[Rally\]\s+\((?P<alteration_mix>UW)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> [Rally] (UW)"
+rallyunderwater_discovery_pattern_1 = re.compile(
+    rf"^{discovery_pattern_group}\s+\[Rally\]\s+\((?P<alteration_mix>UW)\)$",
     re.IGNORECASE)
 
     # -------- [Desert] ---------- #
@@ -1230,9 +1391,17 @@ desert_totd_pattern_1 = re.compile(
 
 
     # -------- [Desert] Antiboost ---------- #
-# Pattern1: "<season> <year> - <mapnumber> - DAB"
+# Pattern seasonal: "<season> <year> - <mapnumber> - DAB"
 desertantiboost_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>DAB)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> - DAB"
+desertantiboost_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+-\s+(?P<alteration_mix>DAB)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> - DAB"
+desertantiboost_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+-\s+(?P<alteration_mix>DAB)$",
     re.IGNORECASE)
 
     # -------- [Desert] Carswitch ---------- #
@@ -1276,7 +1445,7 @@ deserttothetop_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 # Pattern weekly shorts: "<mapname> Desert to the Top"
 deserttothetop_weeklyshorts_pattern_1 = re.compile(
-    rf"^(?P<mapname>{weekly_shorts_pattern_group})\s+(?P<alteration_mix>Desert to the Top)$",
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Desert to the Top)$",
     re.IGNORECASE)
 
     # -------- [Desert] Underwater ---------- #
@@ -1288,11 +1457,28 @@ desertunderwater_seasonal_pattern_1 = re.compile(
 desertunderwater_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Desert)\)\s+\(UW\)$",
     re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> [Desert] (UW)"
+desertunderwater_training_pattern_1 = re.compile(
+    rf"^(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\[Desert\]\s+\(UW\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> [Desert] UW"
+desertunderwater_discovery_pattern_1 = re.compile(
+    rf"^{discovery_pattern_group}\s+\[Desert\]\s+UW$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<weeklyshorts_pattern_group> [Desert] UW"
+desertunderwater_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<name>{weeklyshorts_pattern_group})\s+\[Desert\]\s+UW$",
+    re.IGNORECASE)
+    
 
     # -------- [Desert] Reverse ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> - Reverse Desert"
 desertreverse_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>Reverse Desert)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> - Desert Reverse"
+desertreverse_seasonal_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>Desert Reverse)$",
     re.IGNORECASE)
 
 
@@ -1319,11 +1505,18 @@ race_seasonal_pattern_1 = re.compile(
 # Pattern discovery: "<discovery> [Race]"
 race_discovery_pattern_1 = re.compile(
     rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration_mix>\[Race\])$",
-    re.IGNORECASE
-)
+    re.IGNORECASE)
+# Pattern discovery: "<discovery> (Race)"
+race_discovery_pattern_2 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration_mix>Race)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discovery>_Race"
+race_discovery_pattern_3 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})_(?P<alteration_mix>Race)$",
+    re.IGNORECASE)
 
     # -------- [Stunt] ---------- #
-# Pattern1: "<season> <year> - <mapnumber> [Stunt]"
+# Pattern seasonal: "<season> <year> - <mapnumber> [Stunt]"
 stunt_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>\[Stunt\])$",
     re.IGNORECASE)
@@ -1454,6 +1647,10 @@ wetplastic_training_pattern_1 = re.compile(
 wetplastic_training_pattern_2 = re.compile(
     rf"^(?P<alteration_mix>Wet Plastic)\s+Training\s+-\s+(?P<mapnumber_21>\d{{1,2}})\s+&\s+(?P<mapnumber_24>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> (Wet Plastic)"
+wetplastic_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Wet Plastic)\)$",
+    re.IGNORECASE)
     
     # -------- Wet Wood ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Wet Wood)"
@@ -1476,7 +1673,11 @@ wetwood_spring2020_pattern_1 = re.compile(
 wetwood_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Wet Wood)\)$",
     re.IGNORECASE)
-
+# Pattern weekly shorts: "<mapname> (Wet Wood)"
+wetwood_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Wet Wood)\)$",
+    re.IGNORECASE)
+# ------------------------------------------------------------------------------ #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Wet Wood Yellow Reactor Down)"
 wetwoodyrd_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Wet Wood Yellow Reactor Down)\)$",
@@ -1546,6 +1747,36 @@ weticywood_totd_pattern_1 = re.compile(
 # Pattern totd: "<totdname> (100% WIW)"
 weticywood_totd_pattern_2 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>100% WIW)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> (Wet Icy Wood)"
+weticywood_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Wet Icy Wood)\)$",
+    re.IGNORECASE)
+
+    # -------- Wet Icy Plastic ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> (Wet Icy Plastic)"
+weticyplastic_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Wet Icy Plastic)\)$",
+    re.IGNORECASE)
+# Pattern training: "Training - <mapnumber> (Wet Icy Plastic)"
+weticyplastic_training_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Wet Icy Plastic)\)$",
+    re.IGNORECASE)
+# Pattern training 21&24: "Training - <mapnumber_21> & <mapnumber_24> (Wet Icy Plastic)"
+weticyplastic_training_pattern_2 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber_21>\d{{1,2}})\s+&\s+(?P<mapnumber_24>\d{{1,2}})\s+\((?P<alteration_mix>Wet Icy Plastic)\)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (Wet Icy Plastic)"
+weticyplastic_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Wet Icy Plastic)\)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (Wet Icy Plastic)"
+weticyplastic_discovery_pattern_1 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration_mix>Wet Icy Plastic)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> (Wet Icy Plastic)"
+weticyplastic_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Wet Icy Plastic)\)$",
     re.IGNORECASE)
 
     # -------- YEET Max-Up ---------- #
@@ -1657,6 +1888,10 @@ blind_seasonal_pattern_1 = re.compile(
 blind_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>But Blind)$",
     re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> Blindfolded"
+blind_seasonal_pattern_3 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Blindfolded)$",
+    re.IGNORECASE)
 # Pattern training: "Blind Training - <mapnumber>"
 blind_training_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Blind)\s+(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
@@ -1740,6 +1975,14 @@ checkpointfull_seasonal_pattern_2 = re.compile(
 checkpointfull_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>CPfull)$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> CPfull"
+checkpointfull_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>CPfull)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> CPfull (-NN)"
+checkpointfull_weeklyshorts_pattern_2 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>CPfull)\s+\((?P<alteration_mixinfo>-?\d+)\)$",
+    re.IGNORECASE)
 
     # -------- Checkpointless ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> - Checkpointless"
@@ -1793,6 +2036,10 @@ checkpointless_totd_pattern_4 = re.compile(
 # Pattern totd: "<totdname> (STTF - CPLess)"
 checkpointless_totd_pattern_5 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>STTF\s*-\s*CPLess)\)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> - Checkpointless"
+checkpointless_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+-\s+(?P<alteration_mix>Checkpointless)$",
     re.IGNORECASE)
 
     # -------- Checkpointlink ---------- #
@@ -1850,6 +2097,10 @@ flipped_seasonal_pattern_1 = re.compile(
 flipped_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})(?P<year>\d{{4}})(?P<alteration_mix>UpsideDown)\s+-\s+(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> (Flipped)"
+flipped_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Flipped)\)$",
+    re.IGNORECASE)
 
     # -------- Holes ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> (Holes)"
@@ -1859,6 +2110,10 @@ holes_seasonal_pattern_1 = re.compile(
 # Pattern training: "Training - <mapnumber> Holes"
 holes_training_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+-\s+(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Holes)$",
+    re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> (Holes)"
+holes_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Holes)\)$",
     re.IGNORECASE)
 
     # -------- Invisible ---------- #
@@ -2062,6 +2317,10 @@ straighttothefinish_discovery_pattern_1 = re.compile(
 straighttothefinish_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>STTF)\)$",
     re.IGNORECASE)
+# Pattern weekly shorts: "<mapname> (STTF)"
+straighttothefinish_weeklyshorts_pattern_1 = re.compile(
+    rf"^(?P<mapname>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>STTF)\)$",
+    re.IGNORECASE)
 
     # -------- Stunt Mode ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Stunt"
@@ -2117,15 +2376,18 @@ yeet_totd_pattern_1 = re.compile(
 
 
     # -------- YEET Down ---------- #
-# Pattern1: "<season> <year> - <mapnumber> (DEET)"
+# Pattern seasonal: "<season> <year> - <mapnumber> (DEET)"
 yeetdown_seasonal_pattern_1 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>DEET)\)$",
     re.IGNORECASE)
-# Pattern2: "<season> <year> - <mapnumber> - Deet"
+# Pattern seasonal: "<season> <year> - <mapnumber> - Deet"
 yeetdown_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>Deet)$",
     re.IGNORECASE)
-
+# Pattern seasonal: "<season> <year> - <mapnumber> Deet"
+yeetdown_seasonal_pattern_3 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Deet)$",
+    re.IGNORECASE)
 
 
 # ################ Competition alteration_mixs
@@ -2214,29 +2476,29 @@ scubadiving_training_pattern_1 = re.compile(
 
 
 ALL_PATTERNS = [
-    dirt_seasonal_pattern_1, dirt_training_pattern_1, 
+    dirt_seasonal_pattern_1, dirt_training_pattern_1, dirt_weeklyshorts_pattern_1, 
     fastmagnet_seasonal_pattern_1, fastmagnet_seasonal_pattern_2, fastmagnet_seasonal_pattern_3, fastmagnet_training_pattern_1, 
     flooded_seasonal_pattern_1, flooded_seasonal_pattern_2, flooded_training_pattern_1, flooded_spring2020_pattern_1, flooded_discovery_pattern_1,
     grass_seasonal_pattern_1, grass_training_pattern_2, grass_totd_pattern_1,
-    ice_seasonal_pattern_1, ice_seasonal_pattern_2, ice_seasonal_pattern_3, ice_training_pattern_1, ice_spring2020_pattern_1, ice_discovery_pattern_1,
-    magnet_seasonal_pattern_1, magnet_training_pattern_2, magnet_spring2020_pattern_1, magnet_discovery_pattern_1, magnet_totd_pattern_1, magnet_totd_pattern_2,
-    mixed_seasonal_pattern_1, mixed_training_pattern_1, mixed_training_pattern_2,
-    penalty_seasonal_pattern_1, penalty_training_pattern_1,
-    plastic_seasonal_pattern_1, plastic_training_pattern_1, plastic_training_pattern_2, plastic_spring2020_pattern_1, plastic_discovery_pattern_1, plastic_discovery_pattern_2,
-    road_seasonal_pattern_1, road_seasonal_pattern_2, road_training_pattern_1, roadasphalt_seasonal_pattern_1, roadtech_seasonal_pattern_1,
-    wood_seasonal_pattern_1, wood_training_pattern_1, wood_training_pattern_2, wood_spring2020_pattern_1, wood_discovery_pattern_1, wood_totd_pattern_1,
+    ice_seasonal_pattern_1, ice_seasonal_pattern_2, ice_seasonal_pattern_3, ice_training_pattern_1, ice_spring2020_pattern_1, ice_discovery_pattern_1, ice_totd_pattern_1, ice_weeklyshorts_pattern_1, 
+    magnet_seasonal_pattern_1, magnet_training_pattern_2, magnet_spring2020_pattern_1, magnet_discovery_pattern_1, magnet_totd_pattern_1, magnet_totd_pattern_2, magnet_weeklyshorts_pattern_1, 
+    mixed_seasonal_pattern_1, mixed_training_pattern_1, mixed_training_pattern_2, mixed_weeklyshorts_pattern_1, 
+    penalty_seasonal_pattern_1, penalty_training_pattern_1, penalty_weeklyshorts_pattern_1, 
+    plastic_seasonal_pattern_1, plastic_training_pattern_1, plastic_training_pattern_2, plastic_spring2020_pattern_1, plastic_discovery_pattern_1, plastic_discovery_pattern_2, plastic_weeklyshorts_pattern_1, 
+    road_seasonal_pattern_1, road_seasonal_pattern_2, road_seasonal_pattern_3, road_training_pattern_1, roadasphalt_seasonal_pattern_1, roadtech_seasonal_pattern_1, road_weeklyshorts_pattern_1, 
+    wood_seasonal_pattern_1, wood_training_pattern_1, wood_training_pattern_2, wood_spring2020_pattern_1, wood_discovery_pattern_1, wood_totd_pattern_1, wood_weeklyshorts_pattern_1,
     bobsleigh_seasonal_pattern_1, bobsleigh_seasonal_pattern_2, bobsleigh_seasonal_pattern_3, bobsleigh_training_pattern_1,
     pipe_seasonal_pattern_1,
     sausage_seasonal_pattern_1, sausage_training_pattern_2,
     slottrack_seasonal_pattern_1,
-    surfaceless_seasonal_pattern_1, surfaceless_training_pattern_1, surfaceless_training_pattern_16171819,
-    underwater_seasonal_pattern_1, underwater_training_pattern_1, underwater_spring2020_pattern_1, underwater_discovery_pattern_1, underwater_totd_pattern_1,
+    surfaceless_seasonal_pattern_1, surfaceless_training_pattern_1, surfaceless_training_pattern_16171819, surfaceless_weeklyshorts_pattern_1, 
+    underwater_seasonal_pattern_1, underwater_seasonal_pattern_2, underwater_training_pattern_1, underwater_spring2020_pattern_1, underwater_discovery_pattern_1, underwater_discovery_pattern_2, underwater_discovery_pattern_3, underwater_totd_pattern_1, underwater_weeklyshorts_pattern_1, underwater_weeklyshorts_pattern_2, 
     
     antibooster_seasonal_pattern_1,
     boosterless_seasonal_pattern_1, boosterless_seasonal_pattern_2, boosterless_training_pattern_1, boosterless_spring2020_pattern_1,
     broken_seasonal_pattern_1,
     cleaned_seasonal_pattern_1,
-    cruisecontrol_seasonal_pattern_1, cruisecontrol_seasonal_pattern_2, 
+    cruisecontrol_seasonal_pattern_1, cruisecontrol_seasonal_pattern_2, cruisecontrol_weeklyshorts_pattern_1, 
     cruiseeffects_seasonal_pattern_1, cruiseeffects_training_pattern_2,
     fast_seasonal_pattern_1, fast_seasonal_pattern_2, 
     fragile_seasonal_pattern_1, fragile_seasonal_pattern_2, fragile_seasonal_pattern_3, fragile_seasonal_pattern_4, fragile_training_pattern_1,
@@ -2245,8 +2507,8 @@ ALL_PATTERNS = [
     glider_seasonal_pattern_1,
     nobrakes_seasonal_pattern_1, nobrakes_seasonal_pattern_2,
     noeffects_seasonal_pattern_1, 
-    nogrip_seasonal_pattern_1, nogrip_seasonal_pattern_2, nogrip_seasonal_pattern_3,
-    nosteering_seasonal_pattern_1, nosteering_training_pattern_1,
+    nogrip_seasonal_pattern_1, nogrip_seasonal_pattern_2, nogrip_seasonal_pattern_3, nogrip_seasonal_pattern_4, 
+    nosteering_seasonal_pattern_1, nosteering_training_pattern_1, nosteering_weeklyshorts_pattern_1, 
     randomdankness_seasonal_pattern_1, randomdankness_training_pattern_1,
     randomeffects_seasonal_pattern_1, randomeffects_seasonal_pattern_2,
     reactor_seasonal_pattern_1,
@@ -2257,57 +2519,59 @@ ALL_PATTERNS = [
     wetwheels_seasonal_pattern_1,
     worntires_seasonal_pattern_1,
     
-    oneback_seasonal_pattern_1, oneback_seasonal_pattern_2, oneback_seasonal_pattern_3, oneback_seasonal_pattern_4, oneback_seasonal_pattern_5, oneforward_seasonal_pattern_1, oneforward_training_pattern_1, oneforward_spring2020_pattern_1, oneforward_totd_pattern_1, oneforward_totd_pattern_2,
-    onedown_seasonal_pattern_1, onedown_training_pattern_1, onedown_spring2020_pattern_1, onedown_discovery_pattern_1, onedown_totd_pattern_1,
+    oneback_seasonal_pattern_1, oneback_seasonal_pattern_2, oneback_seasonal_pattern_3, oneback_seasonal_pattern_4, oneback_seasonal_pattern_5, oneback_training_pattern_1, oneforward_seasonal_pattern_1, oneforward_training_pattern_1, oneforward_spring2020_pattern_1, oneforward_totd_pattern_1, oneforward_totd_pattern_2,
+    onedown_seasonal_pattern_1, onedown_training_pattern_1, onedown_spring2020_pattern_1, onedown_discovery_pattern_1, onedown_totd_pattern_1, onedown_weeklyshorts_pattern_1, 
     oneleft_seasonal_pattern_1, oneleft_seasonal_pattern_2, oneright_seasonal_pattern_1, oneright_seasonal_pattern_2,
     oneup_seasonal_pattern_1, oneup_seasonal_pattern_2, oneup_seasonal_pattern_3, oneup_seasonal_pattern_4, oneup_seasonal_pattern_5, oneup_training_pattern_1, oneup_training_pattern_2, oneup_spring2020_pattern_1, oneup_discovery_pattern_1, oneup_totd_pattern_1,
     twoup_seasonal_pattern_1,
     betterreverse_seasonal_pattern_1, betterreverse_seasonal_pattern_2, betterreverse_seasonal_pattern_3,
-    cp1isend_seasonal_pattern_1, cp1isend_seasonal_pattern_2, cp1isend_seasonal_pattern_3, cp1isend_training_pattern_1, cp1isend_spring2020_pattern_1, cp1isend_totd_pattern_1, cp1isend_totd_pattern_2, 
-    floorfin_seasonal_pattern_1,
-    groundclippers_seasonal_pattern_1,
+    cp1isend_seasonal_pattern_1, cp1isend_seasonal_pattern_2, cp1isend_seasonal_pattern_3, cp1isend_training_pattern_1, cp1isend_training_pattern_2, cp1isend_spring2020_pattern_1, cp1isend_totd_pattern_1, cp1isend_totd_pattern_2, 
+    floorfin_seasonal_pattern_1, floorfin_weeklyshorts_pattern_1, 
+    groundclippers_seasonal_pattern_1, groundclippers_seasonal_pattern_2, 
     inclined_seasonal_pattern_1, inclined_seasonal_pattern_2, 
     manslaughter_seasonal_pattern_1,
     nogear5_seasonal_pattern_1,
     podium_seasonal_pattern_1, podium_competition_pattern_1,
     puzzle_seasonal_pattern_1, puzzle_training_pattern_1,
-    reverse_seasonal_pattern_1, reverse_seasonal_pattern_2, reverse_training_pattern_1, reverse_spring2020_pattern_1, reverse_spring2020_pattern_2, reverse_discovery_pattern_1, reverse_totd_pattern_1, reverse_totd_pattern_2,
+    reverse_seasonal_pattern_1, reverse_seasonal_pattern_2, reverse_training_pattern_1, reverse_spring2020_pattern_1, reverse_spring2020_pattern_2, reverse_discovery_pattern_1, reverse_totd_pattern_1, reverse_totd_pattern_2, reverse_weeklyshorts_pattern_1, 
     roofing_seasonal_pattern_1, roofing_seasonal_pattern_2,
     short_seasonal_pattern_1, short_seasonal_pattern_2, short_seasonal_pattern_3, short_seasonal_pattern_4, short_training_pattern_1, short_spring2020_pattern_1,
     skyfinish_seasonal_pattern_1, skyfinish_seasonal_pattern_2, skyfinish_seasonal_pattern_3, skyfinish_spring2020_pattern_1, skyfinish_totd_pattern_1,
     thereandback_seasonal_pattern_1, thereandback_seasonal_pattern_2, thereandback_training_pattern_1,
     yeptreepuzzle_seasonal_pattern_1,
     
-    stadium_seasonal_pattern_1, stadium_seasonal_pattern_2, stadium_discovery_pattern_1, stadium_discovery_pattern_2,
-    stadiumtothetop_seasonal_pattern_1,
+    stadium_seasonal_pattern_1, stadium_seasonal_pattern_2, stadium_discovery_pattern_1, stadium_discovery_pattern_2, stadium_totd_pattern_1, stadium_weeklyshorts_pattern_1, 
+    stadiumtothetop_seasonal_pattern_1, stadiumtothetop_weeklyshorts_pattern_1, 
     stadiumunderwater_seasonal_pattern_1,
     stadiumwetplastic_seasonal_pattern_1,
     stadiumwetwood_seasonal_pattern_1,
-    snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_discovery_pattern_1, snow_totd_pattern_1, snow_totd_pattern_2,
-    snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1, snowcarswitch_totd_pattern_2, snowcarswitch_totd_pattern_3, snowcarswitch_totd_pattern_4,
+    snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_discovery_pattern_1, snow_totd_pattern_1, snow_totd_pattern_2, snow_weeklyshorts_pattern_1, 
+    snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1, snowcarswitch_totd_pattern_2, snowcarswitch_totd_pattern_3, snowcarswitch_totd_pattern_4, snowcarswitch_totd_pattern_5, 
     snowcheckpointless_seasonal_pattern_1, snowcheckpointless_seasonal_pattern_2,
     snowice_seasonal_pattern_1,
-    snowunderwater_seasonal_pattern_1, snowunderwater_seasonal_pattern_2, snowunderwater_seasonal_pattern_3, snowunderwater_training_pattern_1,
+    snowpuzzle_seasonal_pattern_1,
+    snowtothetop_seasonal_pattern_1, snowtothetop_weeklyshorts_pattern_1, 
+    snowunderwater_seasonal_pattern_1, snowunderwater_seasonal_pattern_2, snowunderwater_seasonal_pattern_3, snowunderwater_training_pattern_1, snowunderwater_discovery_pattern_1, snowunderwater_discovery_pattern_2, snowunderwater_totd_pattern_1, snowunderwater_weeklyshorts_pattern_1, snowunderwater_weeklyshorts_pattern_2, 
     snowwetplastic_seasonal_pattern_1,
     snowwood_seasonal_pattern_1, snowwood_training_pattern_1, snowwood_training_pattern_2124,
     rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1,
     rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4, rallycarswitch_totd_pattern_5, rallycarswitch_totd_pattern_6,
     rallycp1isend_seasonal_pattern_1, rallycp1isend_seasonal_pattern_2, rallycp1isend_spring2020_pattern_1,
     rallyice_seasonal_pattern_1,
-    rallytothetop_seasonal_pattern_1,
-    rallyunderwater_seasonal_pattern_1, rallyunderwater_seasonal_pattern_2, rallyunderwater_training_pattern_1, 
+    rallytothetop_seasonal_pattern_1, rallytothetop_weeklyshorts_pattern_1, 
+    rallyunderwater_seasonal_pattern_1, rallyunderwater_seasonal_pattern_2, rallyunderwater_training_pattern_1, rallyunderwater_discovery_pattern_1, 
     desert_seasonal_pattern_1, desert_seasonal_pattern_2, desert_seasonal_pattern_3, desert_seasonal_pattern_4, desert_training_pattern_1, desert_spring2020_pattern_1, desert_discovery_pattern_1, desert_totd_pattern_1,
-    desertantiboost_seasonal_pattern_1,
+    desertantiboost_seasonal_pattern_1, desertantiboost_discovery_pattern_1, desertantiboost_weeklyshorts_pattern_1, 
     desertcarswitch_seasonal_pattern_1, desertcarswitch_totd_pattern_1, desertcarswitch_totd_pattern_2, desertcarswitch_totd_pattern_3, desertcarswitch_totd_pattern_4, 
     desertice_seasonal_pattern_1,
     deserticyredreactordown_seasonal_pattern_1,
     deserttothetop_seasonal_pattern_1, deserttothetop_weeklyshorts_pattern_1,
-    desertunderwater_seasonal_pattern_1, desertunderwater_seasonal_pattern_2, 
-    desertreverse_seasonal_pattern_1,
+    desertunderwater_seasonal_pattern_1, desertunderwater_seasonal_pattern_2, desertunderwater_training_pattern_1, desertunderwater_discovery_pattern_1, desertunderwater_weeklyshorts_pattern_1, 
+    desertreverse_seasonal_pattern_1, desertreverse_seasonal_pattern_2, 
     allcars_seasonal_pattern_1,
     allcarswitch_seasonal_pattern_1,
 
-    race_seasonal_pattern_1, race_discovery_pattern_1,
+    race_seasonal_pattern_1, race_discovery_pattern_1, race_discovery_pattern_2, race_discovery_pattern_3, 
     stunt_seasonal_pattern_1,
     platform_seasonal_pattern_1,
     
@@ -2321,9 +2585,10 @@ ALL_PATTERNS = [
     reverseskyfinish_seasonal_pattern_1, reverseskyfinish_seasonal_pattern_2, reverseskyfinish_seasonal_pattern_3,
     sw2u1lcpuf2d1r_seasonal_pattern_1, 
     underwaterreverse_seasonal_pattern_1, underwaterreverse_seasonal_pattern_2, underwaterreverse_seasonal_pattern_3, underwaterreverse_training_pattern_1,
-    wetplastic_seasonal_pattern_1, wetplastic_training_pattern_1, wetplastic_training_pattern_2,
-    wetwood_seasonal_pattern_1, wetwood_training_pattern_1, wetwood_training_pattern_2, wetwood_spring2020_pattern_1, wetwood_totd_pattern_1, wetwoodyrd_seasonal_pattern_2, wetwoodrrd_seasonal_pattern_3,
-    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_seasonal_pattern_4, weticywood_training_pattern_1, weticywood_training_pattern_2, weticywood_training_pattern_3, weticywood_training_pattern_4, weticywood_training_pattern_5, weticywood_spring2020_pattern_1, weticywood_discovery_pattern_1, weticywood_discovery_pattern_2, weticywood_discovery_pattern_3, weticywood_totd_pattern_1, weticywood_totd_pattern_2, 
+    wetplastic_seasonal_pattern_1, wetplastic_training_pattern_1, wetplastic_training_pattern_2, wetplastic_weeklyshorts_pattern_1, 
+    wetwood_seasonal_pattern_1, wetwood_training_pattern_1, wetwood_training_pattern_2, wetwood_spring2020_pattern_1, wetwood_totd_pattern_1, wetwood_weeklyshorts_pattern_1, wetwoodyrd_seasonal_pattern_2, wetwoodrrd_seasonal_pattern_3, 
+    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_seasonal_pattern_4, weticywood_training_pattern_1, weticywood_training_pattern_2, weticywood_training_pattern_3, weticywood_training_pattern_4, weticywood_training_pattern_5, weticywood_spring2020_pattern_1, weticywood_discovery_pattern_1, weticywood_discovery_pattern_2, weticywood_discovery_pattern_3, weticywood_totd_pattern_1, weticywood_totd_pattern_2, weticywood_weeklyshorts_pattern_1, 
+    weticyplastic_seasonal_pattern_1, weticyplastic_training_pattern_1, weticyplastic_training_pattern_2, weticyplastic_totd_pattern_1, weticyplastic_discovery_pattern_1, weticyplastic_weeklyshorts_pattern_1, 
     yeetmaxup_seasonal_pattern_1,
     yeetpuzzle_seasonal_pattern_1, yeetpuzzle_training_pattern_1, yeetrandompuzzle_seasonal_pattern_1,
     yeetreverse_seasonal_pattern_1,
@@ -2335,7 +2600,7 @@ ALL_PATTERNS = [
     boss_seasonal_pattern_1, boss_seasonal_pattern_2, boss_seasonal_pattern_3,
     bumper_seasonal_pattern_1, bumper_seasonal_pattern_2, bumper_training_pattern_2,
     # Camera
-    blind_seasonal_pattern_1, blind_seasonal_pattern_2, blind_training_pattern_1,
+    blind_seasonal_pattern_1, blind_seasonal_pattern_2, blind_seasonal_pattern_3, blind_training_pattern_1,
     egocentrism_seasonal_pattern_1,
     replay_seasonal_pattern_1,
     #
@@ -2344,15 +2609,15 @@ ALL_PATTERNS = [
     colourcombined_seasonal_pattern_1, colourcombined_training_pattern_1,
     checkpointboostswap_seasonal_pattern_1, checkpointboostswap_training_pattern_1, checkpointboostswap_spring2020_pattern_1,
     checkpoint1kept_seasonal_pattern_1,
-    checkpointfull_seasonal_pattern_1, checkpointfull_seasonal_pattern_2, checkpointfull_training_pattern_1,
-    checkpointless_seasonal_pattern_1, checkpointless_seasonal_pattern_2, checkpointless_training_pattern_1, checkpointless_training_pattern_2, checkpointless_training_pattern_3, checkpointless_spring2020_pattern_1, checkpointless_spring2020_pattern_2, checkpointless_discovery_pattern_1, checkpointless_totd_pattern_1, checkpointless_totd_pattern_2, checkpointless_totd_pattern_3, checkpointless_totd_pattern_4, checkpointless_totd_pattern_5, 
+    checkpointfull_seasonal_pattern_1, checkpointfull_seasonal_pattern_2, checkpointfull_training_pattern_1, checkpointfull_weeklyshorts_pattern_1, checkpointfull_weeklyshorts_pattern_2, 
+    checkpointless_seasonal_pattern_1, checkpointless_seasonal_pattern_2, checkpointless_training_pattern_1, checkpointless_training_pattern_2, checkpointless_training_pattern_3, checkpointless_spring2020_pattern_1, checkpointless_spring2020_pattern_2, checkpointless_discovery_pattern_1, checkpointless_totd_pattern_1, checkpointless_totd_pattern_2, checkpointless_totd_pattern_3, checkpointless_totd_pattern_4, checkpointless_totd_pattern_5, checkpointless_weeklyshorts_pattern_1, 
     checkpointlink_seasonal_pattern_1,
     checkpointsrotated90_seasonal_pattern_1, checkpointsrotated90_seasonal_pattern_2, checkpointsrotated90_seasonal_pattern_3, gotrotated_seasonal_pattern_1,
     dragonyeet_seasonal_pattern_1,
     earthquake_seasonal_pattern_1, earthquake_training_pattern_1,
     extracheckpoint_seasonal_pattern_1,
-    flipped_seasonal_pattern_1, flipped_seasonal_pattern_2,
-    holes_seasonal_pattern_1, holes_training_pattern_1,
+    flipped_seasonal_pattern_1, flipped_seasonal_pattern_2, flipped_weeklyshorts_pattern_1, 
+    holes_seasonal_pattern_1, holes_training_pattern_1, holes_weeklyshorts_pattern_1, 
     invisible_seasonal_pattern_1, invisible_training_pattern_1,
     lunatic_seasonal_pattern_1, lunatic_seasonal_pattern_2,
     minirpg_seasonal_pattern_1, minirpg_seasonal_pattern_2,
@@ -2366,12 +2631,12 @@ ALL_PATTERNS = [
     speedlimit_seasonal_pattern_1, speedlimit_seasonal_pattern_2, speedlimit_seasonal_pattern_3,
     start1down_seasonal_pattern_1,
     supersized_seasonal_pattern_1, supersized_seasonal_pattern_2, supersized_seasonal_pattern_3, supersized_seasonal_pattern_4, supersized_seasonal_pattern_5, supersized_training_pattern_1, 
-    straighttothefinish_seasonal_pattern_1, straighttothefinish_seasonal_pattern_2, straighttothefinish_seasonal_pattern_3, straighttothefinish_seasonal_pattern_4, straighttothefinish_training_pattern_1, straighttothefinish_spring2020_pattern_1, straighttothefinish_discovery_pattern_1, straighttothefinish_totd_pattern_1,
+    straighttothefinish_seasonal_pattern_1, straighttothefinish_seasonal_pattern_2, straighttothefinish_seasonal_pattern_3, straighttothefinish_seasonal_pattern_4, straighttothefinish_training_pattern_1, straighttothefinish_spring2020_pattern_1, straighttothefinish_discovery_pattern_1, straighttothefinish_totd_pattern_1, straighttothefinish_weeklyshorts_pattern_1, 
     stuntmode_seasonal_pattern_1, stuntmode_seasonal_pattern_2,
     symmetrical_seasonal_pattern_1,
     tilted_seasonal_pattern_1, tilted_seasonal_pattern_2, tilted_training_pattern_1,
     yeet_seasonal_pattern_1, yeet_training_pattern_1, yeet_spring2020_pattern_1, yeet_discovery_pattern_1, yeet_totd_pattern_1,
-    yeetdown_seasonal_pattern_1, yeetdown_seasonal_pattern_2,
+    yeetdown_seasonal_pattern_1, yeetdown_seasonal_pattern_2, yeetdown_seasonal_pattern_3, 
     
     easymode_competition_pattern_1,
     

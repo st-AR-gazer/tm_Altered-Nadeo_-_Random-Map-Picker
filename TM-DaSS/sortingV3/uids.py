@@ -51,6 +51,7 @@ special_uids = [
         {"uid": "EmgDdEKryrpRPZaARnOsSpdbqT2", "name": "Training 16 but no brakes + fragile",   "season": "Training",   "year": "2020", "mapNumber": [ "16" ], "alteration": "XX-But"},
         {"uid": "CX9rIBuKXjE_uGwgmOkkNs9aFcg", "name": "Tiny Training - 01",                    "season": "Training",   "year": "2020", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "8n2_7OfJ0Fn5H7wwzhhwL16z1Ra", "name": "Training 13 But it's a climb",          "season": "Training",   "year": "2020", "mapNumber": [ "13" ], "alteration": "XX-But"},
+        {"uid": "xCvqrvy1EHpNeHUmKAEO9nOUJ17", "name": "Invisible Training - 08",               "season": "Training",   "year": "2020", "mapNumber": [ "08" ], "alteration": "XX-But"},
         
         # Spring 2020
         
@@ -921,7 +922,62 @@ special_uids = [
         {"uid": "Qoxw72IS7P8fqdFbE2NtcU2yiFc", "name": "Foundry",           "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "code": "stunt", "mapNumber": [ "23" ]},
         {"uid": "xHSYw3itOe__vB77Yvs4b0mLwjd", "name": "StuntCity",         "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "code": "stunt", "mapNumber": [ "24" ]},
         {"uid": "6VgMgcU_Bo_rcfUhsBmvzJRuMQi", "name": "ScatterPark",       "season": "Summer", "year": "2024", "alteration": "!OfficialNadeo", "code": "stunt", "mapNumber": [ "25" ]},
-        
+
+        # Platform
+
+        {"uid": "N_MnODQ3tXN1hYhkuWbXj0RXFYm", "name": "PinkPlatform",                  "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "01" ]},
+        {"uid": "gDudifq8muIfEIwFaZSBdBLy8h9", "name": "Tangerine",                     "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "02" ]},
+        {"uid": "COxvxmBZYr15rgLxNTzSl7NTpQ1", "name": "Lemonpeaks",                    "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "03" ]},
+        {"uid": "pBfTOMotVWRrLVPfqx39mNmgxk8", "name": "OrangeHills",                   "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "04" ]},
+        {"uid": "60ntV73UUlV3Asdvsuw1q2gpJIm", "name": "Pipeline",                      "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "05" ]},
+        {"uid": "5MLLojaEDtFxrhwXiRN253LbIX",  "name": "Lagooning",                     "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "06" ]},
+        {"uid": "bL3Ik83laXBcnGxD7JbGKyGd_25", "name": "Scarlet Summit",                "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "07" ]},
+        {"uid": "CbxUYoWPr4gtLqcbQ9MtSTToQg9", "name": "Glacial Plunge",                "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "08" ]},
+        {"uid": "21IbgZ8ua70V1a3h11_8HLItPF9", "name": "Primula",                       "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "09" ]},
+        {"uid": "riqjekNCHzRAX1rvnazAcFzyrAg", "name": "Just Do It",                    "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "10" ]},
+        {"uid": "8QH1NIETX0WGzGnAhmRUQ12uEf2", "name": "Bulrush",                       "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "11" ]},
+        {"uid": "mA834Z8Nip9VGmiSn1I3mL2KAVa", "name": "Cobalt Cove",                   "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "12" ]},
+        {"uid": "WooB5luGnOGYnCvATJOpsS6iuq3", "name": "Caramel",                       "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "13" ]},
+        {"uid": "WxvFRJZ18cpf1kYW8sfzrev5b84", "name": "Island Hopping",                "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "14" ]},
+        {"uid": "nEjCJW_EZ6FBlrFdWfMeaPfLZs",  "name": "Padauk",                        "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "15" ]},
+        {"uid": "5XrK6rFU3wylDs2bLyheCZ9Csqa", "name": "Maple Mist",                    "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "16" ]},
+        {"uid": "RkfVGqAGZ_6nDzn9GoTMfQ6Ho3d", "name": "Coffee",                        "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "17" ]},
+        {"uid": "Mxb6WCE4M3OklUONeLWkA5sxJF5", "name": "Meep Mip",                      "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "18" ]},
+        {"uid": "vnxemaPRrvJepKT1nzDu7GSOWWk", "name": "Backstroke",                    "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "19" ]},
+        {"uid": "UyOTirxi_5nMrUBsNTah8LBX8Yk", "name": "Hypothermic",                   "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "20" ]},
+        {"uid": "NIG50Po_ky8wGbSgDi4oSf7Udye", "name": "Ceramic",                       "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "21" ]},
+        {"uid": "VTFR5F1dxr8RvKnixVsJgCAjwMj", "name": "ATFO",                          "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "22" ]},
+        {"uid": "bWSkCZwJag0Ox5yRyxKSJR8AiZ9", "name": "Deja Vu",                       "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "23" ]},
+        {"uid": "3o0ceGPR9KwwzbvxJ_lWI5BGsXl", "name": "Dance Of The Sugar Plum Fairy", "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "24" ]},
+        {"uid": "Y95_GOUE6Do3awo_kMbx56HP9le", "name": "ToThePink",                     "season": "Fall", "year": "2024", "alteration": "!OfficialNadeo", "mapNumber": [ "25" ]},
+
+        # Weekly Shorts
+
+        {"uid": "sSEx79xAXu4Azm8RqJ12VQnYfKd", "name": "First", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "01" ]},
+        {"uid": "Cku71wCCQfPMo_tAOmwMBcOYDgl", "name": "Curve", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "02" ]},
+        {"uid": "CiR2YFr8m4BIrb_p1S6sz06qkD1", "name": "Climb", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "03" ]},
+        {"uid": "7b1uBffuGOMceURWELvDqodYeod", "name": "Boost", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "04" ]},
+        {"uid": "2hhDUJueG3P8d0evdxetA6TLEI",  "name": "Slide", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "05" ]},
+
+        {"uid": "v97FfwztlgncAiVxDSyOI8FMmCh", "name": "Hill",      "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "06" ]},
+        {"uid": "PUZW_cmHUVuX6S7Sg5v5AUxBxP1", "name": "Flight",    "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "07" ]},
+        {"uid": "ye9RBZObEfQaVvPRwvL32qCFEZm", "name": "Pool",      "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "08" ]},
+        {"uid": "3EoC4KP470YW30_9aLVMsO5TsF7", "name": "Forest",    "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "09" ]},
+        {"uid": "8qvIspNnTHFWK7S1OlGsokE9Ibe", "name": "Ice",       "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "10" ]},
+
+        {"uid": "tLUGP9B546I44qqu9OLuwXhQjgh", "name": "Tornado",   "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "11" ]},
+        {"uid": "HdROtck8bdvDZi6UoZUBzrr2X6",  "name": "Marble",    "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "12" ]},
+        {"uid": "9GqkCj24DnIFbXRtTmdyljyVz4k", "name": "Cascade",   "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "13" ]},
+        {"uid": "uOB0G8QuHC9lfNMtHxVFX3zhUi4", "name": "Broken",    "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "14" ]},
+        {"uid": "xJFYV85yqxGJCYoHHTuLdDf3zb7", "name": "Angles",    "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "15" ]},
+
+        {"uid": "BbQQTWXDG1ZrwSh8XLymiBjBHRg", "name": "RubberLand","season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "16" ]},
+        {"uid": "DgIkPNQ_zbWErbQNfiCssha2OT5", "name": "NightRace", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "17" ]},
+        {"uid": "YMePtBXxpQ4CJYXEtGeuZq7_J4f", "name": "IceBraker", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "18" ]},
+        {"uid": "kbfA3kmy1SJSvtjqkQ9pCeB4_m7", "name": "AutoCross", "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "19" ]},
+        {"uid": "Qvb2C9r5d9C8gSqyq9aaDO1tFi3", "name": "Arena",     "season": "Winter", "year": "2025", "alteration": "!OfficialNadeo", "mapNumber": [ "20" ]},
+
+
 
         # TM2020 Campaigns
         
@@ -1913,6 +1969,7 @@ ALL_TOTD_MAP_NAMES = {
     "Moutain Pass", # added manually
     "temple of unknown", # added manually
     "GreenCity", # added manually
+    "EDGE TRANSIT", # added manually
     
     # Added through tm.io:
     "U-Turn",

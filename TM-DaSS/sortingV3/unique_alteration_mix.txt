@@ -1,34 +1,345 @@
-##[Rally] Reverse
+--- Alteration Mix #37 ---
+Original: all cars
+  Recognized: None
+  Unrecognized:
+    - all cars
 
-CPfull; -45
-CPfull; -44
-CPfull; -18
-CPfull; -2
-CPfull; -105
-CPfull; -9
-CPfull; -29
-CPfull; -1
-CPfull; -3
-CPfull; -10
-CPfull; -17
-CPfull; -274
-CPfull; -182
-CPfull; -78
-CPfull; -7
-CPfull; -25
-CPfull; -91
-CPfull; -14
-CPfull; -5
-CPfull; -6
-CPfull; -11
-CPfull; -4
-CPfull; -42
-CPfull; -13
-CPfull; -15
-CPfull; -154
-CPfull; -8
-CPfull; -62
+--- Alteration Mix #49 ---
+Original: Blindfolded
+  Recognized: None
+  Unrecognized:
+    - Blindfolded
 
-Combined
-combined
+--- Alteration Mix #60 ---
+Original: Car Switch
+  Recognized: None
+  Unrecognized:
+    - Car Switch
+
+--- Alteration Mix #74 ---
+Original: Combined
+  Recognized: None
+  Unrecognized:
+    - Combined
+
+--- Alteration Mix #75 ---
+Original: combined
+  Recognized: None
+  Unrecognized:
+    - combined
+
+--- Alteration Mix #80 ---
+Original: CP1 End
+  Recognized: None
+  Unrecognized:
+    - CP1 End
+
+--- Alteration Mix #89 ---
+Original: CPfull; -1
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -1
+
+--- Alteration Mix #90 ---
+Original: CPfull; -10
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -10
+
+--- Alteration Mix #91 ---
+Original: CPfull; -105
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -105
+
+--- Alteration Mix #92 ---
+Original: CPfull; -11
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -11
+
+--- Alteration Mix #93 ---
+Original: CPfull; -12
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -12
+
+--- Alteration Mix #94 ---
+Original: CPfull; -13
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -13
+
+--- Alteration Mix #95 ---
+Original: CPfull; -14
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -14
+
+--- Alteration Mix #96 ---
+Original: CPfull; -15
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -15
+
+--- Alteration Mix #97 ---
+Original: CPfull; -154
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -154
+
+--- Alteration Mix #98 ---
+Original: CPfull; -17
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -17
+
+--- Alteration Mix #99 ---
+Original: CPfull; -18
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -18
+
+--- Alteration Mix #100 ---
+Original: CPfull; -182
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -182
+
+--- Alteration Mix #101 ---
+Original: CPfull; -19
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -19
+
+--- Alteration Mix #102 ---
+Original: CPfull; -2
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -2
+
+--- Alteration Mix #103 ---
+Original: CPfull; -234
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -234
+
+--- Alteration Mix #104 ---
+Original: CPfull; -25
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -25
+
+--- Alteration Mix #105 ---
+Original: CPfull; -274
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -274
+
+--- Alteration Mix #106 ---
+Original: CPfull; -29
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -29
+
+--- Alteration Mix #107 ---
+Original: CPfull; -3
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -3
+
+--- Alteration Mix #108 ---
+Original: CPfull; -4
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -4
+
+--- Alteration Mix #109 ---
+Original: CPfull; -42
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -42
+
+--- Alteration Mix #110 ---
+Original: CPfull; -44
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -44
+
+--- Alteration Mix #111 ---
+Original: CPfull; -45
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -45
+
+--- Alteration Mix #112 ---
+Original: CPfull; -47
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -47
+
+--- Alteration Mix #113 ---
+Original: CPfull; -48
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -48
+
+--- Alteration Mix #114 ---
+Original: CPfull; -5
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -5
+
+--- Alteration Mix #115 ---
+Original: CPfull; -6
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -6
+
+--- Alteration Mix #116 ---
+Original: CPfull; -62
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -62
+
+--- Alteration Mix #117 ---
+Original: CPfull; -7
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -7
+
+--- Alteration Mix #118 ---
+Original: CPfull; -78
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -78
+
+--- Alteration Mix #119 ---
+Original: CPfull; -8
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -8
+
+--- Alteration Mix #120 ---
+Original: CPfull; -9
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -9
+
+--- Alteration Mix #121 ---
+Original: CPfull; -91
+  Recognized:
+    - CPfull -> CPfull
+  Unrecognized:
+    - -91
+
+--- Alteration Mix #148 ---
+Original: DEET To The Top
+  Recognized: None
+  Unrecognized:
+    - DEET To The Top
+
+--- Alteration Mix #150 ---
+Original: Desert Reverse
+  Recognized: None
+  Unrecognized:
+    - Desert Reverse
+
+--- Alteration Mix #151 ---
+Original: Desert to the Top
+  Recognized: None
+  Unrecognized:
+    - Desert to the Top
+
+--- Alteration Mix #195 ---
+Original: Invisible
+  Recognized: None
+  Unrecognized:
+    - Invisible
+
+--- Alteration Mix #218 ---
+Original: NoGrip
+  Recognized: None
+  Unrecognized:
+    - NoGrip
+
+--- Alteration Mix #235 ---
+Original: Race
+  Recognized: None
+  Unrecognized:
+    - Race
+
+--- Alteration Mix #252 ---
+Original: Reverse Desert
+  Recognized: None
+  Unrecognized:
+    - Reverse Desert
+
+--- Alteration Mix #305 ---
+Original: Snow Puzzle
+  Recognized: None
+  Unrecognized:
+    - Snow Puzzle
+
+--- Alteration Mix #306 ---
+Original: Snow to the Top
+  Recognized: None
+  Unrecognized:
+    - Snow to the Top
+
+--- Alteration Mix #328 ---
+Original: STTF - CPLess
+  Recognized: None
+  Unrecognized:
+    - STTF - CPLess
+
+--- Alteration Mix #351 ---
+Original: Wet Icy Plastic
+  Recognized: None
+  Unrecognized:
+    - Wet Icy Plastic
+
+--- Alteration Mix #356 ---
+Original: Wet Wood Red Reactor Down
+  Recognized: None
+  Unrecognized:
+    - Wet Wood Red Reactor Down
+
+--- Alteration Mix #358 ---
+Original: Wet Wood Yellow Reactor Down
+  Recognized: None
+  Unrecognized:
+    - Wet Wood Yellow Reactor Down
 
