@@ -1970,6 +1970,7 @@ ALL_TOTD_MAP_NAMES = {
     "temple of unknown", # added manually
     "GreenCity", # added manually
     "EDGE TRANSIT", # added manually
+    "E D G E T R A N S IE T", # added manually
     
     # Added through tm.io:
     "U-Turn",

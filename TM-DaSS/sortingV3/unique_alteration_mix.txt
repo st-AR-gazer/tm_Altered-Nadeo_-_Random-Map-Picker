@@ -1,38 +1,14 @@
---- Alteration Mix #37 ---
-Original: all cars
-  Recognized: None
-  Unrecognized:
-    - all cars
-
---- Alteration Mix #49 ---
-Original: Blindfolded
-  Recognized: None
-  Unrecognized:
-    - Blindfolded
-
---- Alteration Mix #60 ---
-Original: Car Switch
-  Recognized: None
-  Unrecognized:
-    - Car Switch
-
 --- Alteration Mix #74 ---
-Original: Combined
-  Recognized: None
-  Unrecognized:
-    - Combined
-
---- Alteration Mix #75 ---
 Original: combined
   Recognized: None
   Unrecognized:
     - combined
 
---- Alteration Mix #80 ---
-Original: CP1 End
+--- Alteration Mix #75 ---
+Original: Combined
   Recognized: None
   Unrecognized:
-    - CP1 End
+    - Combined
 
 --- Alteration Mix #89 ---
 Original: CPfull; -1
@@ -264,82 +240,4 @@ Original: CPfull; -91
     - CPfull -> CPfull
   Unrecognized:
     - -91
-
---- Alteration Mix #148 ---
-Original: DEET To The Top
-  Recognized: None
-  Unrecognized:
-    - DEET To The Top
-
---- Alteration Mix #150 ---
-Original: Desert Reverse
-  Recognized: None
-  Unrecognized:
-    - Desert Reverse
-
---- Alteration Mix #151 ---
-Original: Desert to the Top
-  Recognized: None
-  Unrecognized:
-    - Desert to the Top
-
---- Alteration Mix #195 ---
-Original: Invisible
-  Recognized: None
-  Unrecognized:
-    - Invisible
-
---- Alteration Mix #218 ---
-Original: NoGrip
-  Recognized: None
-  Unrecognized:
-    - NoGrip
-
---- Alteration Mix #235 ---
-Original: Race
-  Recognized: None
-  Unrecognized:
-    - Race
-
---- Alteration Mix #252 ---
-Original: Reverse Desert
-  Recognized: None
-  Unrecognized:
-    - Reverse Desert
-
---- Alteration Mix #305 ---
-Original: Snow Puzzle
-  Recognized: None
-  Unrecognized:
-    - Snow Puzzle
-
---- Alteration Mix #306 ---
-Original: Snow to the Top
-  Recognized: None
-  Unrecognized:
-    - Snow to the Top
-
---- Alteration Mix #328 ---
-Original: STTF - CPLess
-  Recognized: None
-  Unrecognized:
-    - STTF - CPLess
-
---- Alteration Mix #351 ---
-Original: Wet Icy Plastic
-  Recognized: None
-  Unrecognized:
-    - Wet Icy Plastic
-
---- Alteration Mix #356 ---
-Original: Wet Wood Red Reactor Down
-  Recognized: None
-  Unrecognized:
-    - Wet Wood Red Reactor Down
-
---- Alteration Mix #358 ---
-Original: Wet Wood Yellow Reactor Down
-  Recognized: None
-  Unrecognized:
-    - Wet Wood Yellow Reactor Down
 

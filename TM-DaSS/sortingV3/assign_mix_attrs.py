@@ -98,7 +98,7 @@ ft_pattern = re.compile(
 )
 
 unvalidated_pattern = re.compile(
-    r"(?:unvalidated|not validated)",
+    r"(?: - unvalidated|unvalidated|not validated)",
     re.IGNORECASE)
 
 def check_discovery_map_name(map_name: str) -> dict:

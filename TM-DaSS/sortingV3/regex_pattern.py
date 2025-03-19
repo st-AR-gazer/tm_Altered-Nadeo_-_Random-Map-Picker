@@ -64,6 +64,10 @@ dirt_seasonal_pattern_1 = re.compile(
 dirt_training_pattern_1 = re.compile(
     rf"^(?P<alteration_mix>Dirty)\s+(?P<season>Training)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (Dirt)"
+dirt_totd_pattern_1 = re.compile(
+    rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration_mix>Dirt)\)$",
+    re.IGNORECASE)
 # Pattern weekly shorts: "<weeklyshortsname> (Dirt)"
 dirt_weeklyshorts_pattern_1 = re.compile(
     rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Dirt)\)$",
@@ -397,6 +401,10 @@ underwater_discovery_pattern_2 = re.compile(
 # Pattern discovery: "<discoveryname> - Underwater"
 underwater_discovery_pattern_3 = re.compile(
     rf"^(?P<discoveryname>{discovery_pattern_group})\s+-\s+(?P<alteration_mix>Underwater)$",
+    re.IGNORECASE)
+# Pattern discovery: "<discoveryname> (UW)"
+underwater_discovery_pattern_4 = re.compile(
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\((?P<alteration_mix>UW)\)$",
     re.IGNORECASE)
 # Pattern totd: "<totdname> (Underwater)"
 underwater_totd_pattern_1 = re.compile(
@@ -934,6 +942,10 @@ puzzle_seasonal_pattern_1 = re.compile(
 puzzle_training_pattern_1 = re.compile(
     rf"^(?P<season>Training)\s+(?P<alteration_mix>Puzzle)\s*-\s*(?P<mapnumber>\d{{1,2}})$",
     re.IGNORECASE)
+# Pattern totd: "<totwname> (Puzzle)"
+puzzle_totd_pattern_1 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Puzzle)\)$",
+    re.IGNORECASE)
 
     # -------- Reverse ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> - Reverse"
@@ -1469,7 +1481,6 @@ desertunderwater_discovery_pattern_1 = re.compile(
 desertunderwater_weeklyshorts_pattern_1 = re.compile(
     rf"^(?P<name>{weeklyshorts_pattern_group})\s+\[Desert\]\s+UW$",
     re.IGNORECASE)
-    
 
     # -------- [Desert] Reverse ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> - Reverse Desert"
@@ -1479,6 +1490,10 @@ desertreverse_seasonal_pattern_1 = re.compile(
 # Pattern seasonal: "<season> <year> - <mapnumber> - Desert Reverse"
 desertreverse_seasonal_pattern_2 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+-\s+(?P<alteration_mix>Desert Reverse)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> Desert Reverse"
+desertreverse_seasonal_pattern_3 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>Desert Reverse)$",
     re.IGNORECASE)
 
 
@@ -1504,7 +1519,7 @@ race_seasonal_pattern_1 = re.compile(
     re.IGNORECASE)
 # Pattern discovery: "<discovery> [Race]"
 race_discovery_pattern_1 = re.compile(
-    rf"^(?P<discoveryname>{discovery_pattern_group})\s+(?P<alteration_mix>\[Race\])$",
+    rf"^(?P<discoveryname>{discovery_pattern_group})\s+\[(?P<alteration_mix>Race)\]$",
     re.IGNORECASE)
 # Pattern discovery: "<discovery> (Race)"
 race_discovery_pattern_2 = re.compile(
@@ -1703,6 +1718,14 @@ weticywood_seasonal_pattern_3 = re.compile(
 # Pattern seasonal: "<season> <year> - <mapnumber> (Pure Wet Icy Wood)"
 weticywood_seasonal_pattern_4 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Pure Wet Icy Wood)\)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (Pure WetIcyWood)"
+weticywood_seasonal_pattern_5 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Pure WetIcyWood)\)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (100% WetIcyWood)"
+weticywood_seasonal_pattern_6 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>100% WetIcyWood)\)$",
     re.IGNORECASE)
 # Pattern training: "Training - <mapnumber> (Wet Icy Wood)"
 weticywood_training_pattern_1 = re.compile(
