@@ -27,7 +27,7 @@ jobs:
       - name: Download CSV
         env:
           WRBOT_API_PASSWORD: ${{ secrets.WRBOT_API_PASSWORD }}
-        run: python download_csv.py
+        run: python TM-DaSS/download_csv.py
 
       - name: Commit and Push Changes
         run: |

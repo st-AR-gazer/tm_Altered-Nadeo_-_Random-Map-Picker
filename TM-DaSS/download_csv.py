@@ -7,13 +7,14 @@ def download_csv():
         raise ValueError("WRBOT_API_PASSWORD is not set in environment variables.")
 
     url = f"https://tmapi.the418.gg/wrbot_api/data.csv?password={password}"
-
     response = requests.get(url)
 
     if response.status_code == 200:
-        with open("data.csv", "wb") as file:
+        os.makedirs("data", exist_ok=True)
+        file_path = os.path.join("data", "data.csv")
+        with open(file_path, "wb") as file:
             file.write(response.content)
-        print("File downloaded successfully as data.csv")
+        print(f"File downloaded successfully as {file_path}")
     else:
         print(f"Failed to download file. Status code: {response.status_code}")
 
