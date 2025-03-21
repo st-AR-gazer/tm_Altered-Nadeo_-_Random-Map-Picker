@@ -252,6 +252,10 @@ plastic_discovery_pattern_2 = re.compile(
 plastic_weeklyshorts_pattern_1 = re.compile(
     rf"^(?P<name>{weeklyshorts_pattern_group})\s+\((?P<alteration_mix>Plastic)\)$",
     re.IGNORECASE)
+# totd: "<totdname> (Plastic)"
+plastic_totd_pattern_1 = re.compile(
+    rf"^(?P<name>{totd_pattern_group})\s+\((?P<alteration_mix>Plastic)\)$",
+    re.IGNORECASE)
 
     # --------- Road ---------- #
 # Pattern seasonal: "Roady <season> <year> - <mapnumber>"
@@ -1326,6 +1330,10 @@ rallycarswitch_totd_pattern_5 = re.compile(
 rallycarswitch_totd_pattern_6 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>RallyCar)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (Carswitch RC)"
+rallycarswitch_totd_pattern_7 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Carswitch RC)\)$",
+    re.IGNORECASE)
 
     # -------- [Rally] CP1 is End ---------- #
 # Pattern seasonal: "[Rally] <season> <year> - <mapnumber> Cp1 is End"
@@ -1444,6 +1452,10 @@ desertcarswitch_totd_pattern_3 = re.compile(
 # Pattern totd: "<totdname> (Cawswitch DesertCar)"
 desertcarswitch_totd_pattern_4 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Cawswitch DesertCar)\)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (CS-DesertCar)"
+desertcarswitch_totd_pattern_5 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>CS-DesertCar)\)$",
     re.IGNORECASE)
 
     # -------- [Desert] Ice ---------- #
@@ -2523,7 +2535,7 @@ ALL_PATTERNS = [
     magnet_seasonal_pattern_1, magnet_training_pattern_2, magnet_spring2020_pattern_1, magnet_discovery_pattern_1, magnet_totd_pattern_1, magnet_totd_pattern_2, magnet_weeklyshorts_pattern_1, 
     mixed_seasonal_pattern_1, mixed_training_pattern_1, mixed_training_pattern_2, mixed_weeklyshorts_pattern_1, 
     penalty_seasonal_pattern_1, penalty_training_pattern_1, penalty_weeklyshorts_pattern_1, 
-    plastic_seasonal_pattern_1, plastic_training_pattern_1, plastic_training_pattern_2, plastic_spring2020_pattern_1, plastic_discovery_pattern_1, plastic_discovery_pattern_2, plastic_weeklyshorts_pattern_1, 
+    plastic_seasonal_pattern_1, plastic_training_pattern_1, plastic_training_pattern_2, plastic_spring2020_pattern_1, plastic_discovery_pattern_1, plastic_discovery_pattern_2, plastic_weeklyshorts_pattern_1, plastic_totd_pattern_1, 
     road_seasonal_pattern_1, road_seasonal_pattern_2, road_seasonal_pattern_3, road_training_pattern_1, roadasphalt_seasonal_pattern_1, roadtech_seasonal_pattern_1, road_weeklyshorts_pattern_1, 
     wood_seasonal_pattern_1, wood_training_pattern_1, wood_training_pattern_2, wood_spring2020_pattern_1, wood_discovery_pattern_1, wood_totd_pattern_1, wood_weeklyshorts_pattern_1,
     bobsleigh_seasonal_pattern_1, bobsleigh_seasonal_pattern_2, bobsleigh_seasonal_pattern_3, bobsleigh_training_pattern_1,
@@ -2594,14 +2606,14 @@ ALL_PATTERNS = [
     snowwetplastic_seasonal_pattern_1,
     snowwood_seasonal_pattern_1, snowwood_training_pattern_1, snowwood_training_pattern_2124,
     rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1,
-    rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4, rallycarswitch_totd_pattern_5, rallycarswitch_totd_pattern_6,
+    rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4, rallycarswitch_totd_pattern_5, rallycarswitch_totd_pattern_6, rallycarswitch_totd_pattern_7, 
     rallycp1isend_seasonal_pattern_1, rallycp1isend_seasonal_pattern_2, rallycp1isend_spring2020_pattern_1,
     rallyice_seasonal_pattern_1,
     rallytothetop_seasonal_pattern_1, rallytothetop_weeklyshorts_pattern_1, 
     rallyunderwater_seasonal_pattern_1, rallyunderwater_seasonal_pattern_2, rallyunderwater_training_pattern_1, rallyunderwater_discovery_pattern_1, 
     desert_seasonal_pattern_1, desert_seasonal_pattern_2, desert_seasonal_pattern_3, desert_seasonal_pattern_4, desert_training_pattern_1, desert_spring2020_pattern_1, desert_discovery_pattern_1, desert_totd_pattern_1,
     desertantiboost_seasonal_pattern_1, desertantiboost_discovery_pattern_1, desertantiboost_weeklyshorts_pattern_1, 
-    desertcarswitch_seasonal_pattern_1, desertcarswitch_totd_pattern_1, desertcarswitch_totd_pattern_2, desertcarswitch_totd_pattern_3, desertcarswitch_totd_pattern_4, 
+    desertcarswitch_seasonal_pattern_1, desertcarswitch_totd_pattern_1, desertcarswitch_totd_pattern_2, desertcarswitch_totd_pattern_3, desertcarswitch_totd_pattern_4, desertcarswitch_totd_pattern_5, 
     desertice_seasonal_pattern_1,
     deserticyredreactordown_seasonal_pattern_1,
     deserttothetop_seasonal_pattern_1, deserttothetop_weeklyshorts_pattern_1,
