@@ -52,6 +52,7 @@ special_uids = [
         {"uid": "CX9rIBuKXjE_uGwgmOkkNs9aFcg", "name": "Tiny Training - 01",                    "season": "Training",   "year": "2020", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "8n2_7OfJ0Fn5H7wwzhhwL16z1Ra", "name": "Training 13 But it's a climb",          "season": "Training",   "year": "2020", "mapNumber": [ "13" ], "alteration": "XX-But"},
         {"uid": "xCvqrvy1EHpNeHUmKAEO9nOUJ17", "name": "Invisible Training - 08",               "season": "Training",   "year": "2020", "mapNumber": [ "08" ], "alteration": "XX-But"},
+        {"uid": "rGap17Elto70oTPhxc08bIQKqCm", "name": "Training - 19 [01 07 2023 patch]",      "season": "Training",   "year": "2020", "mapNumber": [ "19" ], "alteration": "XX-But"},
         
         # Spring 2020
         
@@ -147,6 +148,15 @@ special_uids = [
         
         # Winter 2022
         
+        {"uid": "TwPcOQqRllHY9ObbwPTGrU0geh1", "name": "Wntr 22 2 bt ony hlf te blks",                      "season": "Winter",     "year": "2022", "mapNumber": [ "02" ], "alteration": "XX-But"},
+        {"uid": "FVtSzsoyF4e7Iyqou83qgkqYik5", "name": "Winter 2022 - 01 blurry",                           "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "4Ja4R1vdXfrmXbFXUsaSdfFpTHd", "name": "Winter 2022 - 01 But It's More Water",              "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "lvqeByTb7bHUJ3UkJwpreUXZnzj", "name": "Winter 2022 - 25 Dry",                              "season": "Winter",     "year": "2022", "mapNumber": [ "25" ], "alteration": "XX-But"},
+        {"uid": "ihljWTsrX2_OuwhkPAR5YPouzlg", "name": "Winter 2022 - 25 But It's More Water",              "season": "Winter",     "year": "2022", "mapNumber": [ "25" ], "alteration": "XX-But"},
+        {"uid": "wAooUsQ3rLQ8SyK83df0elTANRi", "name": "Winter 2022 - 01 But it's Bumpy",                   "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "CwfGwSiyOLdlT5Kq2dmEvvyip27", "name": "Winter 2022 - 20 but more poles",                   "season": "Winter",     "year": "2022", "mapNumber": [ "20" ], "alteration": "XX-But"},
+        {"uid": "CoPq29ahGeSNtPwxq9Gw6Ah_Rxk", "name": "Winter 2022 - 01 But it's Red Boosters",            "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "n8Oc5csvzpXHIPpPwXTBPPjQg62", "name": "Winter 2022 - 01 but WICKED",                       "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
         {"uid": "83ioAJscyTn5ZkxjK8eSdLrJxVh", "name": "Winter 2022 - 01 But Flat",                         "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
         # Spring 2022
@@ -183,17 +193,16 @@ special_uids = [
         {"uid": "RF622VSyqWU4RD8j2cnF0unygKd", "name": "Fall 2022 - 22 Magnetic Pipes",                     "season": "Fall",       "year": "2022", "mapNumber": [ "22" ], "alteration": "XX-But"},
         {"uid": "7u3jm11yX3bZeqmrRzKnFngv1ga", "name": "Fall 2022 - 01 but litterally sttf",                "season": "Fall",       "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
         
-        # Winter 2022
+        # Winter 2023
         
-        {"uid": "TwPcOQqRllHY9ObbwPTGrU0geh1", "name": "Wntr 22 2 bt ony hlf te blks",                      "season": "Winter",     "year": "2022", "mapNumber": [ "02" ], "alteration": "XX-But"},
-        {"uid": "FVtSzsoyF4e7Iyqou83qgkqYik5", "name": "Winter 2022 - 01 blurry",                           "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        {"uid": "4Ja4R1vdXfrmXbFXUsaSdfFpTHd", "name": "Winter 2022 - 01 But It's More Water",              "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        {"uid": "lvqeByTb7bHUJ3UkJwpreUXZnzj", "name": "Winter 2022 - 25 Dry",                              "season": "Winter",     "year": "2022", "mapNumber": [ "25" ], "alteration": "XX-But"},
-        {"uid": "ihljWTsrX2_OuwhkPAR5YPouzlg", "name": "Winter 2022 - 25 But It's More Water",              "season": "Winter",     "year": "2022", "mapNumber": [ "25" ], "alteration": "XX-But"},
-        {"uid": "wAooUsQ3rLQ8SyK83df0elTANRi", "name": "Winter 2022 - 01 But it's Bumpy",                   "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        {"uid": "CwfGwSiyOLdlT5Kq2dmEvvyip27", "name": "Winter 2022 - 20 but more poles",                   "season": "Winter",     "year": "2022", "mapNumber": [ "20" ], "alteration": "XX-But"},
-        {"uid": "CoPq29ahGeSNtPwxq9Gw6Ah_Rxk", "name": "Winter 2022 - 01 But it's Red Boosters",            "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        {"uid": "n8Oc5csvzpXHIPpPwXTBPPjQg62", "name": "Winter 2022 - 01 but WICKED",                       "season": "Winter",     "year": "2022", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "TkSn3dObQeCwRXWqQHJX0p5aFs3", "name": "Winter 2023 - 16 High Jump",                        "season": "Winter",     "year": "2023", "mapNumber": [ "16" ], "alteration": "XX-But"},
+        {"uid": "hVbLjjmKM468F7aF_qeaFgmVp3k", "name": "Winter 2023 - 09 Multilap",                         "season": "Winter",     "year": "2023", "mapNumber": [ "09" ], "alteration": "XX-But"},
+        {"uid": "uObBX86_931S65tq_Gqi2ZQBt1j", "name": "Winter 2023 - 17 True One Lap",                     "season": "Winter",     "year": "2023", "mapNumber": [ "17" ], "alteration": "XX-But"},
+        {"uid": "ID9hLjxZCLicNa0FjTLCKpSj2jl", "name": "Winter 2023 - 01 but its A01",                      "season": "Winter",     "year": "2023", "mapNumber": [ "01" ], "alteration": "XX-But"},
+        {"uid": "VL03IttQlArs83lOD6kQsl9AG2",  "name": "Winter 2023 - 10 but no quarter",                   "season": "Winter",     "year": "2023", "mapNumber": [ "10" ], "alteration": "XX-But"},
+        {"uid": "nQDqPJ8B2q_Eok5vSIwTtkgJoQb", "name": "Winter 2023 - 08 True One Lap",                     "season": "Winter",     "year": "2023", "mapNumber": [ "08" ], "alteration": "XX-But"},
+        {"uid": "yLLPiH2piFkwfhu0_zNaAEdqfEb", "name": "Winter 2023 - 21, but The Author Time Is Easy",     "season": "Winter",     "year": "2023", "mapNumber": [ "21" ], "alteration": "XX-But"}, # The actual name is "Winter_2023_-_21_but..._The_Author_Time_Is_Easy.Map.Gbx"
+        {"uid": "lcfv4p6XupngHQgUKVWqb6BZ9Mj", "name": "Winter 2023 - 17 but tm² memory",                   "season": "Winter",     "year": "2023", "mapNumber": [ "17" ], "alteration": "XX-But"},
         
         # Spring 2023
         
@@ -228,28 +237,6 @@ special_uids = [
         {"uid": "_XhxEve1JyP09Vmmx6d9YRYJpOg", "name": "Fall 2023 - 08 (Reverse but with reactor down)",    "season": "Fall",       "year": "2023", "mapNumber": [ "08" ], "alteration": "XX-But"},
         {"uid": "L7k0cXLH1dvE_KZgx_qcICp_ozk", "name": "Fall 2023 - 24 cpless2Top",                         "season": "Fall",       "year": "2023", "mapNumber": [ "24" ], "alteration": "XX-But"},
         
-        # Winter 2023
-        
-        {"uid": "TkSn3dObQeCwRXWqQHJX0p5aFs3", "name": "Winter 2023 - 16 High Jump",                        "season": "Winter",     "year": "2023", "mapNumber": [ "16" ], "alteration": "XX-But"},
-        {"uid": "hVbLjjmKM468F7aF_qeaFgmVp3k", "name": "Winter 2023 - 09 Multilap",                         "season": "Winter",     "year": "2023", "mapNumber": [ "09" ], "alteration": "XX-But"},
-        {"uid": "uObBX86_931S65tq_Gqi2ZQBt1j", "name": "Winter 2023 - 17 True One Lap",                     "season": "Winter",     "year": "2023", "mapNumber": [ "17" ], "alteration": "XX-But"},
-        {"uid": "ID9hLjxZCLicNa0FjTLCKpSj2jl", "name": "Winter 2023 - 01 but its A01",                      "season": "Winter",     "year": "2023", "mapNumber": [ "01" ], "alteration": "XX-But"},
-        {"uid": "VL03IttQlArs83lOD6kQsl9AG2",  "name": "Winter 2023 - 10 but no quarter",                   "season": "Winter",     "year": "2023", "mapNumber": [ "10" ], "alteration": "XX-But"},
-        {"uid": "nQDqPJ8B2q_Eok5vSIwTtkgJoQb", "name": "Winter 2023 - 08 True One Lap",                     "season": "Winter",     "year": "2023", "mapNumber": [ "08" ], "alteration": "XX-But"},
-        {"uid": "yLLPiH2piFkwfhu0_zNaAEdqfEb", "name": "Winter 2023 - 21, but The Author Time Is Easy",     "season": "Winter",     "year": "2023", "mapNumber": [ "21" ], "alteration": "XX-But"}, # The actual name is "Winter_2023_-_21_but..._The_Author_Time_Is_Easy.Map.Gbx"
-        {"uid": "lcfv4p6XupngHQgUKVWqb6BZ9Mj", "name": "Winter 2023 - 17 but tm² memory",                   "season": "Winter",     "year": "2023", "mapNumber": [ "17" ], "alteration": "XX-But"},
-        
-        # Spring 2024
-        
-        {"uid": "pJjsY1gvXM50RFOdVwhcj8h_0Rd", "name": "Spring 2024 - 11 (Very Hidden Finish)",             "season": "Spring",     "year": "2024", "mapNumber": [ "11" ], "alteration": "XX-But"},
-        {"uid": "H_rq865deBHEqhDo1OK1M86HSi8", "name": "Spring 2024 - 25 - Reverse (Rally)",                "season": "Spring",     "year": "2024", "mapNumber": [ "25" ], "alteration": "XX-But"},
-        
-        # Summer 2024
-        
-        
-        # Fall 2024
-        
-        
         # Winter 2024
         
         {"uid": "xJ5VEftIKJarxzgO_BegtM_33q2", "name": "Winter 2024 - 12 Waterblockless",                   "season": "Winter",     "year": "2024", "mapNumber": [ "12" ], "alteration": "XX-But"},
@@ -264,10 +251,28 @@ special_uids = [
         {"uid": "d3QP5EMxcSPyxgZbb_fzkh4Abb3", "name": "Winter 2024 - 08 Remixed",                          "season": "Winter",     "year": "2024", "mapNumber": [ "08" ], "alteration": "XX-But"},
         {"uid": "aNrJFKRUUPWRtRdJfgd3iUHga70", "name": "Plastice Winter 2024 - 20",                         "season": "Winter",     "year": "2024", "mapNumber": [ "20" ], "alteration": "XX-But"},
         {"uid": "gevAR4blc3PHHQbmPh7hNBDJrl2", "name": "Wet Plastic Winter 2024 - 08 (B side)",             "season": "Winter",     "year": "2024", "mapNumber": [ "08" ], "alteration": "XX-But"},
-
+        {"uid": "CmrtAjmn6oc5BS0fI1XpjbjHGR1", "name": "Winter 2024 - 10 (Wet [Snow] Wood)",                "season": "Winter",     "year": "2024", "mapNumber": [ "10" ], "alteration": ""},
         
-        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
-        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        # Spring 2024
+        
+        {"uid": "pJjsY1gvXM50RFOdVwhcj8h_0Rd", "name": "Spring 2024 - 11 (Very Hidden Finish)",             "season": "Spring",     "year": "2024", "mapNumber": [ "11" ], "alteration": "XX-But"},
+        {"uid": "H_rq865deBHEqhDo1OK1M86HSi8", "name": "Spring 2024 - 25 - Reverse (Rally)",                "season": "Spring",     "year": "2024", "mapNumber": [ "25" ], "alteration": "XX-But"},
+        
+        # Summer 2024
+        
+        
+        # Fall 2024
+        
+        
+        # Winter 2025
+        
+        {"uid": "X5aNEEWhRY6x5JzYlsJV7TBYWr8", "name": "Winter 2025 - 24 (Wet Heavy Ice)", "season": "Winter", "year": "2025", "mapNumber": [ "24" ], "alteration": "XX-But"},
+        
+        
+
+        # 
+        
+        
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
@@ -299,6 +304,21 @@ special_uids = [
 
 
 
+    # Discovery: 
+    
+    #SameName
+        {"uid": "tQEU_6mhA8aJoPWBWIO9EFbAKl7", "name": "Arena [Race]", "season": "Summer", "year": "2024", "mapNumber": [ "03" ], "alteration": "[Race]"},
+    
+    # Weekly shorts:
+        {"uid": "NvYLLpapmfX14NIQddXY6u0XJc0", "name": "NightRace - Multilap",                  "season": "Winter", "year": "2025", "mapNumber": [ "17" ], "alteration": "XX-But"},
+        {"uid": "5Wq6VC0ZTLPqPgP5nViWXaa8Vr6", "name": "Forest but you finish in the big hole", "season": "Winter", "year": "2025", "mapNumber": [ "09" ], "alteration": "XX-But"},
+        {"uid": "WeKUG3qIioEejmQhKG6LG4ez1_k", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        
+
+
     
     ## ---------------
     
@@ -326,6 +346,20 @@ special_uids = [
         {"uid": "xGXaEwnbWv29hu35revzhoALpcc", "name": "Plastic Summer 2021 - 25 (Fixed)",         "season": "Summer",   "year": "2021", "mapNumber": [ "25" ], "alteration": "Plastic"},
         {"uid": "VLZmn6FIp7qSjTMNU3qi5ZyM5Y8", "name": "Summer 2023 Road - 12 (by Dark_Kirby)",    "season": "Summer",   "year": "2023", "mapNumber": [ "12" ], "alteration": "Road", "ft": "Dark_Kirby"},
         {"uid": "jSdjxv90MdnqgjGh6fFbkb0y5Ad", "name": "Plastic Winter 2023 - 11 (ft' Kek_DreamZ", "season": "Winter",   "year": "2023", "mapNumber": [ "11" ], "alteration": "Plastic", "ft": "Kek_DreamZ"},
+        {"uid": "Hqx218XU9i7iTH9Ew3jfQeoCp7j", "name": "Fall 2024 - 09 [STUNT}",                   "season": "Fall",     "year": "2024", "mapNumber": [ "09" ], "alteration": "[STUNT]"},
+        {"uid": "sACcNyN0nkW78zYVmIHExJYP2I7", "name": "Fall 2022 poolhunter $eb7Featuring TnTree","season": "Fall",     "year": "2022", "mapNumber": [ "14" ], "alteration": "Poolhunters", "ft": "TnTree"},
+        {"uid": "FUyE4fO98nq8k1kT4mPJw0one67", "name": "Training - 22 (All Up 1)",                 "season": "Training", "year": "2020", "mapNumber": [ "22" ], "alteration": "All Up 1"},
+        {"uid": "Pltbxi_VMUdvd3T6LWBwjiPI9q6", "name": "FullPlastic Fall 2024 - 20",               "season": "Fall",     "year": "2024", "mapNumber": [ "20" ], "alteration": "Plastic"},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
+        {"uid": "", "name": "", "season": "", "year": "", "mapNumber": [ "" ], "alteration": ""},
         
         
         
@@ -384,6 +418,8 @@ special_uids = [
 
 
     ## ----------------
+    
+        # {"uid": "1louJUvfBdVYpjBLKyN7ZUtLw0b", "name": "Fall 2024 - 08 (Wet Wood Better Yellow Reactor Down)", "season": "Fall", "year": "2024", "alteration": "Wet Wood Yellow Reactor Down", "mapNumber": [ "08" ]},
 
 
 

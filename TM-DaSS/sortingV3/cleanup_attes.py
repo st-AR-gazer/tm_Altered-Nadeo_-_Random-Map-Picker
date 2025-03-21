@@ -37,23 +37,36 @@ def extract_cpfull_info(alteration_mix):
     return filtered_mix, missing_cp
 
 def normalize_alteration_mix(alteration_mix, single_variant_map, combination_map):
+    lower_alts = [alt.lower().strip() for alt in alteration_mix]
+    used = [False] * len(alteration_mix)
     normalized = []
-    i = 0
-    n = len(alteration_mix)
-    while i < n:
-        matched = False
-        for combo_len in range(min(3, n - i), 0, -1):
-            combo = tuple(sorted(v.lower() for v in alteration_mix[i:i+combo_len]))
-            if combo in combination_map:
-                normalized.append(combination_map[combo])
-                i += combo_len
-                matched = True
+    
+    for combo in sorted(combination_map.keys(), key=lambda c: len(c), reverse=True):
+        indices = []
+        for element in combo:
+            for idx, alt in enumerate(lower_alts):
+                if not used[idx] and alt == element:
+                    indices.append(idx)
+                    break
+            else:
+                indices = []
                 break
-        if not matched:
-            alt = alteration_mix[i].lower().strip()
-            normalized.append(single_variant_map.get(alt, alteration_mix[i].capitalize()))
-            i += 1
-    normalized_unique = list(dict.fromkeys(normalized))
+        if indices:
+            for idx in indices:
+                used[idx] = True
+            normalized.append(combination_map[combo])
+    
+    for idx, alt in enumerate(lower_alts):
+        if not used[idx]:
+            normalized.append(single_variant_map.get(alt, alteration_mix[idx].capitalize()))
+            used[idx] = True
+    
+    seen = set()
+    normalized_unique = []
+    for item in normalized:
+        if item not in seen:
+            seen.add(item)
+            normalized_unique.append(item)
     return ' '.join(normalized_unique)
 
 def cleanup_attributes(input_file, output_file):

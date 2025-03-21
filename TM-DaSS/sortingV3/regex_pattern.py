@@ -1150,6 +1150,10 @@ snow_totd_pattern_1 = re.compile(
 snow_totd_pattern_2 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Snow)\)$",
     re.IGNORECASE)
+# Pattern totd: "<totdname> (SC)"
+snow_totd_pattern_3 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>SC)\)$",
+    re.IGNORECASE)
 # Pattern weekly shorts: "[Snow] <mapname>"
 snow_weeklyshorts_pattern_1 = re.compile(
     rf"^\[(?P<alteration_mix>Snow)\]\s+(?P<mapname>{weeklyshorts_pattern_group})$",
@@ -1179,6 +1183,10 @@ snowcarswitch_totd_pattern_4 = re.compile(
 # Pattern totd: "<totdname> (Car Switch)"
 snowcarswitch_totd_pattern_5 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Car Switch)\)$",
+    re.IGNORECASE)
+# Pattern totd: "<totdname> (Carswitch SN)"
+snowcarswitch_totd_pattern_6 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>Carswitch SN)\)$",
     re.IGNORECASE)
 
     # -------- [Snow] Checkpointless ---------- #
@@ -1700,6 +1708,14 @@ wetwoodyrd_seasonal_pattern_2 = re.compile(
 # Pattern seasonal: "<season> <year> - <mapnumber> (Wet Wood Red Reactor Down)"
 wetwoodrrd_seasonal_pattern_3 = re.compile(
     rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix>Wet Wood Red Reactor Down)\)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (Wet Wood Better Yellow Reactor Down)"
+wetwoodyrd_seasonal_pattern_4 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix_1>Wet Wood) Better (?P<alteration_mix_2>Yellow Reactor Down)\)$",
+    re.IGNORECASE)
+# Pattern seasonal: "<season> <year> - <mapnumber> (Wet Wood Better Red Reactor Down)"
+wetwoodrrd_seasonal_pattern_5 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+\((?P<alteration_mix_1>Wet Wood) Better (?P<alteration_mix_2>Red Reactor Down)\)$",
     re.IGNORECASE)
 
     # -------- Wet Icy Wood ---------- #
@@ -2499,7 +2515,7 @@ scubadiving_training_pattern_1 = re.compile(
 
 
 ALL_PATTERNS = [
-    dirt_seasonal_pattern_1, dirt_training_pattern_1, dirt_weeklyshorts_pattern_1, 
+    dirt_seasonal_pattern_1, dirt_training_pattern_1, dirt_weeklyshorts_pattern_1, dirt_totd_pattern_1, 
     fastmagnet_seasonal_pattern_1, fastmagnet_seasonal_pattern_2, fastmagnet_seasonal_pattern_3, fastmagnet_training_pattern_1, 
     flooded_seasonal_pattern_1, flooded_seasonal_pattern_2, flooded_training_pattern_1, flooded_spring2020_pattern_1, flooded_discovery_pattern_1,
     grass_seasonal_pattern_1, grass_training_pattern_2, grass_totd_pattern_1,
@@ -2515,7 +2531,7 @@ ALL_PATTERNS = [
     sausage_seasonal_pattern_1, sausage_training_pattern_2,
     slottrack_seasonal_pattern_1,
     surfaceless_seasonal_pattern_1, surfaceless_training_pattern_1, surfaceless_training_pattern_16171819, surfaceless_weeklyshorts_pattern_1, 
-    underwater_seasonal_pattern_1, underwater_seasonal_pattern_2, underwater_training_pattern_1, underwater_spring2020_pattern_1, underwater_discovery_pattern_1, underwater_discovery_pattern_2, underwater_discovery_pattern_3, underwater_totd_pattern_1, underwater_weeklyshorts_pattern_1, underwater_weeklyshorts_pattern_2, 
+    underwater_seasonal_pattern_1, underwater_seasonal_pattern_2, underwater_training_pattern_1, underwater_spring2020_pattern_1, underwater_discovery_pattern_1, underwater_discovery_pattern_2, underwater_discovery_pattern_3, underwater_discovery_pattern_4, underwater_totd_pattern_1, underwater_weeklyshorts_pattern_1, underwater_weeklyshorts_pattern_2, 
     
     antibooster_seasonal_pattern_1,
     boosterless_seasonal_pattern_1, boosterless_seasonal_pattern_2, boosterless_training_pattern_1, boosterless_spring2020_pattern_1,
@@ -2555,7 +2571,7 @@ ALL_PATTERNS = [
     manslaughter_seasonal_pattern_1,
     nogear5_seasonal_pattern_1,
     podium_seasonal_pattern_1, podium_competition_pattern_1,
-    puzzle_seasonal_pattern_1, puzzle_training_pattern_1,
+    puzzle_seasonal_pattern_1, puzzle_training_pattern_1, puzzle_totd_pattern_1, 
     reverse_seasonal_pattern_1, reverse_seasonal_pattern_2, reverse_training_pattern_1, reverse_spring2020_pattern_1, reverse_spring2020_pattern_2, reverse_discovery_pattern_1, reverse_totd_pattern_1, reverse_totd_pattern_2, reverse_weeklyshorts_pattern_1, 
     roofing_seasonal_pattern_1, roofing_seasonal_pattern_2,
     short_seasonal_pattern_1, short_seasonal_pattern_2, short_seasonal_pattern_3, short_seasonal_pattern_4, short_training_pattern_1, short_spring2020_pattern_1,
@@ -2569,7 +2585,7 @@ ALL_PATTERNS = [
     stadiumwetplastic_seasonal_pattern_1,
     stadiumwetwood_seasonal_pattern_1,
     snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_discovery_pattern_1, snow_totd_pattern_1, snow_totd_pattern_2, snow_weeklyshorts_pattern_1, 
-    snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1, snowcarswitch_totd_pattern_2, snowcarswitch_totd_pattern_3, snowcarswitch_totd_pattern_4, snowcarswitch_totd_pattern_5, 
+    snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1, snowcarswitch_totd_pattern_2, snowcarswitch_totd_pattern_3, snowcarswitch_totd_pattern_4, snowcarswitch_totd_pattern_5, snowcarswitch_totd_pattern_6,
     snowcheckpointless_seasonal_pattern_1, snowcheckpointless_seasonal_pattern_2,
     snowice_seasonal_pattern_1,
     snowpuzzle_seasonal_pattern_1,
@@ -2590,7 +2606,7 @@ ALL_PATTERNS = [
     deserticyredreactordown_seasonal_pattern_1,
     deserttothetop_seasonal_pattern_1, deserttothetop_weeklyshorts_pattern_1,
     desertunderwater_seasonal_pattern_1, desertunderwater_seasonal_pattern_2, desertunderwater_training_pattern_1, desertunderwater_discovery_pattern_1, desertunderwater_weeklyshorts_pattern_1, 
-    desertreverse_seasonal_pattern_1, desertreverse_seasonal_pattern_2, 
+    desertreverse_seasonal_pattern_1, desertreverse_seasonal_pattern_2, desertreverse_seasonal_pattern_3, 
     allcars_seasonal_pattern_1,
     allcarswitch_seasonal_pattern_1,
 
@@ -2609,8 +2625,8 @@ ALL_PATTERNS = [
     sw2u1lcpuf2d1r_seasonal_pattern_1, 
     underwaterreverse_seasonal_pattern_1, underwaterreverse_seasonal_pattern_2, underwaterreverse_seasonal_pattern_3, underwaterreverse_training_pattern_1,
     wetplastic_seasonal_pattern_1, wetplastic_training_pattern_1, wetplastic_training_pattern_2, wetplastic_weeklyshorts_pattern_1, 
-    wetwood_seasonal_pattern_1, wetwood_training_pattern_1, wetwood_training_pattern_2, wetwood_spring2020_pattern_1, wetwood_totd_pattern_1, wetwood_weeklyshorts_pattern_1, wetwoodyrd_seasonal_pattern_2, wetwoodrrd_seasonal_pattern_3, 
-    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_seasonal_pattern_4, weticywood_training_pattern_1, weticywood_training_pattern_2, weticywood_training_pattern_3, weticywood_training_pattern_4, weticywood_training_pattern_5, weticywood_spring2020_pattern_1, weticywood_discovery_pattern_1, weticywood_discovery_pattern_2, weticywood_discovery_pattern_3, weticywood_totd_pattern_1, weticywood_totd_pattern_2, weticywood_weeklyshorts_pattern_1, 
+    wetwood_seasonal_pattern_1, wetwood_training_pattern_1, wetwood_training_pattern_2, wetwood_spring2020_pattern_1, wetwood_totd_pattern_1, wetwood_weeklyshorts_pattern_1, wetwoodyrd_seasonal_pattern_2, wetwoodrrd_seasonal_pattern_3, wetwoodyrd_seasonal_pattern_4, wetwoodrrd_seasonal_pattern_5, 
+    weticywood_seasonal_pattern_1, weticywood_seasonal_pattern_2, weticywood_seasonal_pattern_3, weticywood_seasonal_pattern_4, weticywood_seasonal_pattern_5, weticywood_seasonal_pattern_6, weticywood_training_pattern_1, weticywood_training_pattern_2, weticywood_training_pattern_3, weticywood_training_pattern_4, weticywood_training_pattern_5, weticywood_spring2020_pattern_1, weticywood_discovery_pattern_1, weticywood_discovery_pattern_2, weticywood_discovery_pattern_3, weticywood_totd_pattern_1, weticywood_totd_pattern_2, weticywood_weeklyshorts_pattern_1, 
     weticyplastic_seasonal_pattern_1, weticyplastic_training_pattern_1, weticyplastic_training_pattern_2, weticyplastic_totd_pattern_1, weticyplastic_discovery_pattern_1, weticyplastic_weeklyshorts_pattern_1, 
     yeetmaxup_seasonal_pattern_1,
     yeetpuzzle_seasonal_pattern_1, yeetpuzzle_training_pattern_1, yeetrandompuzzle_seasonal_pattern_1,

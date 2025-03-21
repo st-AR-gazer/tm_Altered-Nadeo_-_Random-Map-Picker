@@ -454,7 +454,9 @@ def assign_attributes(item_data: dict) -> dict:
             'ft': None,
             'unvalidated': False
         }
-        logger.warning(f"Unmatched map name: {raw_name} (sanitized: {sanitized_name}), totd: {check_totd_map_name(sanitized_name)}, discovery: {check_discovery_map_name(sanitized_name)}")
+        if not check_discovery_map_name(sanitized_name):
+            logger.warning(f"Unmatched map name: {map_uid} | {raw_name} | sanitized: {sanitized_name} | totd: {check_totd_map_name(sanitized_name)} | discovery: {check_discovery_map_name(sanitized_name)}")
+            
 
     if ft_username:
         attributes['ft'] = ft_username

@@ -109,7 +109,7 @@ alterations_dict = {
     "Underwater Reverse": [ "Underwater Reverse", "UW Reverse", "Uw Reverse", ["UW", "Reverse"] ],
     "Wet Plastic": [ "Wet Plastic", ["Wet Plastic", "Stadium"] ],
     "Wet Wood": [ "Wet Wood" ],
-    "Wet Wood Yellow Reactor Down": [ "Wet Wood Yellow Reactor Down", "WWYRD" ],
+    "Wet Wood Yellow Reactor Down": [ "Wet Wood Yellow Reactor Down", "WWYRD", [ "Wet Wood", "Yellow Reactor Down"] ],
     "Wet Wood Red Reactor Down": [ "Wet Wood Red Reactor Down", "WWRD" ],
     "Wet Icy Wood": [ "Wet Icy Wood", "WetIcyWood" ],
     "Pure Wet Icy Wood": [ "Pure Wet Icy Wood", "100% Wet Icy Wood" ],

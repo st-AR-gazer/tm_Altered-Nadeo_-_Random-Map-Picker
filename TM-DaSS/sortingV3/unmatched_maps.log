@@ -1,95 +1,48 @@
-2025-03-19T23:44:27+0100 INFO: totd_pattern_group written to pattern_dings.txt
-2025-03-19T23:44:27+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
-2025-03-19T23:44:27+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
-2025-03-19T23:44:27+0100 WARNING: Unmatched map name: NightRace - Multilap (sanitized: NightRace - Multilap), totd: False, discovery: {}
-2025-03-19T23:44:28+0100 WARNING: Unmatched map name: Summer 2021 - 21 (sanitized: Summer 2021 - 21), totd: False, discovery: {}
-2025-03-19T23:44:28+0100 WARNING: Unmatched map name: Deja Vu (sanitized: Deja Vu), totd: False, discovery: {'discoveryname': 'Deja Vu', 'season': 'Fall', 'year': 2024, 'mapnumber': [23], 'type': 'platform_discovery'}
-2025-03-19T23:44:28+0100 WARNING: Unmatched map name: Training - 09 (sanitized: Training - 09), totd: False, discovery: {}
-2025-03-19T23:44:28+0100 WARNING: Unmatched map name: Fall 2021 - 19 (sanitized: Fall 2021 - 19), totd: False, discovery: {}
-2025-03-19T23:44:28+0100 WARNING: Unmatched map name: Summer 2021 - 15 (sanitized: Summer 2021 - 15), totd: False, discovery: {}
-2025-03-19T23:44:29+0100 WARNING: Unmatched map name: Summer 2021 - 22 (sanitized: Summer 2021 - 22), totd: False, discovery: {}
-2025-03-19T23:44:29+0100 WARNING: Unmatched map name: Fall 2021 - 23 (sanitized: Fall 2021 - 23), totd: False, discovery: {}
-2025-03-19T23:44:29+0100 WARNING: Unmatched map name: $i$s$f75W$fffinterberg (SC) (sanitized: Winterberg (SC)), totd: False, discovery: {}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: Summer 2021 - 18 (sanitized: Summer 2021 - 18), totd: False, discovery: {}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: Arena [Race] (sanitized: Arena [Race]), totd: False, discovery: {}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: $a8a$ot$b9be$cacf$dbdl$eceo$fdfn $fffV2 bonkfest (sanitized: teflon V2 bonkfest), totd: False, discovery: {}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: Winter 2025 - 24 (Wet Heavy Ice) (sanitized: Winter 2025 - 24 (Wet Heavy Ice)), totd: False, discovery: {}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: HighSpeed (sanitized: HighSpeed), totd: False, discovery: {'discoveryname': 'HighSpeed', 'season': 'Summer', 'year': 2024, 'mapnumber': [21], 'type': 'stunt_discovery'}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: Summer 2021 - 17 (sanitized: Summer 2021 - 17), totd: False, discovery: {}
-2025-03-19T23:44:30+0100 WARNING: Unmatched map name: Summer 2021 - 20 (sanitized: Summer 2021 - 20), totd: False, discovery: {}
-2025-03-19T23:44:31+0100 WARNING: Unmatched map name: Fall 2024 - 09 [STUNT} (sanitized: Fall 2024 - 09 [STUNT}), totd: False, discovery: {}
-2025-03-19T23:44:31+0100 WARNING: Unmatched map name: RedAlert (sanitized: RedAlert), totd: False, discovery: {'discoveryname': 'RedAlert', 'season': 'Summer', 'year': 2024, 'mapnumber': [15], 'type': 'stunt_discovery'}
-2025-03-19T23:44:31+0100 WARNING: Unmatched map name: DeserticStunts (sanitized: DeserticStunts), totd: False, discovery: {'discoveryname': 'DeserticStunts', 'season': 'Summer', 'year': 2024, 'mapnumber': [22], 'type': 'stunt_discovery'}
-2025-03-19T23:44:31+0100 WARNING: Unmatched map name: Summer 2021 - 19 (sanitized: Summer 2021 - 19), totd: False, discovery: {}
-2025-03-19T23:44:31+0100 WARNING: Unmatched map name: Fall 2022 poolhunter $eb7Featuring TnTree (sanitized: Fall 2022 poolhunter), totd: False, discovery: {}
-2025-03-19T23:44:31+0100 WARNING: Unmatched map name: Summer 2021 - 24 (sanitized: Summer 2021 - 24), totd: False, discovery: {}
-2025-03-19T23:44:32+0100 WARNING: Unmatched map name: $F40$o$sM$F50an$F60go$F70 $F80Ta$F90ng$FA0o (Carswitch SN) (sanitized: Mango Tango (Carswitch SN)), totd: False, discovery: {}
-2025-03-19T23:44:33+0100 WARNING: Unmatched map name: Training - 15 (sanitized: Training - 15), totd: False, discovery: {}
-2025-03-19T23:44:33+0100 WARNING: Unmatched map name: GiveMe5 (sanitized: GiveMe5), totd: False, discovery: {'discoveryname': 'GiveMe5', 'season': 'Summer', 'year': 2024, 'mapnumber': [10], 'type': 'stunt_discovery'}
-2025-03-19T23:44:33+0100 WARNING: Unmatched map name: Forest but you finish in the big hole (sanitized: Forest but you finish in the big hole), totd: False, discovery: {}
-2025-03-19T23:44:33+0100 WARNING: Unmatched map name: SimpleFlips (sanitized: SimpleFlips), totd: False, discovery: {'discoveryname': 'SimpleFlips', 'season': 'Summer', 'year': 2024, 'mapnumber': [2], 'type': 'stunt_discovery'}
-2025-03-19T23:44:33+0100 WARNING: Unmatched map name: Fall 2021 - 14 (sanitized: Fall 2021 - 14), totd: False, discovery: {}
-2025-03-19T23:44:33+0100 WARNING: Unmatched map name: Summer 2021 - 25 (sanitized: Summer 2021 - 25), totd: False, discovery: {}
-2025-03-19T23:44:34+0100 WARNING: Unmatched map name: Fall 2024 - 08 (Wet Wood Better Yellow Reactor Down) (sanitized: Fall 2024 - 08 (Wet Wood Better Yellow Reactor Down)), totd: False, discovery: {}
-2025-03-19T23:44:34+0100 WARNING: Unmatched map name: PlatformEdges (sanitized: PlatformEdges), totd: False, discovery: {'discoveryname': 'PlatformEdges', 'season': 'Summer', 'year': 2024, 'mapnumber': [13], 'type': 'stunt_discovery'}
-2025-03-19T23:44:34+0100 WARNING: Unmatched map name: Foundry (sanitized: Foundry), totd: False, discovery: {'discoveryname': 'Foundry', 'season': 'Summer', 'year': 2024, 'mapnumber': [23], 'type': 'stunt_discovery'}
-2025-03-19T23:44:34+0100 WARNING: Unmatched map name: Winter 2024 - 10 (Wet [Snow] Wood) (sanitized: Winter 2024 - 10 (Wet [Snow] Wood)), totd: False, discovery: {}
-2025-03-19T23:44:35+0100 WARNING: Unmatched map name: Lasagna (sanitized: Lasagna), totd: False, discovery: {'discoveryname': 'Lasagna', 'season': 'Summer', 'year': 2024, 'mapnumber': [9], 'type': 'stunt_discovery'}
-2025-03-19T23:44:36+0100 WARNING: Unmatched map name: SuperPipe (sanitized: SuperPipe), totd: False, discovery: {'discoveryname': 'SuperPipe', 'season': 'Summer', 'year': 2024, 'mapnumber': [4], 'type': 'stunt_discovery'}
-2025-03-19T23:44:37+0100 WARNING: Unmatched map name: Fall 2022 - 25 (sanitized: Fall 2022 - 25), totd: False, discovery: {}
-2025-03-19T23:44:37+0100 WARNING: Unmatched map name: Fall 2024 - 05 (Wet Wood Better Yellow Reactor Down) (sanitized: Fall 2024 - 05 (Wet Wood Better Yellow Reactor Down)), totd: False, discovery: {}
-2025-03-19T23:44:37+0100 WARNING: Unmatched map name: Stunt4Ever (sanitized: Stunt4Ever), totd: False, discovery: {'discoveryname': 'Stunt4Ever', 'season': 'Summer', 'year': 2024, 'mapnumber': [5], 'type': 'stunt_discovery'}
-2025-03-19T23:44:37+0100 WARNING: Unmatched map name: Training - 22 (All Up 1) (sanitized: Training - 22 (All Up 1)), totd: False, discovery: {}
-2025-03-19T23:44:37+0100 WARNING: Unmatched map name: Frikandelbroodje (sanitized: Frikandelbroodje), totd: False, discovery: {'discoveryname': 'Frikandelbroodje', 'season': 'Summer', 'year': 2024, 'mapnumber': [20], 'type': 'stunt_discovery'}
-2025-03-19T23:44:37+0100 WARNING: Unmatched map name: Dance Of The Sugar Plum Fairy (sanitized: Dance Of The Sugar Plum Fairy), totd: False, discovery: {'discoveryname': 'Dance Of The Sugar Plum Fairy', 'season': 'Fall', 'year': 2024, 'mapnumber': [24], 'type': 'platform_discovery'}
-2025-03-19T23:44:38+0100 WARNING: Unmatched map name: Meep Mip (sanitized: Meep Mip), totd: False, discovery: {'discoveryname': 'Meep Mip', 'season': 'Fall', 'year': 2024, 'mapnumber': [18], 'type': 'platform_discovery'}
-2025-03-19T23:44:39+0100 WARNING: Unmatched map name: $i$sU-Turn (Puzzle) (sanitized: U-Turn (Puzzle)), totd: False, discovery: {}
-2025-03-19T23:44:39+0100 WARNING: Unmatched map name: $i$sU-Turn (Dirt) (sanitized: U-Turn (Dirt)), totd: False, discovery: {}
-2025-03-19T23:44:39+0100 WARNING: Unmatched map name: Training - 19 [01 07 2023 patch] (sanitized: Training - 19 [01 07 2023 patch]), totd: False, discovery: {}
-2025-03-19T23:44:40+0100 WARNING: Unmatched map name: FullPlastic Fall 2024 - 20 (sanitized: FullPlastic Fall 2024 - 20), totd: False, discovery: {}
-2025-03-19T23:44:40+0100 WARNING: Unmatched map name: WetRally (UW) (sanitized: WetRally (UW)), totd: False, discovery: {}
-2025-03-19T23:44:40+0100 WARNING: Unmatched map name: A08Stunter (sanitized: A08Stunter), totd: False, discovery: {'discoveryname': 'A08Stunter', 'season': 'Summer', 'year': 2024, 'mapnumber': [8], 'type': 'stunt_discovery'}
-2025-03-19T23:44:40+0100 WARNING: Unmatched map name: Fall 2024 - 18 (sanitized: Fall 2024 - 18), totd: False, discovery: {}
-2025-03-19T23:44:40+0100 WARNING: Unmatched map name: Summer 2021 - 14 (sanitized: Summer 2021 - 14), totd: False, discovery: {}
-2025-03-19T23:44:41+0100 WARNING: Unmatched map name: AutoCross - Multilap (sanitized: AutoCross - Multilap), totd: False, discovery: {}
-2025-03-19T23:44:41+0100 WARNING: Unmatched map name: Training - 05 (sanitized: Training - 05), totd: False, discovery: {}
-2025-03-19T23:44:42+0100 WARNING: Unmatched map name: AirMania (sanitized: AirMania), totd: False, discovery: {'discoveryname': 'AirMania', 'season': 'Summer', 'year': 2024, 'mapnumber': [11], 'type': 'stunt_discovery'}
-2025-03-19T23:44:42+0100 WARNING: Unmatched map name: Roundabout (sanitized: Roundabout), totd: False, discovery: {'discoveryname': 'Roundabout', 'season': 'Summer', 'year': 2024, 'mapnumber': [16], 'type': 'stunt_discovery'}
-2025-03-19T23:44:42+0100 WARNING: Unmatched map name: Winter 2025 - 20 (Very Hidden Finish) (sanitized: Winter 2025 - 20 (Very Hidden Finish)), totd: False, discovery: {}
-2025-03-19T23:44:43+0100 WARNING: Unmatched map name: WetDesert Wood Waterless (sanitized: WetDesert Wood Waterless), totd: False, discovery: {}
-2025-03-19T23:44:43+0100 WARNING: Unmatched map name: Summer 2021 - 01 (sanitized: Summer 2021 - 01), totd: False, discovery: {}
-2025-03-19T23:44:44+0100 WARNING: Unmatched map name: BumpersParadise (sanitized: BumpersParadise), totd: False, discovery: {'discoveryname': 'BumpersParadise', 'season': 'Summer', 'year': 2024, 'mapnumber': [12], 'type': 'stunt_discovery'}
-2025-03-19T23:44:44+0100 WARNING: Unmatched map name: IceBraker (Surfaculess) (sanitized: IceBraker (Surfaculess)), totd: False, discovery: {}
-2025-03-19T23:44:44+0100 WARNING: Unmatched map name: Polaris (MTC) (1-Forward (sanitized: Polaris (MTC) (1-Forward), totd: False, discovery: {}
-2025-03-19T23:44:44+0100 WARNING: Unmatched map name: $i$s$f75W$fffinterberg (RC) (sanitized: Winterberg (RC)), totd: False, discovery: {}
-2025-03-19T23:44:45+0100 WARNING: Unmatched map name: SnowSpinning (sanitized: SnowSpinning), totd: False, discovery: {'discoveryname': 'SnowSpinning', 'season': 'Summer', 'year': 2024, 'mapnumber': [19], 'type': 'stunt_discovery'}
-2025-03-19T23:44:45+0100 WARNING: Unmatched map name: PinkPlatform but it's no-steer (sanitized: PinkPlatform but it's no-steer), totd: False, discovery: {}
-2025-03-19T23:44:45+0100 WARNING: Unmatched map name: StuntIsBack (sanitized: StuntIsBack), totd: False, discovery: {'discoveryname': 'StuntIsBack', 'season': 'Summer', 'year': 2024, 'mapnumber': [1], 'type': 'stunt_discovery'}
-2025-03-19T23:44:46+0100 WARNING: Unmatched map name: $F40$o$sM$F50an$F60go$F70 $F80Ta$F90ng$FA0o (Carswitch RC) (sanitized: Mango Tango (Carswitch RC)), totd: False, discovery: {}
-2025-03-19T23:44:46+0100 WARNING: Unmatched map name: Winter 2022 - 04 (sanitized: Winter 2022 - 04), totd: False, discovery: {}
-2025-03-19T23:44:46+0100 WARNING: Unmatched map name: StuntCity (sanitized: StuntCity), totd: False, discovery: {'discoveryname': 'StuntCity', 'season': 'Summer', 'year': 2024, 'mapnumber': [24], 'type': 'stunt_discovery'}
-2025-03-19T23:44:47+0100 WARNING: Unmatched map name: Fall 2024 - 05 (Wet Wood Better Red Reactor Down) (sanitized: Fall 2024 - 05 (Wet Wood Better Red Reactor Down)), totd: False, discovery: {}
-2025-03-19T23:44:47+0100 WARNING: Unmatched map name: ScatterPark (sanitized: ScatterPark), totd: False, discovery: {'discoveryname': 'ScatterPark', 'season': 'Summer', 'year': 2024, 'mapnumber': [25], 'type': 'stunt_discovery'}
-2025-03-19T23:44:47+0100 WARNING: Unmatched map name: Moustache (sanitized: Moustache), totd: False, discovery: {'discoveryname': 'Moustache', 'season': 'Summer', 'year': 2024, 'mapnumber': [14], 'type': 'stunt_discovery'}
-2025-03-19T23:44:48+0100 WARNING: Unmatched map name: Winter 2025 - 23 Desert Reverse (sanitized: Winter 2025 - 23 Desert Reverse), totd: False, discovery: {}
-2025-03-19T23:44:48+0100 WARNING: Unmatched map name: Winter 2025 - 01 (Pure WetIcywood) (sanitized: Winter 2025 - 01 (Pure WetIcywood)), totd: False, discovery: {}
-2025-03-19T23:44:48+0100 WARNING: Unmatched map name: Fall 2024 - 25 Manslaugter (sanitized: Fall 2024 - 25 Manslaugter), totd: False, discovery: {}
-2025-03-19T23:44:49+0100 WARNING: Unmatched map name: Training - 19 (All Up 1) (sanitized: Training - 19 (All Up 1)), totd: False, discovery: {}
-2025-03-19T23:44:49+0100 WARNING: Unmatched map name: Freedom (sanitized: Freedom), totd: True, discovery: {'discoveryname': 'Freedom', 'season': 'Summer', 'year': 2024, 'mapnumber': [6], 'type': 'stunt_discovery'}
-2025-03-19T23:44:50+0100 WARNING: Unmatched map name: $F40$o$sM$F50an$F60go$F70 $F80Ta$F90ng$FA0o (CS-DessertCar) (sanitized: Mango Tango (CS-DessertCar)), totd: False, discovery: {}
-2025-03-19T23:44:50+0100 WARNING: Unmatched map name: Fall 2024 - 01 (Wet Icy Wood Better End) (sanitized: Fall 2024 - 01 (Wet Icy Wood Better End)), totd: False, discovery: {}
-2025-03-19T23:44:50+0100 WARNING: Unmatched map name: Icy Stally (sanitized: Icy Stally), totd: False, discovery: {}
-2025-03-19T23:44:50+0100 WARNING: Unmatched map name: Winter 2025 - 18 (UW Rerverse) (sanitized: Winter 2025 - 18 (UW Rerverse)), totd: False, discovery: {}
-2025-03-19T23:44:51+0100 WARNING: Unmatched map name: CibusFanaticus (sanitized: CibusFanaticus), totd: False, discovery: {'discoveryname': 'CibusFanaticus', 'season': 'Summer', 'year': 2024, 'mapnumber': [18], 'type': 'stunt_discovery'}
-2025-03-19T23:44:51+0100 WARNING: Unmatched map name: Training - 09 Ring End (sanitized: Training - 09 Ring End), totd: False, discovery: {}
-2025-03-19T23:44:52+0100 WARNING: Unmatched map name: Fall 2024 - 24 But no Finish (sanitized: Fall 2024 - 24 But no Finish), totd: False, discovery: {}
-2025-03-19T23:44:52+0100 WARNING: Unmatched map name: Fall 2024 - 01 but PlatformTechLoopStartCurve0OutFull (sanitized: Fall 2024 - 01 but PlatformTechLoopStartCurve0OutFull), totd: False, discovery: {}
-2025-03-19T23:44:52+0100 WARNING: Unmatched map name: Hiking (sanitized: Hiking), totd: False, discovery: {'discoveryname': 'Hiking', 'season': 'Summer', 'year': 2024, 'mapnumber': [17], 'type': 'stunt_discovery'}
-2025-03-19T23:44:52+0100 WARNING: Unmatched map name: $i$sU-Turn (Plastic) (sanitized: U-Turn (Plastic)), totd: False, discovery: {}
-2025-03-19T23:44:53+0100 WARNING: Unmatched map name: $<Arena$> - CarDesert (sanitized: Arena - CarDesert), totd: False, discovery: {}
-2025-03-19T23:44:53+0100 WARNING: Unmatched map name: Forest but you finish in the small hole (sanitized: Forest but you finish in the small hole), totd: False, discovery: {}
-2025-03-19T23:44:53+0100 WARNING: Unmatched map name: Plastic Fall 2024 - 22 (Kek_DreamZ) (sanitized: Plastic Fall 2024 - 22 (Kek_DreamZ)), totd: False, discovery: {}
-2025-03-19T23:44:53+0100 WARNING: Unmatched map name: Fall 2024 - 24 But no Start and no Finish (sanitized: Fall 2024 - 24 But no Start and no Finish), totd: False, discovery: {}
-2025-03-19T23:44:54+0100 WARNING: Unmatched map name: Fall 2024 - 08 (Wet Wood Better Red Reactor Down) (sanitized: Fall 2024 - 08 (Wet Wood Better Red Reactor Down)), totd: False, discovery: {}
-2025-03-19T23:44:54+0100 WARNING: Unmatched map name: OriginalPark (sanitized: OriginalPark), totd: False, discovery: {'discoveryname': 'OriginalPark', 'season': 'Summer', 'year': 2024, 'mapnumber': [7], 'type': 'stunt_discovery'}
-2025-03-19T23:44:54+0100 INFO: Parsed data written to parsed_map_data.json
+2025-03-20T11:59:51+0100 INFO: totd_pattern_group written to pattern_dings.txt
+2025-03-20T11:59:51+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
+2025-03-20T11:59:51+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
+2025-03-20T11:59:52+0100 WARNING: Unmatched map name: OPSwayPKHn8RxqWg8Iyvx254jnj | Summer 2021 - 21 | sanitized: Summer 2021 - 21 | totd: False | discovery: {}
+2025-03-20T11:59:53+0100 WARNING: Unmatched map name: 8ytSRZ5awE5CFRwbmD__ZEsU2o5 | Training - 09 | sanitized: Training - 09 | totd: False | discovery: {}
+2025-03-20T11:59:53+0100 WARNING: Unmatched map name: oxioID1Yt6eE4qhqQlfVi0x_Vu2 | Fall 2021 - 19 | sanitized: Fall 2021 - 19 | totd: False | discovery: {}
+2025-03-20T11:59:54+0100 WARNING: Unmatched map name: o4ah5HrqlDdu6aBTx2LVSF_Njdh | Summer 2021 - 15 | sanitized: Summer 2021 - 15 | totd: False | discovery: {}
+2025-03-20T11:59:54+0100 WARNING: Unmatched map name: pEaFOgrDzyz6GzlWBuR9Ojv97ej | Summer 2021 - 22 | sanitized: Summer 2021 - 22 | totd: False | discovery: {}
+2025-03-20T11:59:55+0100 WARNING: Unmatched map name: ZQIZuWQRHLk_8Glh1LlH6HFXVo8 | Fall 2021 - 23 | sanitized: Fall 2021 - 23 | totd: False | discovery: {}
+2025-03-20T11:59:56+0100 WARNING: Unmatched map name: aDIi5yS0Duvv_kcq7tGbbFC3KWk | $i$s$f75W$fffinterberg (SC) | sanitized: Winterberg (SC) | totd: False | discovery: {}
+2025-03-20T11:59:56+0100 WARNING: Unmatched map name: TRixW53QVKotu450VTT3vgvRCBg | $a8a$ot$b9be$cacf$dbdl$eceo$fdfn $fffV2 bonkfest | sanitized: teflon V2 bonkfest | totd: False | discovery: {}
+2025-03-20T11:59:57+0100 WARNING: Unmatched map name: 8NB6FDBQ349CleGEGvCGvjQ7xR2 | Summer 2021 - 18 | sanitized: Summer 2021 - 18 | totd: False | discovery: {}
+2025-03-20T11:59:59+0100 WARNING: Unmatched map name: F4Dd1w95zj9DqcICqtMY14Vcmib | Summer 2021 - 17 | sanitized: Summer 2021 - 17 | totd: False | discovery: {}
+2025-03-20T11:59:59+0100 WARNING: Unmatched map name: 6ktBl2_M6diV0qedChCkNM7f4Qg | Summer 2021 - 20 | sanitized: Summer 2021 - 20 | totd: False | discovery: {}
+2025-03-20T12:00:01+0100 WARNING: Unmatched map name: vEYHgVm7ePt6yV3vJLiZvalNAsj | Summer 2021 - 19 | sanitized: Summer 2021 - 19 | totd: False | discovery: {}
+2025-03-20T12:00:06+0100 WARNING: Unmatched map name: q775zACzMA9fKYNTLkvDDacZdWl | Summer 2021 - 24 | sanitized: Summer 2021 - 24 | totd: False | discovery: {}
+2025-03-20T12:00:11+0100 WARNING: Unmatched map name: F2aLKEFJDUmtgWK2Yxv5o1dXjD4 | Training - 15 | sanitized: Training - 15 | totd: False | discovery: {}
+2025-03-20T12:00:14+0100 WARNING: Unmatched map name: _B7ETXz_3ROU82GU_WVe_BPM5em | Fall 2021 - 14 | sanitized: Fall 2021 - 14 | totd: False | discovery: {}
+2025-03-20T12:00:14+0100 WARNING: Unmatched map name: oCiN8eTZJSAQlGVU6llZ0_EgkF0 | Summer 2021 - 25 | sanitized: Summer 2021 - 25 | totd: False | discovery: {}
+2025-03-20T12:00:25+0100 WARNING: Unmatched map name: u3bBenzNzy7a1_JfChfcV1k3awk | Fall 2022 - 25 | sanitized: Fall 2022 - 25 | totd: False | discovery: {}
+2025-03-20T12:00:38+0100 WARNING: Unmatched map name: JjjXVZTtMkdUOpbUFjnQ_GbLume | Fall 2024 - 18 | sanitized: Fall 2024 - 18 | totd: False | discovery: {}
+2025-03-20T12:00:38+0100 WARNING: Unmatched map name: WwZQWVwZ9Z6I1L8GKpyo_A0hJFa | Summer 2021 - 14 | sanitized: Summer 2021 - 14 | totd: False | discovery: {}
+2025-03-20T12:00:40+0100 WARNING: Unmatched map name: WeKUG3qIioEejmQhKG6LG4ez1_k | AutoCross - Multilap | sanitized: AutoCross - Multilap | totd: False | discovery: {}
+2025-03-20T12:00:42+0100 WARNING: Unmatched map name: adJt5N4EL1LnqcU6rucvtcPwvf1 | Training - 05 | sanitized: Training - 05 | totd: False | discovery: {}
+2025-03-20T12:00:46+0100 WARNING: Unmatched map name: X04Pf0WU358lIzO4ADzATA7pPq7 | Winter 2025 - 20 (Very Hidden Finish) | sanitized: Winter 2025 - 20 (Very Hidden Finish) | totd: False | discovery: {}
+2025-03-20T12:00:49+0100 WARNING: Unmatched map name: KpWhkKj2kA9dCiAqd5NAjx3Ige5 | WetDesert Wood Waterless | sanitized: WetDesert Wood Waterless | totd: False | discovery: {}
+2025-03-20T12:00:49+0100 WARNING: Unmatched map name: uhy7g070KdefWB6g_6mQqwZIH1n | Summer 2021 - 01 | sanitized: Summer 2021 - 01 | totd: False | discovery: {}
+2025-03-20T12:00:51+0100 WARNING: Unmatched map name: vbAUP5qtnamgqQJhsAwneJkEEt3 | IceBraker (Surfaculess) | sanitized: IceBraker (Surfaculess) | totd: False | discovery: {}
+2025-03-20T12:00:51+0100 WARNING: Unmatched map name: IlH11X_itFg4ZOwJ_26diKg5Jc2 | Polaris (MTC) (1-Forward | sanitized: Polaris (MTC) (1-Forward | totd: False | discovery: {}
+2025-03-20T12:00:51+0100 WARNING: Unmatched map name: l6lAoQJtyb_58UIO4NI4Wc_x5_1 | $i$s$f75W$fffinterberg (RC) | sanitized: Winterberg (RC) | totd: False | discovery: {}
+2025-03-20T12:00:52+0100 WARNING: Unmatched map name: rYhy5VZNuwY_9fFrEx61g0rEWq1 | PinkPlatform but it's no-steer | sanitized: PinkPlatform but it's no-steer | totd: False | discovery: {}
+2025-03-20T12:00:54+0100 WARNING: Unmatched map name: ZrkFMigVNqAfibYhNweZx1_IUta | $F40$o$sM$F50an$F60go$F70 $F80Ta$F90ng$FA0o (Carswitch RC) | sanitized: Mango Tango (Carswitch RC) | totd: False | discovery: {}
+2025-03-20T12:00:54+0100 WARNING: Unmatched map name: dTv9ps3D7Ggrm81_xp2uDvB98n4 | Winter 2022 - 04 | sanitized: Winter 2022 - 04 | totd: False | discovery: {}
+2025-03-20T12:00:59+0100 WARNING: Unmatched map name: i0WB2XGB60TqUCSgAEhMNztXNXk | Fall 2024 - 25 Manslaugter | sanitized: Fall 2024 - 25 Manslaugter | totd: False | discovery: {}
+2025-03-20T12:01:02+0100 WARNING: Unmatched map name: GMt6r8r_1l7UeaVmP_grnqTxP5e | Training - 19 (All Up 1) | sanitized: Training - 19 (All Up 1) | totd: False | discovery: {}
+2025-03-20T12:01:03+0100 WARNING: Unmatched map name: 9SHOaoC9_O7eohgGi78Zy_3t580 | $F40$o$sM$F50an$F60go$F70 $F80Ta$F90ng$FA0o (CS-DessertCar) | sanitized: Mango Tango (CS-DessertCar) | totd: False | discovery: {}
+2025-03-20T12:01:04+0100 WARNING: Unmatched map name: FxX7DtjShSvlzTAx_WR46l66JD5 | Fall 2024 - 01 (Wet Icy Wood Better End) | sanitized: Fall 2024 - 01 (Wet Icy Wood Better End) | totd: False | discovery: {}
+2025-03-20T12:01:04+0100 WARNING: Unmatched map name: vGRsOv7FQ5RDQjXgxMOu5LuqVnl | Icy Stally | sanitized: Icy Stally | totd: False | discovery: {}
+2025-03-20T12:01:05+0100 WARNING: Unmatched map name: NU5IGpe4RnOc2mpjD5ufuWC4EYm | Winter 2025 - 18 (UW Rerverse) | sanitized: Winter 2025 - 18 (UW Rerverse) | totd: False | discovery: {}
+2025-03-20T12:01:08+0100 WARNING: Unmatched map name: 6OXraX8dcx_WRho_3e1VRp5CWOm | Fall 2024 - 24 But no Finish | sanitized: Fall 2024 - 24 But no Finish | totd: False | discovery: {}
+2025-03-20T12:01:08+0100 WARNING: Unmatched map name: u3LObu0DmTKGUFR0vPEvKifM6Qm | Training - 09 Ring End | sanitized: Training - 09 Ring End | totd: False | discovery: {}
+2025-03-20T12:01:09+0100 WARNING: Unmatched map name: uO2h8bb4PyDZvE440gRw0WOCL2c | Fall 2024 - 01 but PlatformTechLoopStartCurve0OutFull | sanitized: Fall 2024 - 01 but PlatformTechLoopStartCurve0OutFull | totd: False | discovery: {}
+2025-03-20T12:01:10+0100 WARNING: Unmatched map name: fhDy4tReaiNZX3hZ0yYL6LPkgpi | $i$sU-Turn (Plastic) | sanitized: U-Turn (Plastic) | totd: False | discovery: {}
+2025-03-20T12:01:11+0100 WARNING: Unmatched map name: AyQ5Vtgdv_vPxOBgM3vplJFhYNd | $<Arena$> - CarDesert | sanitized: Arena - CarDesert | totd: False | discovery: {}
+2025-03-20T12:01:12+0100 WARNING: Unmatched map name: YsAbWCDxmoQlTucpBfTpzptL4ke | Forest but you finish in the small hole | sanitized: Forest but you finish in the small hole | totd: False | discovery: {}
+2025-03-20T12:01:12+0100 WARNING: Unmatched map name: jNaJNZuVawcZgcdXuGBVt3inAhd | Plastic Fall 2024 - 22 (Kek_DreamZ) | sanitized: Plastic Fall 2024 - 22 (Kek_DreamZ) | totd: False | discovery: {}
+2025-03-20T12:01:12+0100 WARNING: Unmatched map name: UKF6XvNLcC9CTJLYsetH4DC2qXm | Fall 2024 - 24 But no Start and no Finish | sanitized: Fall 2024 - 24 But no Start and no Finish | totd: False | discovery: {}
+2025-03-20T12:01:18+0100 INFO: Parsed data written to parsed_map_data.json
