@@ -1,27 +1,4 @@
-2025-03-21T08:31:19+0100 INFO: totd_pattern_group written to pattern_dings.txt
-2025-03-21T08:31:19+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
-2025-03-21T08:31:19+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
-2025-03-21T08:31:19+0100 WARNING: Unmatched map name: OPSwayPKHn8RxqWg8Iyvx254jnj | Summer 2021 - 21 | sanitized: Summer 2021 - 21 | totd: False | discovery: {}
-2025-03-21T08:31:20+0100 WARNING: Unmatched map name: 8ytSRZ5awE5CFRwbmD__ZEsU2o5 | Training - 09 | sanitized: Training - 09 | totd: False | discovery: {}
-2025-03-21T08:31:20+0100 WARNING: Unmatched map name: oxioID1Yt6eE4qhqQlfVi0x_Vu2 | Fall 2021 - 19 | sanitized: Fall 2021 - 19 | totd: False | discovery: {}
-2025-03-21T08:31:20+0100 WARNING: Unmatched map name: o4ah5HrqlDdu6aBTx2LVSF_Njdh | Summer 2021 - 15 | sanitized: Summer 2021 - 15 | totd: False | discovery: {}
-2025-03-21T08:31:20+0100 WARNING: Unmatched map name: pEaFOgrDzyz6GzlWBuR9Ojv97ej | Summer 2021 - 22 | sanitized: Summer 2021 - 22 | totd: False | discovery: {}
-2025-03-21T08:31:21+0100 WARNING: Unmatched map name: ZQIZuWQRHLk_8Glh1LlH6HFXVo8 | Fall 2021 - 23 | sanitized: Fall 2021 - 23 | totd: False | discovery: {}
-2025-03-21T08:31:21+0100 WARNING: Unmatched map name: aDIi5yS0Duvv_kcq7tGbbFC3KWk | $i$s$f75W$fffinterberg (SC) | sanitized: Winterberg (SC) | totd: False | discovery: {}
-2025-03-21T08:31:21+0100 WARNING: Unmatched map name: TRixW53QVKotu450VTT3vgvRCBg | $a8a$ot$b9be$cacf$dbdl$eceo$fdfn $fffV2 bonkfest | sanitized: teflon V2 bonkfest | totd: False | discovery: {}
-2025-03-21T08:31:21+0100 WARNING: Unmatched map name: 8NB6FDBQ349CleGEGvCGvjQ7xR2 | Summer 2021 - 18 | sanitized: Summer 2021 - 18 | totd: False | discovery: {}
-2025-03-21T08:31:22+0100 WARNING: Unmatched map name: F4Dd1w95zj9DqcICqtMY14Vcmib | Summer 2021 - 17 | sanitized: Summer 2021 - 17 | totd: False | discovery: {}
-2025-03-21T08:31:22+0100 WARNING: Unmatched map name: 6ktBl2_M6diV0qedChCkNM7f4Qg | Summer 2021 - 20 | sanitized: Summer 2021 - 20 | totd: False | discovery: {}
-2025-03-21T08:31:22+0100 WARNING: Unmatched map name: vEYHgVm7ePt6yV3vJLiZvalNAsj | Summer 2021 - 19 | sanitized: Summer 2021 - 19 | totd: False | discovery: {}
-2025-03-21T08:31:23+0100 WARNING: Unmatched map name: q775zACzMA9fKYNTLkvDDacZdWl | Summer 2021 - 24 | sanitized: Summer 2021 - 24 | totd: False | discovery: {}
-2025-03-21T08:31:24+0100 WARNING: Unmatched map name: F2aLKEFJDUmtgWK2Yxv5o1dXjD4 | Training - 15 | sanitized: Training - 15 | totd: False | discovery: {}
-2025-03-21T08:31:25+0100 WARNING: Unmatched map name: _B7ETXz_3ROU82GU_WVe_BPM5em | Fall 2021 - 14 | sanitized: Fall 2021 - 14 | totd: False | discovery: {}
-2025-03-21T08:31:25+0100 WARNING: Unmatched map name: oCiN8eTZJSAQlGVU6llZ0_EgkF0 | Summer 2021 - 25 | sanitized: Summer 2021 - 25 | totd: False | discovery: {}
-2025-03-21T08:31:29+0100 WARNING: Unmatched map name: u3bBenzNzy7a1_JfChfcV1k3awk | Fall 2022 - 25 | sanitized: Fall 2022 - 25 | totd: False | discovery: {}
-2025-03-21T08:31:33+0100 WARNING: Unmatched map name: JjjXVZTtMkdUOpbUFjnQ_GbLume | Fall 2024 - 18 | sanitized: Fall 2024 - 18 | totd: False | discovery: {}
-2025-03-21T08:31:33+0100 WARNING: Unmatched map name: WwZQWVwZ9Z6I1L8GKpyo_A0hJFa | Summer 2021 - 14 | sanitized: Summer 2021 - 14 | totd: False | discovery: {}
-2025-03-21T08:31:34+0100 WARNING: Unmatched map name: adJt5N4EL1LnqcU6rucvtcPwvf1 | Training - 05 | sanitized: Training - 05 | totd: False | discovery: {}
-2025-03-21T08:31:36+0100 WARNING: Unmatched map name: uhy7g070KdefWB6g_6mQqwZIH1n | Summer 2021 - 01 | sanitized: Summer 2021 - 01 | totd: False | discovery: {}
-2025-03-21T08:31:38+0100 WARNING: Unmatched map name: l6lAoQJtyb_58UIO4NI4Wc_x5_1 | $i$s$f75W$fffinterberg (RC) | sanitized: Winterberg (RC) | totd: False | discovery: {}
-2025-03-21T08:31:39+0100 WARNING: Unmatched map name: dTv9ps3D7Ggrm81_xp2uDvB98n4 | Winter 2022 - 04 | sanitized: Winter 2022 - 04 | totd: False | discovery: {}
-2025-03-21T08:31:48+0100 INFO: Parsed data written to parsed_map_data.json
+2025-03-22T04:23:09+0100 INFO: totd_pattern_group written to pattern_dings.txt
+2025-03-22T04:23:09+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
+2025-03-22T04:23:09+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
+2025-03-22T04:23:31+0100 INFO: Parsed data written to parsed_map_data.json

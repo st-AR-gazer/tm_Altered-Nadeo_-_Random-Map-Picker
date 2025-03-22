@@ -1300,6 +1300,10 @@ rally_training_pattern_1 = re.compile(
 rally_totd_pattern_1 = re.compile(
     rf"^{totd_pattern_group}\s+\((?P<alteration_mix>RallyCar)\)$",
     re.IGNORECASE)
+# Pattern5: "<totd> (RC)"
+rally_totd_pattern_2 = re.compile(
+    rf"^{totd_pattern_group}\s+\((?P<alteration_mix>RC)\)$",
+    re.IGNORECASE)
 
     # -------- [Rally] Carswitch ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Rallycarswitch"
@@ -2596,7 +2600,7 @@ ALL_PATTERNS = [
     stadiumunderwater_seasonal_pattern_1,
     stadiumwetplastic_seasonal_pattern_1,
     stadiumwetwood_seasonal_pattern_1,
-    snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_discovery_pattern_1, snow_totd_pattern_1, snow_totd_pattern_2, snow_weeklyshorts_pattern_1, 
+    snow_seasonal_pattern_1, snow_seasonal_pattern_2, snow_seasonal_pattern_3, snow_training_pattern_1, snow_discovery_pattern_1, snow_totd_pattern_1, snow_totd_pattern_2, snow_totd_pattern_3, snow_weeklyshorts_pattern_1, 
     snowcarswitch_seasonal_pattern_1, snowcarswitch_totd_pattern_1, snowcarswitch_totd_pattern_2, snowcarswitch_totd_pattern_3, snowcarswitch_totd_pattern_4, snowcarswitch_totd_pattern_5, snowcarswitch_totd_pattern_6,
     snowcheckpointless_seasonal_pattern_1, snowcheckpointless_seasonal_pattern_2,
     snowice_seasonal_pattern_1,
@@ -2605,7 +2609,7 @@ ALL_PATTERNS = [
     snowunderwater_seasonal_pattern_1, snowunderwater_seasonal_pattern_2, snowunderwater_seasonal_pattern_3, snowunderwater_training_pattern_1, snowunderwater_discovery_pattern_1, snowunderwater_discovery_pattern_2, snowunderwater_totd_pattern_1, snowunderwater_weeklyshorts_pattern_1, snowunderwater_weeklyshorts_pattern_2, 
     snowwetplastic_seasonal_pattern_1,
     snowwood_seasonal_pattern_1, snowwood_training_pattern_1, snowwood_training_pattern_2124,
-    rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1,
+    rally_seasonal_pattern_1, rally_seasonal_pattern_2, rally_training_pattern_1, rally_totd_pattern_1, rally_totd_pattern_2, 
     rallycarswitch_seasonal_pattern_1, rallycarswitch_totd_pattern_1, rallycarswitch_totd_pattern_2, rallycarswitch_totd_pattern_3, rallycarswitch_totd_pattern_4, rallycarswitch_totd_pattern_5, rallycarswitch_totd_pattern_6, rallycarswitch_totd_pattern_7, 
     rallycp1isend_seasonal_pattern_1, rallycp1isend_seasonal_pattern_2, rallycp1isend_spring2020_pattern_1,
     rallyice_seasonal_pattern_1,
