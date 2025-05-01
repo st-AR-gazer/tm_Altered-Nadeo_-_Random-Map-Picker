@@ -1,4 +1,165 @@
-2025-03-22T04:23:09+0100 INFO: totd_pattern_group written to pattern_dings.txt
-2025-03-22T04:23:09+0100 INFO: discovery_pattern_group written to discovery_pattern_group.txt
-2025-03-22T04:23:09+0100 INFO: competition_pattern_group written to competition_pattern_group.txt
-2025-03-22T04:23:31+0100 INFO: Parsed data written to parsed_map_data.json
+2025-04-28T22:48:12+0200 INFO: totd_pattern_group written to pattern_dings.txt
+2025-04-28T22:48:12+0200 INFO: discovery_pattern_group written to discovery_pattern_group.txt
+2025-04-28T22:48:12+0200 INFO: competition_pattern_group written to competition_pattern_group.txt
+2025-04-28T22:48:13+0200 WARNING: Unmatched map name: rHkpThDdT7bXMxoR4VBcDsKFVyk | Spring 2025 - 21 Blind | sanitized: Spring 2025 - 21 Blind | totd: False | discovery: {}
+2025-04-28T22:48:13+0200 WARNING: Unmatched map name: 6irtjsw0v_sP5T_OhDv6BpBfUS6 | SummerTube [Race] | sanitized: SummerTube [Race] | totd: False | discovery: {}
+2025-04-28T22:48:15+0200 WARNING: Unmatched map name: vRWcm_sn8FJxv6Pc0nFH7bZ3SK1 | Fall 2024 - 17 Reverse Effects | sanitized: Fall 2024 - 17 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:15+0200 WARNING: Unmatched map name: wuzvW3w6xttEZvRSV5CoR1BcJil | Spring 2025 - 04 Blind | sanitized: Spring 2025 - 04 Blind | totd: False | discovery: {}
+2025-04-28T22:48:15+0200 WARNING: Unmatched map name: siucM1wlXSFwElnx_ZfZcpOVT03 | Spring 2025 - 17 Blind | sanitized: Spring 2025 - 17 Blind | totd: False | discovery: {}
+2025-04-28T22:48:15+0200 WARNING: Unmatched map name: oepVVxi_npn70Ye98mD56MumxXi | Spring 2025 - 18 Lowered | sanitized: Spring 2025 - 18 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:15+0200 WARNING: Unmatched map name: GqbTFBsQD5qHKiBw3RV_e9ddQka | Spring 2025 - 17 Lowered | sanitized: Spring 2025 - 17 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:15+0200 WARNING: Unmatched map name: JUcN8Li_4zbfQY4c6i_XoBvMh74 | Orienticion [Race] | sanitized: Orienticion [Race] | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: kCDcQpAfr1kpznOMDu5um6Exlc7 | Spring 2025 - 04 | sanitized: Spring 2025 - 04 | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: fF8ss4WwQw5cn85KYwIWD8ynZDm | Fall 2024 - 18 Reverse Effects | sanitized: Fall 2024 - 18 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: LVmQkVixcxsY4Dn2cGj84iL90k | Spring 2025 - 01 Reverse Effects | sanitized: Spring 2025 - 01 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: u7KbkzRTJFD0aGVfEdf2hJxXrZh | WetPlastic [Race] | sanitized: WetPlastic [Race] | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: iVWI_TbPFfrz20I48ARtZ1O2CP0 | Spring 2025 - 09 Blind | sanitized: Spring 2025 - 09 Blind | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: PFkzUsEOzLO5lny_l1G5SBCo2v0 | Spring 2025 - 08 | sanitized: Spring 2025 - 08 | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: 9Tt86aLSKw1dtB7dq8MA_VlSSP7 | Bulrush [Race] (STTF) | sanitized: Bulrush [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: KBowDB8121RzNSpktUsk_GsPJ72 | Spring 2025 - 03 lowered | sanitized: Spring 2025 - 03 lowered | totd: False | discovery: {}
+2025-04-28T22:48:16+0200 WARNING: Unmatched map name: KkQ7z3CNNPIDcCkK6e1Uu6ObHe8 | Elevatord [Race] | sanitized: Elevatord [Race] | totd: False | discovery: {}
+2025-04-28T22:48:17+0200 WARNING: Unmatched map name: Y1fGiRMerCBxgiZnEOhOF3JZfU0 | Spring 2025 - 14 Lowered | sanitized: Spring 2025 - 14 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:17+0200 WARNING: Unmatched map name: k7OHtrM0TB5INoZwXyw8xwJACM8 | Winter 2025 - 16 Reverse Effects | sanitized: Winter 2025 - 16 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:18+0200 WARNING: Unmatched map name: 0rC2BdRdz0WD4nLLeonpeykbzA2 | Spring 2025 - 15 Lowered | sanitized: Spring 2025 - 15 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:18+0200 WARNING: Unmatched map name: 0yDbp9OAUQeu_QKvlAcmQTkcxud | Winter 2025 - 07 Reverse Effects | sanitized: Winter 2025 - 07 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:18+0200 WARNING: Unmatched map name: iPYBWeGjegYp2LKYbycFVJ6T7Mf | OasisPark [Race] | sanitized: OasisPark [Race] | totd: False | discovery: {}
+2025-04-28T22:48:18+0200 WARNING: Unmatched map name: XyqBonYWf3lfmK1GZ5i7OTwcnIl | Spring 2025 - 23 Reverse Effects | sanitized: Spring 2025 - 23 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:18+0200 WARNING: Unmatched map name: 2PNYh0UXuItyB55DGSVcCNel8O4 | Summer 2021 - 01 | sanitized: Summer 2021 - 01 | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: NegBb9oXaMOFb5LfiGK2aIU50o2 | Winter 2025 - 19 Reverse Effects | sanitized: Winter 2025 - 19 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: aQTStSEvaD9bk8eHKkeBRLM1Kl3 | ATFO [Race] (STTF) | sanitized: ATFO [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: aZE5Aax7YAW01jlWLE3OSisKTf8 | Island Hopping [Race] (STTF) | sanitized: Island Hopping [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: S51rVqoAn3HzJOAeetzkxhNj0o | Spring 2025 - 02 Blind | sanitized: Spring 2025 - 02 Blind | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: tXPToWl2_fRb7zB5vpOWtR8BYch | RunTheWater [Race] | sanitized: RunTheWater [Race] | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: 26OpQKluFiV4iNUir3i3yyAlLWb | ColouredPipes [Race] | sanitized: ColouredPipes [Race] | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: nDL1DN0a7igJNQhhRRyUoQmz6Fd | Spring 2025 - 22 Blind | sanitized: Spring 2025 - 22 Blind | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: QyWa_dTM6Kni193TvcpKtHhYcx9 | Fall 2024 - 03 Reverse Effects | sanitized: Fall 2024 - 03 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:19+0200 WARNING: Unmatched map name: bSqxZswgbHw7HvjkDyiqXlkee9g | Spring 2025 - 15 Blind | sanitized: Spring 2025 - 15 Blind | totd: False | discovery: {}
+2025-04-28T22:48:20+0200 WARNING: Unmatched map name: RiGlTHOPZtWdDJD2Lvnr4CCMTV4 | Spring 2025 - 13 Lowered | sanitized: Spring 2025 - 13 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:20+0200 WARNING: Unmatched map name: UrLM31B1BhfUncqZGQ10RD1aQKj | Winter 2025 - 05 Reverse Effects | sanitized: Winter 2025 - 05 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:20+0200 WARNING: Unmatched map name: 5JNBPdMCvTo7wv8Nxw5eM4oKvWl | Just Do It [Race] (STTF) | sanitized: Just Do It [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:20+0200 WARNING: Unmatched map name: od5KZ9fYo9eUb4z1f9fuBj3sME7 | Training - 21 (All Up 1) | sanitized: Training - 21 (All Up 1) | totd: False | discovery: {}
+2025-04-28T22:48:20+0200 WARNING: Unmatched map name: Jwuy8dmOrbFTtw5ZzQFwylnWSb0 | DrownedRoad [Race] | sanitized: DrownedRoad [Race] | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: S88kjrGsMwpAfGhf7q0XO2dFtJi | Fall 2024 - 06 Reverse Effects | sanitized: Fall 2024 - 06 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: DSNCBluzwjRsJm6WCDbiM2i2TIj | Spring 2025 - 19 Lowered | sanitized: Spring 2025 - 19 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: MaYtC3bIMesAfFZX4pPmGN8nwfg | Spring 2025 - 14 Blind | sanitized: Spring 2025 - 14 Blind | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: PVGqgnbfnOLA5MonM9F1l5eHrH0 | Spring 2025 - 01 Blind | sanitized: Spring 2025 - 01 Blind | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: vpDZFosOZHeU7GsDvkChZUtE95b | Spring 2025 - 09 Lowered | sanitized: Spring 2025 - 09 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: MLBHIgNMFVwf20e4tSQDUJq6bZm | Spring 2025 - 07 Blind | sanitized: Spring 2025 - 07 Blind | totd: False | discovery: {}
+2025-04-28T22:48:21+0200 WARNING: Unmatched map name: ytDYlchrtQJJNfCqtfFoU0UXBHb | Dance Of The Sugar Plum Fairy [Race] (STTF) | sanitized: Dance Of The Sugar Plum Fairy [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:22+0200 WARNING: Unmatched map name: ozO34bmjq9bD5pO9pome0EoP140 | HitTheRoads [Race] | sanitized: HitTheRoads [Race] | totd: False | discovery: {}
+2025-04-28T22:48:22+0200 WARNING: Unmatched map name: d2ZraPrZix62BAmU6S6H9e8BtE6 | Spring 2025 - 18 Blind | sanitized: Spring 2025 - 18 Blind | totd: False | discovery: {}
+2025-04-28T22:48:22+0200 WARNING: Unmatched map name: eZsW0g9ywDLf0sSOX_h0KG9tmh1 | TheLarotabyn [Race] | sanitized: TheLarotabyn [Race] | totd: False | discovery: {}
+2025-04-28T22:48:22+0200 WARNING: Unmatched map name: F3Gx66xXikwD_YZE8tviW_Ncpt4 | Fall 2024 - 09 Reverse Effects | sanitized: Fall 2024 - 09 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:23+0200 WARNING: Unmatched map name: qK5cz5t6Z0720jxmhqAeanIAM8m | Fall 2024 - 01 Reverse Effects | sanitized: Fall 2024 - 01 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:23+0200 WARNING: Unmatched map name: 6R6DViyCqXurmx0QsLij4VAlpI5 | Fall 2024 - 07 Reverse Effects | sanitized: Fall 2024 - 07 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:23+0200 WARNING: Unmatched map name: 2OqHHDeOFqTxuKqb7WyBpnA1aX3 | OrangeHills [Race] (STTF) | sanitized: OrangeHills [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:23+0200 WARNING: Unmatched map name: cGD9tAb_v5BbDtLOD3UKEDIFgHe | Backstroke [Race] (STTF) | sanitized: Backstroke [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: B2JTNAQRnB5DWp4qea29XBWal1g | Lagooning [Race] (STTF) | sanitized: Lagooning [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: ZIMtQO68cuRnoqdvBaE1EOw5kq | Spring 2025 - 11 | sanitized: Spring 2025 - 11 | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: aApXrK7f1zwUHiokgt80v0OjaPi | Spring 2025 - 12 Lowered | sanitized: Spring 2025 - 12 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: CREesn5qj8IoIaDNKKYVdn8IeXb | Spring 2025 - 20 Blind | sanitized: Spring 2025 - 20 Blind | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: lFNdC9PCOt37bqcsv_fnwr8vRha | Spring 2025 - 25 | sanitized: Spring 2025 - 25 | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: T81miqw3iscnToziuxFx0ccC5Um | Hypothermic [Race] (STTF) | sanitized: Hypothermic [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:24+0200 WARNING: Unmatched map name: vNCKx2YFzHpBrEhl4FMU7eV81em | Spring 2025 - 20 Reverse Effects | sanitized: Spring 2025 - 20 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: 0Gvaf3U0BNFDYLpmRDXEq4MVQsm | Spring 2025 - 22 Reverse Effects | sanitized: Spring 2025 - 22 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: o_gf0VSX5dxhimHi8HFJF0HG_q8 | Caramel [Race] (STTF) | sanitized: Caramel [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: gy7VcH_63gYMapfUbIEIuT15dK6 | Arena | sanitized: Arena | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: pDR_gM4XGM_GhdlgeWn4qjvfnG3 | Spring 2025 - 19 | sanitized: Spring 2025 - 19 | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: xfGBKqY7668J_Z0d5ZIu7xRQbgj | Spring 2025 - 13 Reverse Effects | sanitized: Spring 2025 - 13 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: xmRAvyAH1mKMAQkIJQZITWmLP06 | Glacial Plunge [Race] (STTF) | sanitized: Glacial Plunge [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: 66n4EB3JF42oArBScZN_mF2jj5c | Spring 2025 - 03 | sanitized: Spring 2025 - 03 | totd: False | discovery: {}
+2025-04-28T22:48:25+0200 WARNING: Unmatched map name: mXhhlx96SK_qN6jaA0deXFF_JW7 | Scarlet Summit [Race] (STTF) | sanitized: Scarlet Summit [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:26+0200 WARNING: Unmatched map name: QBFUG9qtjtYXGxPn9yCfRSSW28i | Spring 2025 - 21 Lowered | sanitized: Spring 2025 - 21 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:26+0200 WARNING: Unmatched map name: xbpaBVehSrfaDLtgHe7ZuC21id3 | Spring 2025 - 09 Reverse Effects | sanitized: Spring 2025 - 09 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:26+0200 WARNING: Unmatched map name: UsFClHlL0JIW2g4MtxLAnQr2xKm | Winter 2025 - 22 Reverse Effects | sanitized: Winter 2025 - 22 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:26+0200 WARNING: Unmatched map name: FGbjKLXUOFR1kYu3THYMdTqCQD3 | Fall 2024 - 16 Reverse Effects | sanitized: Fall 2024 - 16 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:27+0200 WARNING: Unmatched map name: cKUl72aXfZI4IG7bWDfpHARshN9 | PinkPlatform [Race] (STTF) | sanitized: PinkPlatform [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:27+0200 WARNING: Unmatched map name: bUZGrvWkqpXI7nurQlevBpK8pb4 | Spring 2025 - 25 Lowered | sanitized: Spring 2025 - 25 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:27+0200 WARNING: Unmatched map name: lVPDQXGbe8aFdEDkYEvNo6iLOAh | Spring 2025 - 06 Lowered | sanitized: Spring 2025 - 06 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:27+0200 WARNING: Unmatched map name: XogNrhkJzmcDU3w8VuKAyUXC98j | DeserticSlalom [Race] | sanitized: DeserticSlalom [Race] | totd: False | discovery: {}
+2025-04-28T22:48:27+0200 WARNING: Unmatched map name: 7Zc_qyKmZdHg_Fe06Bk4xkUuEL3 | Spring 2025 - 24 | sanitized: Spring 2025 - 24 | totd: False | discovery: {}
+2025-04-28T22:48:27+0200 WARNING: Unmatched map name: w5RNvZb5bYGFwvIVGMyXrJINqR | Spring 2025 - 16 Lowered | sanitized: Spring 2025 - 16 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:28+0200 WARNING: Unmatched map name: kRI21bX4eVJjuVxfybMhK0f4fX7 | Spring 2025 - 23 | sanitized: Spring 2025 - 23 | totd: False | discovery: {}
+2025-04-28T22:48:28+0200 WARNING: Unmatched map name: UVMUUmv0F0tN4999jRKHBjq27ml | Spring 2025 - 10 | sanitized: Spring 2025 - 10 | totd: False | discovery: {}
+2025-04-28T22:48:28+0200 WARNING: Unmatched map name: Hzc4UJVJrpcYocL_hOIoQdmKGg5 | Spring 2025 - 06 Reverse Effects | sanitized: Spring 2025 - 06 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:28+0200 WARNING: Unmatched map name: KhRjcdWrOexzOYBe8MB1SZh3ND9 | Spring 2025 - 02 | sanitized: Spring 2025 - 02 | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: HtUacKRlCmcXpsGGx9Qw2cYxym1 | Spring 2025 - 22 | sanitized: Spring 2025 - 22 | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: JtBVtASDEUSstaCNfZWAEyJqqP9 | Spring 2025 - 10 Blind | sanitized: Spring 2025 - 10 Blind | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: _1yEek7L6FYrXmIkz6u1ua9oRnj | Winter 2025 - 24 Reverse Effects | sanitized: Winter 2025 - 24 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: 9VFLZgw8afDM5UebKVaS7eJeqq6 | JumpInSplash [Race] | sanitized: JumpInSplash [Race] | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: RUbEUUo4Td0n5aFaLWevKPugUMf | Spring 2025 - 22 Lowered | sanitized: Spring 2025 - 22 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: scu_p2bZdirqEvVMtEmfE4OlaY1 | Lemonpeaks [Race] (STTF) | sanitized: Lemonpeaks [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:29+0200 WARNING: Unmatched map name: a3TetshPacOoHY6I6mc8FusEOae | Spring 2025 - 01 Lowered | sanitized: Spring 2025 - 01 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: tGzxfivbJLXkJP6YVU_wZiBRiz5 | Spring 2025 - 13 | sanitized: Spring 2025 - 13 | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: wy511Jxcov_QkEH3y9zhQVTghb3 | Ceramic [Race] (STTF) | sanitized: Ceramic [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: ZUvXdSM4W5KbaYhrnQsO_j6Hukj | Spring 2025 - 12 | sanitized: Spring 2025 - 12 | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: 7aPVxr1y7NLgKkZqHRbSPSRAeFl | Training - 05 Multi | sanitized: Training - 05 Multi | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: tpihb0oVTOJKvxYxweH8ITCGvc5 | Spring 2025 - 05 Blind | sanitized: Spring 2025 - 05 Blind | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: HBqVL7MAlkZZgNPR9dhwVuWwpc4 | Spring 2025 - 04 Lowered | sanitized: Spring 2025 - 04 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: Xw9hcWvmLIkdCCUJ5wk1YKogifd | Spring 2025 - 15 | sanitized: Spring 2025 - 15 | totd: False | discovery: {}
+2025-04-28T22:48:30+0200 WARNING: Unmatched map name: OV16ZELYL6bZVp2TAhbiXIZCrh4 | Padauk [Race] (STTF) | sanitized: Padauk [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:31+0200 WARNING: Unmatched map name: WblmBX_GE3bFv4yz0lOvfHDgM47 | Spring 2025 - 23 Blind | sanitized: Spring 2025 - 23 Blind | totd: False | discovery: {}
+2025-04-28T22:48:31+0200 WARNING: Unmatched map name: fGIU_IxbvluhVGqW0yZohV1edFh | Spring 2025 - 14 | sanitized: Spring 2025 - 14 | totd: False | discovery: {}
+2025-04-28T22:48:31+0200 WARNING: Unmatched map name: vLrce_V7ycT__g5El1vYb0Unhjf | Training - 24 (All Up 1) | sanitized: Training - 24 (All Up 1) | totd: False | discovery: {}
+2025-04-28T22:48:31+0200 WARNING: Unmatched map name: jA3htI8CxicYckhxuIyTYs3aRI8 | Spring 2025 - 06 Blind | sanitized: Spring 2025 - 06 Blind | totd: False | discovery: {}
+2025-04-28T22:48:31+0200 WARNING: Unmatched map name: pthVg2ZijWKXfEaJT6c4bRxl8Mk | Spring 2025 07 Lowered | sanitized: Spring 2025 07 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:32+0200 WARNING: Unmatched map name: ax5x0EgP7L1l14a1iSNXfah5wqg | Spring 2025 - 24 Reverse Effects | sanitized: Spring 2025 - 24 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:32+0200 WARNING: Unmatched map name: 0IpkznEU6xhnCjo4juNFO_V3NNk | Winter 2025 - 21 Reverse Effects | sanitized: Winter 2025 - 21 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:32+0200 WARNING: Unmatched map name: A5b5qda7NLLAOjjPe1mYbSqC6Oh | Spring 2025 - 11 Lowered | sanitized: Spring 2025 - 11 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:32+0200 WARNING: Unmatched map name: afLDQoGmdtfsdsHlV6t7hGCD106 | BoostHour [Race] | sanitized: BoostHour [Race] | totd: False | discovery: {}
+2025-04-28T22:48:32+0200 WARNING: Unmatched map name: MnYG60pZhxw7qKZUaOdYPiyCer8 | Meep Mip [Race] (STTF) | sanitized: Meep Mip [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:32+0200 WARNING: Unmatched map name: Q_EbRLjoHVnv8rBoFrqBcgk8ap8 | Winter 2024 - 25 (Very Hidden Finish) | sanitized: Winter 2024 - 25 (Very Hidden Finish) | totd: False | discovery: {}
+2025-04-28T22:48:33+0200 WARNING: Unmatched map name: gCp_CpGZvMdQ4rRoDXTi1CXwyd2 | Deja Vu [Race] (STTF) | sanitized: Deja Vu [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: 4QSvF9xQQD8u7oTPx7A9T6WMjja | Spring 2025 - 01 | sanitized: Spring 2025 - 01 | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: iTeCGbqqL2FCiL9CYh5GrNQLnsa | Spring 2025 - 14 Reverse Effects | sanitized: Spring 2025 - 14 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: 1Bce_fQPtNLC4X2LKn7rN__7P_n | WaterFall [Race] | sanitized: WaterFall [Race] | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: hmmOV8_u4YLCJXPLosAZ_BsvuMe | Spring 2025 - 20 Lowered | sanitized: Spring 2025 - 20 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: acegmsL_MGUg8Ig39gu00ToAc54 | Spring 2025 - 09 | sanitized: Spring 2025 - 09 | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: uHlocbKfmi_EWIHxaKWD_klrCH2 | Riseform [Race] | sanitized: Riseform [Race] | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: QUo8toQchfQabB96mCz6MH05MU7 | Coffee [Race] (STTF) | sanitized: Coffee [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: 6wKpz7x6xx3vDyGJ2jlsXMGxIc7 | Fall 2024 - 25 Reverse Effects | sanitized: Fall 2024 - 25 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: 9bxEH5K6RHpM2C7nUJEicMEKZb4 | Spring 2025 - 07 | sanitized: Spring 2025 - 07 | totd: False | discovery: {}
+2025-04-28T22:48:34+0200 WARNING: Unmatched map name: PpZolRHFZB1hVwqErSbIznemTRe | Spring 2025 - 18 | sanitized: Spring 2025 - 18 | totd: False | discovery: {}
+2025-04-28T22:48:35+0200 WARNING: Unmatched map name: uSARfUgpVwPEwHBlq7DvuytOfO7 | Primula [Race] (STTF) | sanitized: Primula [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:35+0200 WARNING: Unmatched map name: 03ntB6pr8ucu3U0zFKq_lAu0fEf | Fall 2024 - 22 Reverse Effects | sanitized: Fall 2024 - 22 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:35+0200 WARNING: Unmatched map name: yJm760f4YbDT8z2kPHA116PAycb | Training - 10 Multi | sanitized: Training - 10 Multi | totd: False | discovery: {}
+2025-04-28T22:48:35+0200 WARNING: Unmatched map name: 3Zepoyxc9zovuLcT_34saiJ_yPe | Spring 2025 - 08 Reverse Effects | sanitized: Spring 2025 - 08 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:36+0200 WARNING: Unmatched map name: FOEYhK9rMCw9xnCKovyS6zpXJU7 | Spring 2025 - 24 Blind | sanitized: Spring 2025 - 24 Blind | totd: False | discovery: {}
+2025-04-28T22:48:36+0200 WARNING: Unmatched map name: ovdBtvw2qBtjlLYNO39iSGb3Wf2 | Spring 2025 - 03 Blind | sanitized: Spring 2025 - 03 Blind | totd: False | discovery: {}
+2025-04-28T22:48:36+0200 WARNING: Unmatched map name: LuwmbwOQG_p0l2oPH2VRIGH8Utm | Spring 2025 - 02 Lowered | sanitized: Spring 2025 - 02 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: tvwusMWflYpYhHngh02CoO28vV0 | Spring 2025 - 16 | sanitized: Spring 2025 - 16 | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: 1tBcvEPKIqds3dqL9_Pmr2SO4wc | Spring 2025 - 25 Blind | sanitized: Spring 2025 - 25 Blind | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: 5VzTtwlpLmsyd0vC4epyVQl9Bga | Spring 2025 - 16 Blind | sanitized: Spring 2025 - 16 Blind | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: st9K2BpTBQuKCJT7f51nUjWCW7a | ToThePink [Race] (STTF) | sanitized: ToThePink [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: 4ftORJQue8pB7UMpUxOigYoO8Zc | Spring 2025 - 19 Reverse Effects | sanitized: Spring 2025 - 19 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: djsz9J5Wcwr3_WdEZLXh9NmLGem | Spring 2025 - 17 | sanitized: Spring 2025 - 17 | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: Q5WcpuMyjNMuuhrKSnGC2fcqED0 | Spring 2025 - 25 Reverse Effects | sanitized: Spring 2025 - 25 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: 8tIsYeTHxW_RrD3UJrONTeOu1Q6 | Spring 2025 - 08 Blind | sanitized: Spring 2025 - 08 Blind | totd: False | discovery: {}
+2025-04-28T22:48:37+0200 WARNING: Unmatched map name: BcvoOvTqJWDn8aEtSAxNWVlXHl4 | Spring 2025 - 24 Lowered | sanitized: Spring 2025 - 24 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: PYDpOu3A5294LXTJzVgmY20G6Al | Spring 2025 - 21 | sanitized: Spring 2025 - 21 | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: Y0pa2ox83GjRmMYeIRQ5RUaJvMa | Neverest [Race] | sanitized: Neverest [Race] | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: 946b2X351U9EeRKDRI24SCURuPm | Fall 2024 - 04 Reverse Effects | sanitized: Fall 2024 - 04 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: N5ZqB98LYmCSEIibRa643OkB61 | Fall 2024 - 14 Reverse Effects | sanitized: Fall 2024 - 14 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: rKChIKS8NowPDBS06nMCu5Juvwl | Maple Mist [Race] (STTF) | sanitized: Maple Mist [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: nE33uoY82zcvKJleHyfY6HJFTn9 | Spring 2025 - 05 Lowered | sanitized: Spring 2025 - 05 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:38+0200 WARNING: Unmatched map name: jwyfIygbK_6_qwyQQE8P9o0nLDl | Cobalt Cove [Race] (STTF) | sanitized: Cobalt Cove [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:39+0200 WARNING: Unmatched map name: XyesUiRV1WQ8YM4gjzZtD5sw2J6 | Spring 2025 - 10 Lowered | sanitized: Spring 2025 - 10 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:39+0200 WARNING: Unmatched map name: dHQsxKcdlXEr248AVx1C8Mf65o5 | Tangerine [Race] (STTF) | sanitized: Tangerine [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:39+0200 WARNING: Unmatched map name: d2vbYVbRvMG2w9qawKd2p72Ijim | Winter 2025 - 01 Reverse Effects | sanitized: Winter 2025 - 01 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:39+0200 WARNING: Unmatched map name: v0mGlqU0sFlPZr69KGVMluKm6rk | Spring 2025 - 23 Lowered | sanitized: Spring 2025 - 23 Lowered | totd: False | discovery: {}
+2025-04-28T22:48:39+0200 WARNING: Unmatched map name: EIZdLwxpLBlqrZpLdDIVPNNbNKl | Spring 2025 - 11 Blind | sanitized: Spring 2025 - 11 Blind | totd: False | discovery: {}
+2025-04-28T22:48:39+0200 WARNING: Unmatched map name: hlizrXlE7DLySa9sJxj91m2TdQd | Spring 2025 - 06 | sanitized: Spring 2025 - 06 | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: Hv5HaiDmbHKNziU3br8N0pH9iTh | Spring 2025 - 12 Blind | sanitized: Spring 2025 - 12 Blind | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: rxB4R5RKWSuaJepFQkbpgJys2A5 | Spring 2025 - 20 | sanitized: Spring 2025 - 20 | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: Y0LQAlxJK49m9OvNqGaxjYbWmWk | Spring 2025 - 13 Blind | sanitized: Spring 2025 - 13 Blind | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: hcNTxFa0UhdgniAQbNZWNycNNT | Fall 2024 - 19 Reverse Effects | sanitized: Fall 2024 - 19 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: MAYT6Oajvh8yhPvvZLyVEpGhMc2 | Spring 2025 - 12 Reverse Effects | sanitized: Spring 2025 - 12 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: k6eRheUuYrQlpblQnAMwEHWXTK5 | Winter 2025 - 15 Reverse Effects | sanitized: Winter 2025 - 15 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:40+0200 WARNING: Unmatched map name: sG7X08VUwUEDSdgQ7nVXKU9Pa4i | Spring 2025 - 19 Blind | sanitized: Spring 2025 - 19 Blind | totd: False | discovery: {}
+2025-04-28T22:48:41+0200 WARNING: Unmatched map name: 0xHGbC0mZW3Fkx0V9j6CiL_9Wq0 | Winter 2025 - 20 Reverse Effects | sanitized: Winter 2025 - 20 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:42+0200 WARNING: Unmatched map name: cKWHvMMshE9Wxf9ILoYaC_HYq33 | NoTechLogic [Race] | sanitized: NoTechLogic [Race] | totd: False | discovery: {}
+2025-04-28T22:48:42+0200 WARNING: Unmatched map name: j5UNUMsE6QfFsZhnD44odi5BxW9 | Pipeline [Race] (STTF) | sanitized: Pipeline [Race] (STTF) | totd: False | discovery: {}
+2025-04-28T22:48:42+0200 WARNING: Unmatched map name: kJL9FuAcMUh0OkSWJnOdlswkWjk | Winter 2025 - 23 Reverse Effects | sanitized: Winter 2025 - 23 Reverse Effects | totd: False | discovery: {}
+2025-04-28T22:48:42+0200 WARNING: Unmatched map name: cyAsefOVqDysVX0D0O7zHoHMZ2j | Spring 2025 - 05 | sanitized: Spring 2025 - 05 | totd: False | discovery: {}
+2025-04-28T22:48:42+0200 WARNING: Unmatched map name: 4h3eft95RwbpmrAIztcHvzutIC0 | ColorPool [Race] | sanitized: ColorPool [Race] | totd: False | discovery: {}
+2025-04-28T22:48:43+0200 INFO: Parsed data written to parsed_map_data.json

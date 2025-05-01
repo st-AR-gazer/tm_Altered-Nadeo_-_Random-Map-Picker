@@ -1,243 +1,388 @@
---- Alteration Mix #74 ---
-Original: combined
-  Recognized: None
-  Unrecognized:
-    - combined
 
---- Alteration Mix #75 ---
-Original: Combined
-  Recognized: None
-  Unrecognized:
-    - Combined
-
---- Alteration Mix #89 ---
-Original: CPfull; -1
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -1
-
---- Alteration Mix #90 ---
-Original: CPfull; -10
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -10
-
---- Alteration Mix #91 ---
-Original: CPfull; -105
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -105
-
---- Alteration Mix #92 ---
-Original: CPfull; -11
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -11
-
---- Alteration Mix #93 ---
-Original: CPfull; -12
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -12
-
---- Alteration Mix #94 ---
-Original: CPfull; -13
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -13
-
---- Alteration Mix #95 ---
-Original: CPfull; -14
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -14
-
---- Alteration Mix #96 ---
-Original: CPfull; -15
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -15
-
---- Alteration Mix #97 ---
-Original: CPfull; -154
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -154
-
---- Alteration Mix #98 ---
-Original: CPfull; -17
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -17
-
---- Alteration Mix #99 ---
-Original: CPfull; -18
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -18
-
---- Alteration Mix #100 ---
-Original: CPfull; -182
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -182
-
---- Alteration Mix #101 ---
-Original: CPfull; -19
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -19
-
---- Alteration Mix #102 ---
-Original: CPfull; -2
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -2
-
---- Alteration Mix #103 ---
-Original: CPfull; -234
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -234
-
---- Alteration Mix #104 ---
-Original: CPfull; -25
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -25
-
---- Alteration Mix #105 ---
-Original: CPfull; -274
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -274
-
---- Alteration Mix #106 ---
-Original: CPfull; -29
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -29
-
---- Alteration Mix #107 ---
-Original: CPfull; -3
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -3
-
---- Alteration Mix #108 ---
-Original: CPfull; -4
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -4
-
---- Alteration Mix #109 ---
-Original: CPfull; -42
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -42
-
---- Alteration Mix #110 ---
-Original: CPfull; -44
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -44
-
---- Alteration Mix #111 ---
-Original: CPfull; -45
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -45
-
---- Alteration Mix #112 ---
-Original: CPfull; -47
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -47
-
---- Alteration Mix #113 ---
-Original: CPfull; -48
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -48
-
---- Alteration Mix #114 ---
-Original: CPfull; -5
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -5
-
---- Alteration Mix #115 ---
-Original: CPfull; -6
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -6
-
---- Alteration Mix #116 ---
-Original: CPfull; -62
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -62
-
---- Alteration Mix #117 ---
-Original: CPfull; -7
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -7
-
---- Alteration Mix #118 ---
-Original: CPfull; -78
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -78
-
---- Alteration Mix #119 ---
-Original: CPfull; -8
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -8
-
---- Alteration Mix #120 ---
-Original: CPfull; -9
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -9
-
---- Alteration Mix #121 ---
-Original: CPfull; -91
-  Recognized:
-    - CPfull -> CPfull
-  Unrecognized:
-    - -91
-
+!OfficialNadeo
+(G); CPLess, Reverse
+(Snow) Wet Plastic
+08
+1 Left
+1 Right
+1-back
+1-BACK
+1-Back
+1-DOWN
+1-Down
+1-For
+1-forward
+1-Forward
+1-Left
+1-up
+1-UP
+1-Up
+100% Wet Icy wood
+100% Wet Icy Wood
+1back
+1UP
+2-UP
+2D
+4CS
+[Desert]
+[Desert] (UW)
+[Desert] Carswitch
+[Race]
+[Rally]; CP1 is End
+[Rally]; Cp1 is End
+[Snow]; Wood
+[Snow] (UW)
+[Snow] Carswitch
+[Stunt]
+[STUNT]
+All 1-Up
+all cars
+All Up 1
+AntiBoosters
+Asphalt
+asphalt
+Backwards
+backwards
+Better Mixed
+Better Reverse
+BeVerse
+Big
+Blind
+BLIND
+Blindfolded
+Bobsleigh
+bobsleigh
+Boomerang
+boosterless
+Boosterless
+BOSS
+Broken
+bumper
+Bumper
+But Blind
+Car Switch
+CarDesert
+CarRally
+CarSnow
+CarSport
+Carswitch DesertCar
+Carswitch RallyCar
+Carswitch RC
+Carswitch SN
+Carswitch SnowCar
+Cawswitch DesertCar
+Checkpoin't
+Checkpointless
+Checkpointless Reverse
+Checkpointless snow
+Cleaned
+Combined
+combined
+cp is End
+Cp is End
+CP-Boost Swap
+CP1
+CP1 End
+CP1 Ends
+CP1 is End
+cp1 is End
+cp1 is end
+CP1 Kept
+CP1-End
+Cpfull
+CPfull
+CPfull; -1
+CPfull; -10
+CPfull; -105
+CPfull; -11
+CPfull; -12
+CPfull; -13
+CPfull; -14
+CPfull; -15
+CPfull; -154
+CPfull; -17
+CPfull; -18
+CPfull; -182
+CPfull; -19
+CPfull; -2
+CPfull; -234
+CPfull; -25
+CPfull; -274
+CPfull; -29
+CPfull; -3
+CPfull; -4
+CPfull; -42
+CPfull; -44
+CPfull; -45
+CPfull; -47
+CPfull; -48
+CPfull; -5
+CPfull; -6
+CPfull; -62
+CPfull; -7
+CPfull; -78
+CPfull; -8
+CPfull; -9
+CPfull; -91
+CPLess
+CPLESS
+cpLess
+cpless
+Cpless
+CPLess - STTF
+CPLess, Reverse
+CPLess, Reverse (G)
+CPLess-STTF
+CPLink
+CPs Rotated 90
+CPs Rotated 90°
+Cruise
+Cruise Control
+Cruise Effects
+CS-DC
+CS-DesertCar
+CS-Rally
+CS-RallyCar
+CS-RC
+CS-SC
+CS-SnowCar
+CS_SC
+DAB
+DEET
+Deet
+DEET To The Top
+Desert
+Desert Reverse
+Desert to the Top
+DesertCar
+Desertcarswitch
+Dicy
+Dirt
+Dirty
+DragonYeet
+Earthquake
+Easy Mode
+EASY MODE
+Effectless
+Egocentrism
+Extra CP
+Fast
+fast magnet
+FastMagnet
+FLAT
+Flat
+Flipped
+Flooded
+Floor-fin
+Floor-Fin
+Fragile
+fragile
+FreeWheel
+Freewheel
+Full Fragile
+Glider
+Got Rotated
+grass
+Grassy
+Ground Clippers
+Ground Clippers; [Stadium]
+Harder
+Holes
+Ice
+Ice Edition
+Icy
+Icy; Reverse
+Icy [Snow]
+Icy Reactor
+Icy RR
+IDRRD
+inclined
+Inclined
+Invisible
+IR
+Last Section Joined
+Last Section Joined; All Ends
+Lunatic
+Magnet
+Magnet Reverse
+Manslaughter
+Mini RPG
+Mirror
+Mirrored
+Mixed
+No Brakes
+No brakes
+no gear 5
+No Grip
+No Steer
+no steering
+No Steering
+No-Cut
+No-Grip
+No-steer
+No-Steer
+NoBrakes
+NoGrip
+NoItems
+official nadeo map
+one back
+Penalty
+Pipe
+Plastic
+PlasticReverse
+Platform
+Podium
+Pool Hunters
+poolhunter
+Poolhunter
+poolhunters
+Poolhunters
+PR
+Pure Wet Icy Wood
+Pure WetIcywood
+Puzzle
+Race
+Rally to the Top
+RallyCar
+Rallycarswitch
+Random
+Random Dankness
+Random Effects
+RC
+Reactor
+Reactor Down
+Reactordown
+Red Effects
+Replay
+Rev Sky Fin
+Rev Sky Finish
+Rev Sky is Finish
+Reverse
+reverse
+Reverse Desert
+Reverse Magna
+Ricy
+Ring CP
+ring cp
+Ring CP%
+RNG Booster
+Road
+Road Dirt
+Road dirt
+Roady
+Roofing
+RPG
+Sausage
+SC
+Scuba diving
+Scuba Diving
+Section 1 Joined
+Section 1 Joined; All Starts
+Section 10 Joined
+Section 11 Joined
+Section 12 Joined
+Section 13 Joined
+Section 14 Joined
+Section 15 Joined
+Section 16 Joined
+Section 17 Joined
+Section 2 Joined
+Section 3 Joined
+Section 4 Joined
+Section 5 Joined
+Section 6 Joined
+Section 7 Joined
+Section 8 Joined
+Section 9 Joined
+Select DEL
+Short
+short
+short; Icy
+Shorts
+shorts
+SITF
+Sky Finish
+Sky is the Finish
+Slot Track
+slow mo
+Slowmo
+SlowMo
+slowmo
+Slowmotion
+Slowmow
+Snow
+SNOW; UW
+Snow Car UW
+Snow Puzzle
+Snow to the Top
+SnowCar
+Snowcar
+snowcar
+snowCar UW
+SNowCar UW
+SnowCar UW
+Snowcarswitch
+Speed Limit
+speedlimit
+Speedlimit
+SpeedLimit
+Stadium to the Top
+Staircase
+Start 1-down
+start 1-down
+Start 1-Down
+Straight to the finish
+Straight To The Finish
+Straight to the Finish
+STTF
+sttf
+STTF - CPLess
+STTF-CPLess
+Stunt
+Super
+super
+Supersized
+Surfaceless
+sw2u1l-cpu-f2d1r
+Symmetrical
+There And Back
+There&Back
+Tilted
+Underwater
+underwater
+Underwater; Snow
+Underwater Reverse
+UpsideDown
+uw
+UW
+UW; Reverse
+UW Reverse
+Uw Reverse
+UW reverse
+Walmart Mini
+Wet Icy Plastic
+Wet Icy Wood
+Wet Plastic
+Wet Plastic; Stadium
+Wet Wood
+Wet Wood; Red Reactor Down
+Wet Wood; Yellow Reactor Down
+Wet Wood Red Reactor Down
+Wet Wood Stadium Car
+Wet Wood Yellow Reactor Down
+Wet-Wheels
+WetIcyWood
+Wood
+Worn Tires
+XX-But
+YEET
+Yeet
+yeet
+YEET; max-up
+YEET; Max-up
+YEET; REVERSE
+YEET Down
+YEET Puzzle
+Yeet Puzzle
+Yeet Random Puzzle
+YEP TREE PUZZLE

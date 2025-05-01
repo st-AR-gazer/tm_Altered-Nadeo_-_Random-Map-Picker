@@ -1,5 +1,8 @@
 Get csv with all the map uids from Kovacs (place in data foler as "data")
 Run `DownloadFromNadeo` script
-Move `map_data.json` file to `sortingv3`
+Copy `map_data.json` file to `sortingv3`
 Run `assign_mix_attrs.py`
 Run `clenup_attrs.py`
+
+
+Run `extract_attrs.py` if you need to stort through the unmatched_maps.log file for new alterations

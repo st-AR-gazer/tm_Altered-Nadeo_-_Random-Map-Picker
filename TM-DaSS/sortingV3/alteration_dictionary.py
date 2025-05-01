@@ -22,6 +22,7 @@ alterations_dict = {
     # Altered Effects
     "Cruise": ["Cruise", "Cruise Control"],
     "Cruise Effects": [ "Cruise Effects" ],
+    "CP is Engine Off": [ "CP is Engine Off" ],
     "Fragile": [ "Fragile" ],
     "Full Fragile": [ "Full Fragile" ],
     "Freewheel": [ "Freewheel", "FreeWheel" ],
@@ -181,4 +182,5 @@ alterations_dict = {
     "TMGL Easy": [ "Easy Mode", "EASY MODE" ],
     "Unaltered Nadeo": [ "official nadeo map", "!OfficialNadeo" ],
     "Altered TOTD": [""],
+
 }

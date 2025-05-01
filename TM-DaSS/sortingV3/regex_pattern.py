@@ -476,6 +476,12 @@ cruisecontrol_weeklyshorts_pattern_1 = re.compile(
     rf"^(?P<name>{weeklyshorts_pattern_group})\s+(?P<alteration_mix>Cruise Control)$",
     re.IGNORECASE)
 
+    # -------- CP is Engine Off ---------- #
+# Pattern seasonal: "<season> <year> - <mapnumber> CP is Engine Off"
+cpengineoff_seasonal_pattern_1 = re.compile(
+    rf"^(?P<season>{SEASON_REGEX})\s+(?P<year>\d{{4}})\s*-\s*(?P<mapnumber>\d{{1,2}})\s+(?P<alteration_mix>CP is Engine Off)$",
+    re.IGNORECASE)
+
     # -------- Cruise Effects ---------- #
 # Pattern seasonal: "<season> <year> - <mapnumber> Cruise Effects"
 cruiseeffects_seasonal_pattern_1 = re.compile(
@@ -2553,7 +2559,8 @@ ALL_PATTERNS = [
     boosterless_seasonal_pattern_1, boosterless_seasonal_pattern_2, boosterless_training_pattern_1, boosterless_spring2020_pattern_1,
     broken_seasonal_pattern_1,
     cleaned_seasonal_pattern_1,
-    cruisecontrol_seasonal_pattern_1, cruisecontrol_seasonal_pattern_2, cruisecontrol_weeklyshorts_pattern_1, 
+    cruisecontrol_seasonal_pattern_1, cruisecontrol_seasonal_pattern_2, cruisecontrol_weeklyshorts_pattern_1,
+    cpengineoff_seasonal_pattern_1,
     cruiseeffects_seasonal_pattern_1, cruiseeffects_training_pattern_2,
     fast_seasonal_pattern_1, fast_seasonal_pattern_2, 
     fragile_seasonal_pattern_1, fragile_seasonal_pattern_2, fragile_seasonal_pattern_3, fragile_seasonal_pattern_4, fragile_training_pattern_1,
