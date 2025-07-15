@@ -4,5 +4,33 @@ Copy `map_data.json` file to `sortingv3`
 Run `assign_mix_attrs.py`
 Run `clenup_attrs.py`
 
-
 Run `extract_attrs.py` if you need to stort through the unmatched_maps.log file for new alterations
+
+---
+
+Adding a new regex pattern:
+
+to add a new regex pattern, follow these steps:
+1. Define the regex pattern using `re.compile()`.
+2. Use the appropriate regex group names for capturing relevant parts of the map name
+    - Use `(?P<season>{SEASON_REGEX})` for capturing the season
+    - Use `(?P<year>\d{4})` for capturing the year OOPS: Some names may not have a year, and some only have year in a two long length format
+    - Use `(?P<mapnumber>\d{1,2})` for capturing the map number
+    - Use `(?P<alteration_mix>...)` for capturing the alteration (this gets cleaned up later)
+
+    - Use `(?P<competitionname>{competition_pattern_group})` for capturing the competition name
+    - Use `(?P<mapnumber_color>white|green|blue|red|black)` for capturing the color-coded map number sets
+    - Use `(?P<mapnumber_section>\d{1,2})` for capturing the section number
+    - Use `(?P<mapnumber_multiple>[\d\s&]+)` for capturing multiple map numbers in a single string
+    - Use `(?P<mapnumber_1>\d{1,2})`, `(?P<mapnumber_2>\d{1,2})`, ..., `(?P<mapnumber_25>\d{1,2})` for capturing individual map numbers from 1 to 25
+    - Use `(?P<alteration_additional_info>.+)` for capturing any additional alteration information
+    - Use `(?P<season_chinese>[\u4e00-\u9fa5]+)` for capturing Chinese season names (if applicable)
+
+    - Use `(?P<spring2020>[STst][0-1]\d)` for capturing the spring 2020 map number
+
+    - Use `(?P<discoveryname>{discovery_pattern_group})` for capturing the discovery name
+    - Use `(?P<totdname>{totd_pattern_group})` for capturing the TOTD name
+    - Use `(?P<weeklyshortsname>{weeklyshorts_pattern_group})` for capturing the weekly shorts name
+The <season> <year> <mapnumber> <alteration_mix> <spring2020> <discoveryname> <totdname> <weeklyshortsname> are later used to properly assign each individual attribute to a map.
+This is done in the `assign_mix_attrs.py` script (within the `match_known_patterns` function)
+3. Add the new pattern to the `regex_patterns` list at the correct position in the file (correspinding to it's location on the AN discord)
